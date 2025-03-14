@@ -20,7 +20,7 @@ def unroll_json(json_chunk, prefix=""):
         if isinstance(value, dict):
             # Recursively call unroll_context for nested dictionaries
             nested_prefix = prefix + key.capitalize() + " - "
-            unrolled_text += unroll_context(value, nested_prefix)
+            unrolled_text += unroll_json(value, nested_prefix)
         else:
             # Add the key-value pair to the unrolled text
             unrolled_text += f"{formatted_key}{value}\n"
@@ -72,6 +72,9 @@ def generate_markdown_solution(problem):
 
 with open('input.json', 'r') as file:
     problem_data_list = json.load(file)
+
+if not isinstance(problem_data_list, list):
+    problem_data_list = [problem_data_list]
 
 # Open an output file for writing the Markdown content
 with open('output.md', 'w') as output_file:

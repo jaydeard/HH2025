@@ -115,4 +115,23 @@
             ]
         }
     }
+    ,
+    {
+        "id": "HH-WAVE-0001",
+        "title": "Plane Wave Propagation Time",
+        "description": "Calculate the time required for a plane wave to reach a specified point.",
+        "difficulty": "Basic",
+        "tags": ["waves", "propagation", "physics"],
+        "question_text": "How long does it take a plane wave, passing through the origin with a wavefront normal at 10° from the positive z-axis, to reach a point at (x0, z0) = (3, 6)? Use c = 3e8 m/s as the speed of light.",
+        "solution": {
+          "steps": [
+            "Determine the unit propagation vector. Since the wavefront normal makes a 10° angle with the positive z-axis, the unit vector is n = (sin(10°), cos(10°)).",
+            "Write the displacement vector from the origin to the point: r = (3, 6).",
+            "Project r onto n to find the effective travel distance: distance = 3*sin(10°) + 6*cos(10°).",
+            "Using sin(10°) ≈ 0.17365 and cos(10°) ≈ 0.98481, compute the distance: 3×0.17365 + 6×0.98481 ≈ 0.52095 + 5.90886 ≈ 6.43 m.",
+            "Divide the distance by the speed of light (c = 3×10^8 m/s) to find the time: t ≈ 6.43 / (3×10^8) ≈ 2.14×10^-8 s, or about 21.4 nanoseconds."
+          ],
+          "final_answer": "Approximately 21.4 nanoseconds."
+        }
+      }
 ]
