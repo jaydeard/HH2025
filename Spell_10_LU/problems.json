@@ -1,0 +1,103 @@
+[
+    {
+        "id": "HH-PERFECTRECON-0001",
+        "title": "Perfect Reconstruction in Off-Axis Holography",
+        "description": "Analyze the conditions required for achieving perfect reconstruction of a holographic image.",
+        "difficulty": "Intermediate",
+        "insight": "Perfect reconstruction occurs when the illumination wave replicates the reference wave, ensuring identical image and object characteristics.",
+        "tags": ["perfect reconstruction", "holography", "off-axis holography", "wavefront matching", "optics"],
+        "question_text": "In an off-axis hologram setup, a reference beam and an illumination beam create interference patterns on the holographic plate. The illumination wave replicates the reference wave. Under what conditions will the reconstructed image perfectly match the original object wavefront?\n\nUse the relationships for phase addition and wavefront curvature to derive the conditions for perfect reconstruction.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PERFECTRECON-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PERFECTRECON-0001s.png",
+        "solution": {
+            "final_answer": "The image will perfectly reconstruct if the illumination matches the reference wave in wavelength, angle, and divergence.",
+            "steps": [
+                "Start with the phase addition law for holography: $$\\Phi_{out} = m (\\Phi_{obj} - \\Phi_{ref}) + \\Phi_{ill}$$.",
+                "For perfect reconstruction, the phase footprint of the illumination wave must match the reference wave: $$\\Phi_{ill} = \\Phi_{ref}$$.",
+                "The angle of the illumination beam must equal the reference beam: $$\\theta_{ill} = \\theta_{ref}$$.",
+                "The wavelength of the illumination beam must match the reference beam: $$\\lambda_{ill} = \\lambda_{ref}$$.",
+                "The divergence of the illumination beam must match the reference beam.",
+                "When these conditions are met, the reconstructed image matches the original object wavefront perfectly."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-PERFECTRECON-0002",
+        "title": "Perfect Reconstruction in Off-Axis Holography",
+        "description": "Calculate the conditions required for achieving perfect reconstruction of a holographic image in terms of wavelength, angle, and phase difference.",
+        "difficulty": "Advanced",
+        "insight": "Perfect reconstruction requires matching the wavelength, angle, and phase of the illumination wave with the reference wave.",
+        "tags": ["perfect reconstruction", "holography", "off-axis holography", "wavefront matching", "optics", "phase difference"],
+        "question_text": "In an off-axis holography setup, a reference wave with a wavelength of $$\\lambda = 632.8 \\, nm$$ illuminates the holographic plate at an angle of $$\\theta_{ref} = 20^\\circ$$. The illumination wave has a wavelength of $$\\lambda_{ill} = 633.0 \\, nm$$ and an angle of $$\\theta_{ill} = 21^\\circ$$.\n\n**a)** Calculate the phase mismatch between the reference and illumination waves.\n**b)** Determine if the phase difference allows for perfect reconstruction.\n\nUse the phase mismatch formula:\n$$\\Delta \\Phi = \\frac{2 \\pi}{\\lambda} (\\Delta \\lambda) L + k (\\theta_{ref} - \\theta_{ill})$$, where $$L = 1.0 \\, m$$ and $$k = \\frac{2 \\pi}{\\lambda}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PERFECTRECON-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PERFECTRECON-0002s.png",
+        "solution": {
+            "final_answer": "Phase mismatch ≈ 173.2 radians. Perfect reconstruction is not achieved.",
+            "steps": [
+                "**Part (a): Calculate Phase Mismatch**",
+                "1. Use the formula: $$\\Delta \\Phi = \\frac{2 \\pi}{\\lambda} (\\Delta \\lambda) L + k (\\theta_{ref} - \\theta_{ill})$$.",
+                "2. Substitute given values: $$\\lambda = 632.8 \\times 10^{-9} \\, m$$, $$\\Delta \\lambda = 0.2 \\times 10^{-9} \\, m$$, $$L = 1.0 \\, m$$, $$\\theta_{ref} = 20^\\circ$$, $$\\theta_{ill} = 21^\\circ$$.",
+                "3. Calculate wavenumber: $$k = \\frac{2 \\pi}{632.8 \\times 10^{-9}} ≈ 9.93 \\times 10^6 \\, rad/m$$.",
+                "4. Calculate phase mismatch:",
+                "   $$\\Delta \\Phi = (9.93 \\times 10^6)(0.2 \\times 10^{-9})(1.0) + (9.93 \\times 10^6)(0.01745)$$.",
+                "5. Evaluate terms: $$\\Delta \\Phi = 1.99 \\times 10^{-3} + 173.2$$.",
+                "6. Final result: $$\\Delta \\Phi ≈ 173.2 \\, rad$$.",
+                "**Part (b): Evaluate Reconstruction Conditions**",
+                "1. For perfect reconstruction, $$\\Delta \\Phi$$ must be approximately zero.",
+                "2. Since $$173.2 \\, rad$$ is not zero, the image will not perfectly reconstruct.",
+                "**Conclusion:**",
+                "The phase mismatch is approximately $$173.2 \\, rad$$, and perfect reconstruction conditions are not met."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-LONGMAG-0005",
+        "title": "Longitudinal Magnification in Off-Axis Holography using Radii of Curvature",
+        "description": "Calculate the longitudinal magnification of an image reconstructed from an off-axis hologram using the radii of curvature formula.",
+        "difficulty": "Advanced",
+        "insight": "Longitudinal magnification depends on the ratio of radii of curvature of the wavefronts in the object and image spaces, scaled by the wavelength and magnification factor.",
+        "tags": ["longitudinal magnification", "off-axis holography", "radii of curvature", "optics", "wavefront analysis"],
+        "question_text": "In an off-axis hologram setup, the object wavefront has a radius of curvature of $$R_{obj} = 200 \\text{ mm}$$, and the image wavefront has a radius of curvature of $$R_{out,m} = 600 \\text{ mm}$$. The wavelengths are $$\\lambda_1 = 500 \\text{ nm}$$ and $$\\lambda_2 = 600 \\text{ nm}$$. The system has a magnification factor of $$m = 1.5$$.\n\nUsing the longitudinal magnification formula:\n$$MAG_{long} = m \\frac{\\lambda_2}{\\lambda_1} \\left(\\frac{R_{out,m}}{R_{obj}}\\right)^2$$,\ncalculate the longitudinal magnification of the image.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0005.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0005s.png",
+        "solution": {
+            "final_answer": "MAG_long ≈ 8.1",
+            "steps": [
+                "Start with the longitudinal magnification formula: $$MAG_{long} = m \\frac{\\lambda_2}{\\lambda_1} \\left(\\frac{R_{out,m}}{R_{obj}}\\right)^2$$.",
+                "Substitute the given values: $$m = 1.5$$, $$\\lambda_2 = 600 \\text{ nm}$$, $$\\lambda_1 = 500 \\text{ nm}$$, $$R_{out,m} = 600 \\text{ mm}$$, $$R_{obj} = 200 \\text{ mm}$$.",
+                "Evaluate the wavelength ratio: $$\\frac{600}{500} = 1.2$$.",
+                "Evaluate the curvature ratio: $$\\frac{600}{200} = 3$$.",
+                "Square the curvature ratio: $$3^2 = 9$$.",
+                "Substitute into the formula: $$MAG_{long} = 1.5 \\cdot 1.2 \\cdot 9$$.",
+                "Simplify: $$MAG_{long} = 16.2$$.",
+                "The longitudinal magnification of the image is approximately 16.2."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-LATERALMAG-0002",
+        "title": "Lateral Magnification in Off-Axis Holography",
+        "description": "Calculate the lateral magnification of an image reconstructed from an off-axis hologram.",
+        "difficulty": "Intermediate",
+        "insight": "Lateral magnification in off-axis holography depends on the wavelength, angles, and radii of curvature of the reference and object beams.",
+        "tags": ["lateral magnification", "off-axis holography", "hologram imaging", "optics", "geometrical optics"],
+        "question_text": "In an off-axis hologram setup, the object beam has a wavelength of $$\\lambda_1 = 633 \\, \\text{nm}$$, and the reconstructed image uses a wavelength of $$\\lambda_2 = 543 \\, \\text{nm}$$. The object beam has a radius of curvature $$R_{obj} = 100 \\, \\text{mm}$$, and the image beam has a radius of curvature $$R_{out,m,x} = 150 \\, \\text{mm}$$. The angles of the object and image beams are $$\\theta_{obj} = 30^\\circ$$ and $$\\theta_{out,m} = 45^\\circ$$, respectively. Determine the lateral magnification of the reconstructed image.\n\nUse the relationship:\n$$MAG_{lateral,x} = m \\frac{\\lambda_2}{\\lambda_1} \\frac{\\cos(\\theta_{obj})}{\\cos(\\theta_{out,m})} \\frac{R_{out,m,x}}{R_{obj}}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0002s.png",
+        "solution": {
+            "final_answer": "MAG_{lateral,x} ≈ 1.57",
+            "steps": [
+                "Start with the lateral magnification formula:\n$$MAG_{lateral,x} = m \\frac{\\lambda_2}{\\lambda_1} \\frac{\\cos(\\theta_{obj})}{\\cos(\\theta_{out,m})} \\frac{R_{out,m,x}}{R_{obj}}$$.",
+                "Assume m = 1 for first-order diffraction.",
+                "Substitute the given values:\n$$\\lambda_2 = 543 \\times 10^{-9} \\, \\text{m}$$,\n$$\\lambda_1 = 633 \\times 10^{-9} \\, \\text{m}$$,\n$$\\theta_{obj} = 30^\\circ$$,\n$$\\theta_{out,m} = 45^\\circ$$,\n$$R_{out,m,x} = 150 \\, \\text{mm}$$,\n$$R_{obj} = 100 \\, \\text{mm}$$.",
+                "Evaluate each term:\n- $$\\frac{\\lambda_2}{\\lambda_1} = 0.857$$,\n- $$\\frac{\\cos(30^\\circ)}{\\cos(45^\\circ)} = 1.224$$,\n- $$\\frac{150}{100} = 1.5$$.",
+                "Combine all terms:\n$$MAG_{lateral,x} = 1 \\cdot 0.857 \\cdot 1.224 \\cdot 1.5$$.",
+                "Simplify:\n$$MAG_{lateral,x} ≈ 1.57$$.",
+                "The lateral magnification of the image is approximately 1.57."
+            ]
+        }
+    }
+]

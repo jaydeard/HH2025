@@ -1,0 +1,85 @@
+[
+    {
+        "id": "HH-HORIZONTALFOCUS-0002",
+        "title": "Horizontal Focus in Phase Conjugate Imaging",
+        "description": "Determine the horizontal focus distance of a holographic image using phase conjugate illumination under a different plate angle configuration.",
+        "difficulty": "Intermediate",
+        "insight": "The horizontal focus in phase conjugate imaging is influenced by the plate angle and object-output beam geometry.",
+        "tags": ["horizontal focus", "phase conjugation", "holography", "real image projection", "optics"],
+        "question_text": "In a phase conjugate holographic setup, a hologram is illuminated using a conjugate beam. The vertical focus is measured at 300 mm, while the horizontal focus depends on the plate angle. If the plate angle corresponds to **Configuration B**, determine the **horizontal focus distance**.\n\nUse the horizontal focus relationship from the text for **plate angle Configuration B**.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-HORIZONTALFOCUS-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-HORIZONTALFOCUS-0002s.png",
+        "solution": {
+            "final_answer": "Horizontal focus ≈ 290.2 mm",
+            "steps": [
+                "From the text, the horizontal focus distance depends on the plate angle.",
+                "For **plate angle Configuration B**, the horizontal focus value is directly provided as **290.2 mm**.",
+                "Verify that the vertical focus remains consistent at **300 mm**.",
+                "Conclude that the **horizontal focus distance** for **plate angle Configuration B** is approximately **290.2 mm**."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-HORIZONTALFOCUS-0001",
+        "title": "Horizontal Focus in Phase Conjugate Imaging",
+        "description": "Calculate the horizontal focus distance of a holographic image using phase conjugate illumination.",
+        "difficulty": "Intermediate",
+        "insight": "The horizontal focus in phase conjugate imaging depends on the plate angle and the object-output beam geometry.",
+        "tags": ["horizontal focus", "phase conjugation", "holography", "real image projection", "optics"],
+        "question_text": "In a phase conjugate holographic setup, a hologram is illuminated using a conjugate beam. The vertical focus is measured at 280 mm, while the horizontal focus depends on the plate angle. If the plate angle corresponds to **Configuration A**, determine the **horizontal focus distance**.\n\nUse the horizontal focus relationship from the text for **plate angle Configuration A**.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-HORIZONTALFOCUS-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-HORIZONTALFOCUS-0001s.png",
+        "solution": {
+            "final_answer": "Horizontal focus ≈ 325.4 mm",
+            "steps": [
+                "From the text, the horizontal focus distance depends on the plate angle.",
+                "For **plate angle Configuration A**, the horizontal focus value is directly provided as **325.4 mm**.",
+                "Verify that the vertical focus remains consistent at **280 mm**.",
+                "Conclude that the **horizontal focus distance** for **plate angle Configuration A** is approximately **325.4 mm**."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-VERTICALFOCUS-0002",
+        "title": "Vertical Focus in Phase Conjugate Imaging",
+        "description": "Calculate the vertical focus distance of a holographic image using phase conjugate illumination with a different plate angle configuration.",
+        "difficulty": "Intermediate",
+        "insight": "The vertical focus in phase conjugate imaging is determined by the plate angle and the object-output beam geometry.",
+        "tags": ["vertical focus", "phase conjugation", "holography", "real image projection", "optics"],
+        "question_text": "In a phase conjugate holographic setup, a hologram is illuminated using a conjugate beam. The horizontal focus is measured at 350 mm, while the vertical focus depends on the plate angle. If the plate angle corresponds to **Configuration B**, determine the **vertical focus distance**.\n\nUse the vertical focus relationship from the text for **plate angle Configuration B**.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-VERTICALFOCUS-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-VERTICALFOCUS-0002s.png",
+        "solution": {
+            "final_answer": "Vertical focus ≈ 310.2 mm",
+            "steps": [
+                "From the text, the vertical focus distance depends on the plate angle.",
+                "For **plate angle Configuration B**, the vertical focus value is directly provided as **310.2 mm**.",
+                "Verify that the horizontal focus remains consistent at **350 mm**.",
+                "Conclude that the **vertical focus distance** for **plate angle Configuration B** is approximately **310.2 mm**."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-VERTICALFOCUS-0001",
+        "title": "Vertical Focus Location in Phase Conjugate Imaging",
+        "description": "Calculate the vertical focus distance of a holographic image using phase conjugate illumination.",
+        "difficulty": "Intermediate",
+        "insight": "The vertical focus in phase conjugate imaging depends on the plate angle and object-output beam geometry.",
+        "tags": ["vertical focus", "phase conjugation", "holography", "real image projection", "optics"],
+        "question_text": "In a phase conjugate holographic setup, a hologram is illuminated using a conjugate beam. The horizontal focus is measured at 312.5 mm, while the vertical focus depends on the plate angle. If the plate angle corresponds to configuration C, determine the vertical focus distance.\n\nUse the vertical focus relationship from the text for plate angle C.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-VERTICALFOCUS-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-VERTICALFOCUS-0001s.png",
+        "solution": {
+            "final_answer": "Vertical focus ≈ 277.8 mm",
+            "steps": [
+                "From the text, the vertical focus distance depends on the plate angle.",
+                "For plate angle C, the vertical focus value is provided directly: 277.8 mm.",
+                "Verify the conditions: horizontal focus remains at 312.5 mm.",
+                "Conclude that the vertical focus distance for plate angle C is approximately 277.8 mm."
+            ]
+        }
+    }
+]

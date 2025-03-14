@@ -1,0 +1,39 @@
+[
+    {
+        "id": "HH-VISUALCUE-0001",
+        "title": "Pictorial Cues in Depth Perception",
+        "description": "Identify which depth perception cue is a pictorial cue.",
+        "difficulty": "Basic",
+        "tags": ["vision", "depth perception", "pictorial cues"],
+        "question_text": "Which of the following is a pictorial cue?\n\n1. Occlusion\n2. Accommodation\n3. Parallax",
+        "solution": {
+            "final_answer": "Occlusion"
+        }
+    }
+    ,
+    {
+        "id": "HH-DEPTHCUE-0002",
+        "title": "Monocular vs. Binocular Depth Cues",
+        "description": "Classify the following depth perception cues as either monocular or binocular.",
+        "difficulty": "Basic",
+        "tags": ["vision", "depth perception", "monocular", "binocular"],
+        "question_text": "Sort the following depth perception cues into their correct categories: monocular or binocular.\n\nOcclusion (overlap)  \nPerspective  \nAccommodation (focus)  \nMotion Parallax  \nConvergence  \nFusion (stereopsis)  \nEdge Effects",
+        "solution": {
+            "final_answer": "\n\nMonocular cues: Occlusion, Perspective, Accommodation, Motion Parallax  \nBinocular cues: Convergence, Fusion, Edge Effects",
+            "steps": ["Remember that monocular cues can be perceived with one eye, while binocular cues require both eyes."]
+        }
+    }
+    ,
+    {
+        "id": "HH-DEPTHCUE-0001",
+        "title": "Depthly Hallows in Depth Perception",
+        "description": "Identify which depth perception cues are considered part of the 'Depthly Hallows' in this class.",
+        "difficulty": "Basic",
+        "tags": ["vision", "depth perception", "Depthly Hallows"],
+        "question_text": "Which of the following are part of the 'Depthly Hallows' as defined in this class? (select all that apply)\n\nProprioception  \nParallax  \nPerspective Lines  \nOcclusion  \nAccommodation",
+        "solution": {
+            "final_answer": "Parallax, Occlusion, Accommodation"
+        }    
+    }
+    
+]

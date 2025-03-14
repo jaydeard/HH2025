@@ -1,0 +1,187 @@
+[
+    {
+        "id": "HH-OBJECTREF-0007",
+        "title": "Object Beam and Reference Beam Properties in Holography",
+        "description": "Analyze the amplitude and phase properties of object and reference beams in a holographic setup.",
+        "difficulty": "Intermediate",
+        "insight": "The interference pattern between the object and reference beams is the core mechanism enabling holographic recording and reconstruction.",
+        "tags": ["holography", "object beam", "reference beam", "interference", "optics"],
+        "question_text": "In a holographic recording setup, an object beam is diffusely reflected from an aluminum-sprayed object surface, while a reference beam is a plane wave incident at an angle of 30°. The reference beam's intensity is greater than the object beam by a factor of 10. What is the beam ratio, and how does it affect the interference pattern?",
+        "hint": "The beam ratio (K) is the ratio of the intensity of the reference beam to the intensity of the object beam. The interference pattern's visibility depends on this ratio.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0007.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0007s.png",
+        "solution": {
+            "final_answer": "Beam ratio (K) = 10; Higher ratios reduce interference fringe visibility.",
+            "steps": [
+                "The beam ratio is defined as: $$K = \\frac{I_{ref}}{I_{obj}}$$.",
+                "Substitute the given values: $$K = 10$$.",
+                "Interpretation: A high beam ratio (K > 1) ensures clear recording of the interference pattern but may reduce fringe contrast if excessively high.",
+                "The interference term in the intensity pattern is given by: $$I_{int} = 2\\sqrt{I_{obj} I_{ref}} \\cos(\\Delta \\phi)$$.",
+                "As K increases, the contribution from the object beam decreases relative to the reference beam, affecting fringe visibility.",
+                "Conclusion: The beam ratio (K=10) strikes a balance, but extreme values (e.g., K > 50) may cause poor contrast in the interference pattern."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-OBJECTREF-0008",
+        "title": "Beam Ratio and Fringe Contrast in Holographic Recording",
+        "description": "Evaluate the impact of beam ratio on fringe visibility and interference contrast in a holographic setup.",
+        "difficulty": "Intermediate",
+        "insight": "An optimal beam ratio balances the intensity of the object and reference beams to maximize fringe visibility without overwhelming the holographic pattern.",
+        "tags": ["holography", "object beam", "reference beam", "beam ratio", "interference"],
+        "question_text": "In a holographic setup, the object beam has an average intensity of 1 mW/cm², while the reference beam has an intensity of 15 mW/cm². The object beam preserves polarization, and the reference beam is incident at an angle of 45°. Calculate the beam ratio and discuss how it influences the interference pattern and hologram quality.",
+        "hint": "The beam ratio (K) is defined as the ratio of the reference beam intensity to the object beam intensity. Optimal fringe visibility occurs when the intensities are balanced.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008s.png",
+        "solution": {
+            "final_answer": "Beam ratio (K) = 15; Excessively high ratios reduce fringe contrast.",
+            "steps": [
+                "The beam ratio is defined as: $$K = \\frac{I_{ref}}{I_{obj}}$$.",
+                "Substitute the given values: $$I_{ref} = 15 \\text{ mW/cm}^2$$, $$I_{obj} = 1 \\text{ mW/cm}^2$$.",
+                "Calculate the beam ratio: $$K = \\frac{15}{1} = 15$$.",
+                "Interpretation: A beam ratio of 15 means the reference beam is significantly stronger than the object beam.",
+                "Effect on Fringe Pattern: High beam ratios reduce fringe visibility as the weaker beam's modulation effect diminishes.",
+                "Optimal Balance: Ideal beam ratios for high-contrast holograms are typically between 5 and 10.",
+                "Conclusion: At a beam ratio of 15, fringe visibility is reduced, but the interference pattern remains detectable for recording."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-INTERFERENCE-0009",
+        "title": "Interference Pattern Formation in Holography",
+        "description": "Analyze the formation of an interference pattern between object and reference beams in a holographic recording setup.",
+        "difficulty": "Intermediate",
+        "insight": "The interference pattern results from the superposition of the object and reference beams, and its visibility depends on their relative intensities and phase differences.",
+        "tags": ["holography", "interference", "fringe pattern", "optics", "wave optics"],
+        "question_text": "In a holographic setup, an object beam with a phase distribution varying across x and y interferes with a plane wave reference beam at an angle of 20°. The intensities of the beams are equal. Write the mathematical expression for the total intensity pattern on the recording plane.",
+        "hint": "Use the interference formula: $$I(x, y) = I_{obj} + I_{ref} + 2\\sqrt{I_{obj} I_{ref}} \\cos(\\Delta \\phi)$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0009.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0009s.png",
+        "solution": {
+            "final_answer": "I(x, y) = 2I₀ [1 + cos(Δφ(x, y))]",
+            "steps": [
+                "The total intensity pattern is given by: $$I(x, y) = I_{obj} + I_{ref} + 2\\sqrt{I_{obj} I_{ref}} \\cos(\\Delta \\phi)$$.",
+                "Since the intensities are equal: $$I_{obj} = I_{ref} = I₀$$.",
+                "Substituting into the formula: $$I(x, y) = I₀ + I₀ + 2\\sqrt{I₀ I₀} \\cos(\\Delta \\phi)$$.",
+                "Simplify: $$I(x, y) = 2I₀ [1 + cos(\\Delta \\phi(x, y))]$$.",
+                "Interpretation: The intensity varies sinusoidally depending on the phase difference between the two beams.",
+                "Conclusion: The fringe pattern is determined by the phase distribution Δφ(x, y)."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-ARTIFACTS-0001",
+        "title": "Artifacts in Holographic Reconstruction: Twin Image and Zero-Order Terms",
+        "description": "Analyze the impact of twin images and zero-order terms in a holographic reconstruction and propose a method to minimize their effects.",
+        "difficulty": "Intermediate",
+        "insight": "Artifacts such as twin images and zero-order terms arise from imperfections in holographic recording and reconstruction processes.",
+        "tags": ["holography", "artifacts", "twin image", "zero-order term", "reconstruction"],
+        "question_text": "In a holographic reconstruction, a clear primary image is observed, but there is also an unwanted twin image and a bright central zero-order term. Explain the origin of these artifacts and suggest one technique to reduce each artifact during the reconstruction process.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ARTIFACTS-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ARTIFACTS-0001s.png",
+        "solution": {
+            "final_answer": "Twin Image: Phase-shifting techniques; Zero-Order Term: Spatial filtering.",
+            "steps": [
+                "**Step 1: Origin of Twin Image**",
+                "1. The twin image arises from the interference pattern recorded by both the real and conjugate object waves.",
+                "2. During reconstruction, these waves overlap, causing a secondary (twin) image to appear.",
+                "**Step 2: Mitigating Twin Image**",
+                "1. A common solution is to use **phase-shifting holography**, where multiple phase-shifted holograms are combined to eliminate the twin image.",
+                "**Step 3: Origin of Zero-Order Term**",
+                "1. The zero-order term originates from the unmodulated light passing directly through the hologram.",
+                "2. It creates a bright spot at the center of the reconstructed image.",
+                "**Step 4: Mitigating Zero-Order Term**",
+                "1. **Spatial filtering** can be applied using an aperture at the Fourier plane to block the zero-order term.",
+                "**Step 5: Final Answer**",
+                "1. Twin Image: Phase-shifting techniques.",
+                "2. Zero-Order Term: Spatial filtering.",
+                "**Additional Context / Clarification:**",
+                "Twin images and zero-order terms are fundamental artifacts in holography. While twin images arise due to phase ambiguities, zero-order terms result from residual unmodulated light. Modern techniques like phase-shifting and spatial filtering are commonly employed to minimize these issues, improving the clarity of reconstructed holographic images."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-ARTIFACTS-0002",
+        "title": "Eliminating Twin Images in Holographic Reconstruction",
+        "description": "Analyze the cause of twin images in holography and identify an effective technique to minimize their effect.",
+        "difficulty": "Advanced",
+        "insight": "Twin images in holographic reconstruction are caused by overlapping conjugate waves and can be minimized using phase-shifting techniques.",
+        "tags": ["holography", "artifacts", "twin image", "reconstruction", "phase shifting"],
+        "question_text": "During a holographic reconstruction, a secondary twin image appears alongside the primary image, reducing clarity and fidelity. Explain the origin of this twin image and describe a specific technique used to minimize it.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ARTIFACTS-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ARTIFACTS-0002s.png",
+        "solution": {
+            "final_answer": "Twin Image: Off-axis holography with spatial filtering; Zero-Order Term: Spatial filtering using a Fourier aperture.",
+            "steps": [
+                "**Step 1: Origin of Twin Image**",
+                "1. Twin images result from the interference pattern created by both the real object wave and its conjugate.",
+                "2. During reconstruction, these two components overlap, creating an unwanted secondary image.",
+                "**Step 2: Mitigating Twin Image**",
+                "1. A common solution is to use **off-axis holography**, where the reference beam is angled relative to the object beam.",
+                "2. This angular separation allows the real and twin images to be spatially separated in the Fourier plane.",
+                "3. **Spatial filtering** can then be applied using an aperture to block the twin image, isolating the primary image.",
+                "**Step 3: Origin of Zero-Order Term**",
+                "1. The zero-order term originates from the unmodulated reference beam passing directly through the hologram without being diffracted.",
+                "2. It manifests as a bright central spot in the reconstructed image.",
+                "**Step 4: Mitigating Zero-Order Term**",
+                "1. **Spatial filtering** is employed in the Fourier plane to block the zero-order diffraction.",
+                "2. By placing an aperture that allows only the desired diffraction orders (typically the first-order diffracted beams) to pass, the zero-order term can be effectively suppressed.",
+                "**Step 5: Final Answer**",
+                "1. **Twin Image:** Off-axis holography with spatial filtering effectively eliminates the unwanted twin image by spatially separating and filtering it out.",
+                "2. **Zero-Order Term:** Spatial filtering using a Fourier aperture removes the bright central spot caused by the zero-order term, enhancing the clarity of the primary image.",
+                "**Additional Context / Clarification:**",
+                "Twin images and zero-order terms are fundamental artifacts in holography that degrade image quality. **Off-axis holography** not only aids in eliminating twin images but also enhances the overall reconstruction by enabling better control over diffraction orders. **Spatial filtering** is a versatile technique applied in the Fourier plane of the optical system to selectively block unwanted components, thereby refining the reconstructed holographic image for higher fidelity and clarity."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-RECMAT-0011",
+        "title": "Silver Halide Emulsion Properties in Holography",
+        "description": "Analyze the key optical properties of silver halide emulsions used in holographic recording materials.",
+        "difficulty": "Intermediate",
+        "insight": "The small grain size of silver halide emulsions allows them to resolve fine interference fringes, making them suitable for high-resolution holograms.",
+        "tags": ["holography", "silver halide", "recording material", "optics", "wave optics"],
+        "question_text": "A silver halide holographic emulsion has grains approximately 35 nm in diameter. Explain how this small grain size impacts the resolution of interference fringes recorded on the emulsion.",
+        "hint": "The resolution of holographic recording materials depends on the ability to capture fine interference fringes, which is influenced by the grain size.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0011.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0011s.png",
+        "solution": {
+            "final_answer": "Smaller grain size improves the resolution of interference fringes.",
+            "steps": [
+                "The resolution of a holographic recording material depends on its ability to record fine-scale interference fringes.",
+                "Smaller grains mean higher spatial resolution because they can capture finer details.",
+                "Grains larger than the fringe spacing would blur the interference pattern, reducing the clarity of the hologram.",
+                "The 35 nm grain size in silver halide emulsions allows them to resolve fringe patterns corresponding to very high spatial frequencies.",
+                "Conclusion: Smaller grains in silver halide emulsions ensure higher resolution and better quality holograms."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-RECMAT-0012",
+        "title": "Grain Size vs Sensitivity in Holographic Emulsions",
+        "description": "Examine how the grain size of silver halide emulsions affects their sensitivity and ability to record fine interference fringes.",
+        "difficulty": "Intermediate",
+        "insight": "There is a trade-off between grain size and sensitivity: smaller grains improve resolution but reduce light sensitivity.",
+        "tags": ["holography", "silver halide", "recording material", "grain size", "optics"],
+        "question_text": "A holographic silver halide emulsion has extremely fine grains (35 nm) to resolve fine interference fringes. Explain how this fine grain size impacts the sensitivity of the emulsion.",
+        "hint": "Smaller grains improve resolution but reduce the light sensitivity of the emulsion.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012s.png",
+        "solution": {
+            "final_answer": "Smaller grain size reduces light sensitivity but improves resolution.",
+            "steps": [
+                "Sensitivity in holographic emulsions depends on the ability of grains to absorb light photons.",
+                "Smaller grains have less surface area to absorb photons, reducing sensitivity.",
+                "However, smaller grains enable better spatial resolution because they can record finer interference fringes.",
+                "This creates a trade-off: smaller grains improve resolution but reduce sensitivity.",
+                "Conclusion: Silver halide emulsions with 35 nm grains prioritize resolution over light sensitivity."
+            ]
+        }
+    }
+]

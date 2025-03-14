@@ -1,0 +1,28 @@
+[
+    {
+        "id": "HH-LASERGRATING-0001",
+        "title": "Laser Diffraction by a Grating: Beam Locations on a Screen",
+        "description": "Calculate the locations of first, second, and third-order diffraction beams on a screen when a laser interacts with a diffraction grating.",
+        "difficulty": "Intermediate",
+        "insight": "The angles of diffracted beams can be calculated using the grating equation, and their positions on a screen can be determined using trigonometric relationships.",
+        "tags": ["laser diffraction", "grating", "beam locations", "optics", "wave optics"],
+        "question_text": "A HeNe laser beam (λ = 633 nm) travels along the z-axis and is incident on a grating of spatial frequency 742 cy/mm. Find the locations of the first, second, and third-order beams on a screen 1 m away when the grating is perpendicular to the z-axis.",
+        "hint": "Use the grating equation: $$\\sin(\\theta_{out}) = m \\lambda f$$, where $$f$$ is the spatial frequency of the grating. Then calculate the position on the screen using $$x = z \\cdot \\tan(\\theta_{out})$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LASERGRATING-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LASERGRATING-0001s.png",
+        "solution": {
+            "final_answer": "x₁ = 532 mm, x₂ = 2730 mm, x₃ = Evanescent",
+            "steps": [
+                "Use the grating equation: $$\\sin(\\theta_{out}) = m \\lambda f$$.",
+                "Substitute the given values: $$\\lambda = 633 \\times 10^{-9} \\text{ m}$$, $$f = 742 \\text{ cycles/mm} = 742 \\times 10^3 \\text{ cycles/m}$$.",
+                "Calculate $$f \\cdot \\lambda$$: $$= 742 \\times 10^3 \\cdot 633 \\times 10^{-9}$$.",
+                "For each order (m=1, m=2, m=3), calculate $$\\theta_{out}$$ using $$\\arcsin(m \\lambda f)$$.",
+                "Use $$x = z \\cdot \\tan(\\theta_{out})$$ to calculate the position on the screen (z=1 m).",
+                "Evaluate for m=1: $$\\theta_{out} ≈ 28°$$, $$x = 1000 \\cdot \\tan(28°) ≈ 532 \\text{ mm}$$.",
+                "Evaluate for m=2: $$\\theta_{out} ≈ 69.9°$$, $$x = 1000 \\cdot \\tan(69.9°) ≈ 2730 \\text{ mm}$$.",
+                "Evaluate for m=3: $$\\theta_{out}$$ exceeds the critical angle, resulting in evanescent behavior.",
+                "Conclusion: The first-order beam is at 532 mm, the second-order beam is at 2730 mm, and the third-order beam is evanescent."
+            ]
+        }
+    }
+]

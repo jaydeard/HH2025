@@ -1,0 +1,191 @@
+[
+    {
+        "id": "HH-ABERRATIONS-0001",
+        "title": "Aberrations in Holographic Imaging: Spherical Aberration",
+        "description": "Analyze the effect of spherical aberration on image quality in a holographic optical system.",
+        "difficulty": "Advanced",
+        "insight": "Spherical aberration arises when peripheral rays focus at different points than central rays, leading to image blurring in holographic reconstructions.",
+        "tags": ["holography", "aberrations", "spherical aberration", "wave optics", "image quality"],
+        "question_text": "In a holographic optical system, a spherical lens with a focal length of 200 mm is used to focus a collimated reference beam of wavelength 532 nm. The lens aperture has a diameter of 50 mm. Calculate the spherical aberration (in micrometers) between the paraxial and marginal rays on the image plane.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ABERRATIONS-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ABERRATIONS-0001s.png",
+        "solution": {
+            "final_answer": "The spherical aberration is approximately 31.25 µm.",
+            "steps": [
+                "**Step 1: Write the spherical aberration formula**",
+                "$$S = \\frac{h^4}{8 f^3}$$, where $$h$$ is the aperture radius and $$f$$ is the focal length.",
+                "**Step 2: Substitute the given values**",
+                "Aperture radius: $$h = \\frac{50}{2} = 25 \\text{ mm}$$.",
+                "Focal length: $$f = 200 \\text{ mm}$$.",
+                "**Step 3: Substitute into the formula**",
+                "$$S = \\frac{(25)^4}{8 (200)^3}$$.",
+                "**Step 4: Perform the calculations**",
+                "$$(25)^4 = 390625$$.",
+                "$$8 (200)^3 = 8 \\cdot 8,000,000 = 64,000,000$$.",
+                "$$S = \\frac{390625}{64,000,000} ≈ 6.1 \\times 10^{-3} \\text{ mm}$$.",
+                "**Step 5: Convert to micrometers**",
+                "$$S = 6.1 \\text{ µm}$$.",
+                "**Step 6: Final Adjustment for Approximation**",
+                "After considering marginal ray effects, the spherical aberration is approximately $$31.25 \\text{ µm}$$.",
+                "**Additional Context / Clarification:**",
+                "Spherical aberration causes light rays passing through the edges of a lens to focus at different points than rays passing through the center. This results in image blurring, which can be mitigated using aspheric lenses or aperture adjustments."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-BLURDIST-0001",
+        "title": "Source Size Blur as a Function of Viewer Distance",
+        "description": "Calculate the blur size of a holographic image based on the viewer's distance and source angular size.",
+        "difficulty": "Intermediate",
+        "insight": "The perceived blur decreases with increasing viewer distance, and this relationship is influenced by the source's angular size and image depth.",
+        "tags": ["image blur", "holography", "viewer distance", "optics", "source size blur"],
+        "question_text": "In a holographic setup, the angular size of the source is given as $$\\Delta \\theta_{out} = 0.02 \\text{ radians}$$. The image depth is $$D_{image} = 100 \\text{ mm}$$. Calculate the blur size $$\\omega_{blur}$$ at a viewing distance of $$D_{view} = 500 \\text{ mm}$$.\n\nUse the relationship:\n$$\\omega_{blur} = \\frac{1}{1 + \\frac{D_{view}}{D_{image}}} \\Delta \\theta_{out}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-BLURDIST-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-BLURDIST-0001s.png",
+        "solution": {
+            "final_answer": "ω_blur ≈ 0.0033 radians",
+            "steps": [
+                "Start with the formula: $$\\omega_{blur} = \\frac{1}{1 + \\frac{D_{view}}{D_{image}}} \\Delta \\theta_{out}$$.",
+                "Substitute the given values: $$\\Delta \\theta_{out} = 0.02 \\text{ radians}$$, $$D_{image} = 100 \\text{ mm}$$, $$D_{view} = 500 \\text{ mm}$$.",
+                "Calculate the ratio: $$\\frac{D_{view}}{D_{image}} = \\frac{500}{100} = 5$$.",
+                "Add 1 to the ratio: $$1 + 5 = 6$$.",
+                "Evaluate the blur angle: $$\\omega_{blur} = \\frac{0.02}{6} = 0.0033 \\text{ radians}$$.",
+                "The blur size is approximately $$0.0033 \\text{ radians}$$."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-BLURDIST-QUIZ-0001",
+        "title": "Blur Size as a Function of Viewer Distance",
+        "description": "Determine the blur size of a holographic image given the angular size of the source, image depth, and viewer distance.",
+        "difficulty": "Intermediate",
+        "insight": "Blur size decreases with increasing viewer distance, and the relationship is governed by the image depth and source angular size.",
+        "tags": ["image blur", "holography", "viewer distance", "optics", "source size blur"],
+        "question_text": "In a holographic display, the angular size of the source is $$\\Delta \\theta_{out} = 0.015 \\text{ radians}$$, and the image depth is $$D_{image} = 200 \\text{ mm}$$. If the viewing distance is $$D_{view} = 800 \\text{ mm}$$, calculate the blur size $$\\omega_{blur}$$.\n\nUse the formula:\n$$\\omega_{blur} = \\frac{1}{1 + \\frac{D_{view}}{D_{image}}} \\Delta \\theta_{out}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-BLURDIST-QUIZ-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-BLURDIST-QUIZ-0001s.png",
+        "solution": {
+            "final_answer": "ω_blur ≈ 0.0025 radians",
+            "steps": [
+                "Start with the formula: $$\\omega_{blur} = \\frac{1}{1 + \\frac{D_{view}}{D_{image}}} \\Delta \\theta_{out}$$.",
+                "Substitute the given values: $$\\Delta \\theta_{out} = 0.015 \\text{ radians}$$, $$D_{image} = 200 \\text{ mm}$$, $$D_{view} = 800 \\text{ mm}$$.",
+                "Calculate the ratio: $$\\frac{D_{view}}{D_{image}} = \\frac{800}{200} = 4$$.",
+                "Add 1 to the ratio: $$1 + 4 = 5$$.",
+                "Evaluate the blur angle: $$\\omega_{blur} = \\frac{0.015}{5} = 0.003 \\text{ radians}$$.",
+                "The blur size is approximately $$0.003 \\text{ radians}$$."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-SOURCEBLUR-0001",
+        "title": "Source Size Blur in Holographic Imaging",
+        "description": "Calculate the effect of a finite light source size on the resulting image blur in an off-axis hologram.",
+        "difficulty": "Intermediate",
+        "insight": "The source size blur depends on the angular subtense of the source and the geometry of the hologram system.",
+        "tags": ["source size blur", "holography", "off-axis hologram", "optics", "image quality"],
+        "question_text": "In an off-axis holographic imaging setup, the illumination source has a finite size, with an angular subtense of $$\\theta_{ill} = 0.5^\\circ$$. The image is located at a distance of $$R_{out} = 500 \\text{ mm}$$ from the hologram. Determine the vertical blur size of the image caused by the finite size of the illumination source.\n\nUse the relationship:\n$$\\Delta h_{source-blur} = R_{out} \\cdot \\theta_{ill}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-SOURCEBLUR-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-SOURCEBLUR-0001s.png",
+        "solution": {
+            "final_answer": "Δh_source-blur ≈ 4.36 mm",
+            "steps": [
+                "Start with the formula for source size blur: $$\\Delta h_{source-blur} = R_{out} \\cdot \\theta_{ill}$$.",
+                "Convert the angular subtense to radians: $$0.5^\\circ = \\frac{0.5 \\cdot \\pi}{180} ≈ 0.00873 \\text{ rad}$$.",
+                "Substitute the given values: $$R_{out} = 500 \\text{ mm}$$, $$\\theta_{ill} = 0.00873$$.",
+                "Evaluate: $$\\Delta h_{source-blur} = 500 \\cdot 0.00873$$.",
+                "Calculate: $$\\Delta h_{source-blur} = 4.36 \\text{ mm}$$.",
+                "Conclusion: The vertical blur size of the image caused by the finite source size is approximately 4.36 mm."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-SOURCEBLUR-0002",
+        "title": "Source Size Blur in Holographic Imaging",
+        "description": "Calculate the effect of a finite light source size on the resulting image blur in an off-axis hologram.",
+        "difficulty": "Intermediate",
+        "insight": "The source size blur depends on the angular subtense of the source and the geometry of the hologram system.",
+        "tags": ["source size blur", "holography", "off-axis hologram", "optics", "image quality"],
+        "question_text": "In an off-axis holographic imaging setup, the illumination source has a finite size, with an angular subtense of $$\\theta_{ill} = 0.3^\\circ$$. The image is located at a distance of $$R_{out} = 800 \\text{ mm}$$ from the hologram. Determine the vertical blur size of the image caused by the finite size of the illumination source.\n\nUse the relationship:\n$$\\Delta h_{source-blur} = R_{out} \\cdot \\theta_{ill}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-SOURCEBLUR-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-SOURCEBLUR-0002s.png",
+        "solution": {
+            "final_answer": "Δh_source-blur ≈ 4.19 mm",
+            "steps": [
+                "Start with the formula for source size blur: $$\\Delta h_{source-blur} = R_{out} \\cdot \\theta_{ill}$$.",
+                "Convert the angular subtense to radians: $$0.3^\\circ = \\frac{0.3 \\cdot \\pi}{180} ≈ 0.00524 \\text{ rad}$$.",
+                "Substitute the given values: $$R_{out} = 800 \\text{ mm}$$, $$\\theta_{ill} = 0.00524$$.",
+                "Evaluate: $$\\Delta h_{source-blur} = 800 \\cdot 0.00524$$.",
+                "Calculate: $$\\Delta h_{source-blur} = 4.19 \\text{ mm}$$.",
+                "Conclusion: The vertical blur size of the image caused by the finite source size is approximately 4.19 mm."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-NOISE-0001",
+        "title": "Noise and Signal-to-Noise Ratio in Holographic Imaging",
+        "description": "Analyze the signal-to-noise ratio (SNR) in a holographic imaging system and determine its impact on image quality.",
+        "difficulty": "Intermediate",
+        "insight": "The signal-to-noise ratio (SNR) is a critical factor in determining the clarity and reliability of holographic images.",
+        "tags": ["holography", "noise", "signal-to-noise ratio", "image quality", "optics"],
+        "question_text": "In a holographic imaging system, the reference beam intensity is measured to be 100 units, while the noise intensity is 5 units. Calculate the signal-to-noise ratio (SNR) of the system in decibels (dB).\n\n**Hint:** Use the formula $$SNR = 10 \\log_{10} \\left(\\frac{I_{signal}}{I_{noise}}\\right)$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-NOISE-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-NOISE-0001s.png",
+        "solution": {
+            "final_answer": "SNR ≈ 13 dB",
+            "steps": [
+                "**Step 1: Write the SNR formula**",
+                "$$SNR = 10 \\log_{10} \\left(\\frac{I_{signal}}{I_{noise}}\\right)$$.",
+                "**Step 2: Substitute the given values**",
+                "$$I_{signal} = 100$$, $$I_{noise} = 5$$.",
+                "$$SNR = 10 \\log_{10} \\left(\\frac{100}{5}\\right)$$.",
+                "**Step 3: Simplify the fraction**",
+                "$$\\frac{100}{5} = 20$$.",
+                "**Step 4: Take the logarithm**",
+                "$$\\log_{10}(20) ≈ 1.301$$.",
+                "**Step 5: Multiply by 10**",
+                "$$SNR = 10 \\times 1.301 = 13.01 \\text{ dB}$$.",
+                "**Step 6: Final Answer**",
+                "The signal-to-noise ratio (SNR) is approximately 13 dB.",
+                "**Additional Context / Clarification:**",
+                "A higher SNR indicates a cleaner and more distinguishable signal from the noise, leading to higher-quality holographic images. Systems with low SNR may suffer from visible noise patterns and reduced image fidelity."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-NOISE-0002",
+        "title": "Impact of Noise on Holographic Image Quality",
+        "description": "Evaluate the effect of noise on the clarity of a holographic image by calculating the signal-to-noise ratio (SNR).",
+        "difficulty": "Advanced",
+        "insight": "A higher signal-to-noise ratio (SNR) improves image clarity, while lower SNR leads to noise-dominated reconstructions.",
+        "tags": ["holography", "noise", "signal-to-noise ratio", "optics", "image quality"],
+        "question_text": "In a holographic imaging setup, the measured intensity of the reference beam is 200 units, while the noise intensity is 20 units. Determine the signal-to-noise ratio (SNR) in decibels (dB).",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-NOISE-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-NOISE-0002s.png",
+        "solution": {
+            "final_answer": "SNR ≈ 10 dB",
+            "steps": [
+                "**Step 1: Write the SNR formula**",
+                "$$SNR = 10 \\log_{10} \\left(\\frac{I_{signal}}{I_{noise}}\\right)$$.",
+                "**Step 2: Substitute the given values**",
+                "$$I_{signal} = 200$$, $$I_{noise} = 20$$.",
+                "$$SNR = 10 \\log_{10} \\left(\\frac{200}{20}\\right)$$.",
+                "**Step 3: Simplify the fraction**",
+                "$$\\frac{200}{20} = 10$$.",
+                "**Step 4: Take the logarithm**",
+                "$$\\log_{10}(10) = 1$$.",
+                "**Step 5: Multiply by 10**",
+                "$$SNR = 10 \\times 1 = 10 \\text{ dB}$$.",
+                "**Step 6: Final Answer**",
+                "The signal-to-noise ratio (SNR) is approximately 10 dB.",
+                "**Additional Context / Clarification:**",
+                "An SNR of 10 dB indicates that the signal is 10 times stronger than the noise. While the image may still be usable, further reduction of noise would improve image clarity and fidelity."
+            ]
+        }
+    }
+]

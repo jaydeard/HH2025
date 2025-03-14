@@ -1,0 +1,118 @@
+[
+    {
+        "id": "HH-REFLECTION-0001b",
+        "title": "Reflection by a Mirror: Angle of Incidence and Reflection",
+        "description": "Determine the height at which a light ray reflects off a mirror and strikes two walls placed at specific distances.",
+        "difficulty": "Intermediate",
+        "insight": "The reflection follows the law of reflection, where the angle of incidence equals the angle of reflection.",
+        "tags": ["reflection", "optics", "geometry", "angle of incidence"],
+        "question_text": "A ray of light passes through the origin of the coordinate system at an angle of 30° to the z-axis. At what height will it hit a wall 3 meters from the origin? A mirror is placed at the origin, parallel to the x-axis. At what height will the ray strike a wall at 10 meters in the −z direction, as sketched?",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-REFLECTION-0001b.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-REFLECTION-0001bs.png",
+        "solution": {
+            "final_answer": "At 3 meters: 1.73 m, At 10 meters: 5.77 m",
+            "steps": [
+                "Use the tangent relationship: $$\\tan(30^\\circ) = \\frac{x}{z}$$.",
+                "For the wall at 3 m: $$x = 3 \\cdot \\tan(30^\\circ) = 1.73 \\text{ m}$$.",
+                "For the wall at 10 m: $$x = 10 \\cdot \\tan(30^\\circ) = 5.77 \\text{ m}$$."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-REFLECTION-0001",
+        "title": "Reflection by a Mirror: Angle of Incidence and Reflection",
+        "description": "Determine the height at which a light ray reflects off a mirror and strikes two walls placed at specific distances.",
+        "difficulty": "Intermediate",
+        "insight": "The reflection follows the law of reflection, where the angle of incidence equals the angle of reflection.",
+        "tags": ["reflection", "optics", "geometry", "angle of incidence"],
+        "question_text": "A ray of light passes through the origin of the coordinate system at an angle of 20° to the z-axis. At what height will it hit a wall 5 meters from the origin? A mirror is placed at the origin, parallel to the x-axis. At what height will the ray strike a wall at 10 meters in the −z direction, as sketched?",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-REFLECTION-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-REFLECTION-0001s.png",
+        "solution": {
+            "final_answer": "At 5 meters: 1.81 m, At 10 meters: 3.64 m",
+            "steps": [
+                "Use the tangent relationship: $$\\tan(20^\\circ) = \\frac{x}{z}$$.",
+                "For the wall at 5 m: $$x = 5 \\cdot \\tan(20^\\circ) = 1.81 \\text{ m}$$.",
+                "For the wall at 10 m: $$x = 10 \\cdot \\tan(20^\\circ) = 3.64 \\text{ m}$$."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-PRISM-0001",
+        "title": "Refraction by a Prism: Angle of Light through a Triangular Prism",
+        "description": "Determine the final angle of a light ray after it traverses a triangular prism with a given apex angle and refractive index.",
+        "difficulty": "Advanced",
+        "insight": "The refraction of light through a prism follows Snell's Law, and the internal angles determine the final exiting angle.",
+        "tags": ["refraction", "prism", "Snell's law", "optics"],
+        "question_text": "What is the angle of the ray of light pictured here after it has traversed a triangular prism with an apex angle of 45° and a refractive index of 1.50?",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PRISM-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PRISM-0001s.png",
+        "solution": {
+            "final_answer": "The final angle is 10°.",
+            "steps": [
+                "Use Trig, and the coordinate (-10,-7) fot find the input angle: $$\\theta =  35^\\circ$$.",
+                "Use Snell's Law at the first interface: $$\\theta_{int,1} = \\sin^{-1}\\left(\\frac{1}{1.5} \\sin 35^\\circ\\right) = 22.5^\\circ$$.",
+                "Calculate the internal angle at the second interface: $$\\theta_{int,2} = 22.5^\\circ - 45^\\circ = -22.5^\\circ$$.",
+                "Apply Snell's Law again at the second interface: $$\\theta_{ext,2} = \\sin^{-1}\\left(1.5 \\sin(-22.5^\\circ)\\right) = 35^\\circ$$.",
+                "Determine the final exiting angle: $$\\theta_{final} = 45^\\circ - 35^\\circ = 10^\\circ$$."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-PRISM-0001b",
+        "title": "Refraction Through a Triangular Prism",
+        "description": "Determine the final angle of a ray of light after traversing a triangular prism with a given apex angle and refractive index.",
+        "difficulty": "Advanced",
+        "insight": "The refraction of light through a prism follows Snell's Law, and the deviation angle depends on the refractive index and apex angle of the prism.",
+        "tags": ["refraction", "optics", "Snell's Law", "prism", "geometry"],
+        "question_text": "What is the angle of the ray of light after it has traversed a triangular prism with an apex angle of 45° and a refractive index of 1.50, as shown in the diagram?",
+        "hint": "Use Snell's Law at both interfaces of the prism and calculate the angles of refraction step by step.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-REFRACTION-0001b.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-REFRACTION-0001bs.png",
+        "solution": {
+            "final_answer": "θ_final = 10°",
+            "steps": [
+                "Calculate the angle of the first refraction: $$\\theta_{\\text{int,1}} = \\sin^{-1}\\left(\\frac{1}{1.5} \\sin(35^\\circ)\\right) = 22.5^\\circ$$.",
+                "Determine the internal angle at the apex: $$\\theta_{\\text{int,2}} = 22.5^\\circ - 45^\\circ = -22.5^\\circ$$.",
+                "Calculate the angle of emergence: $$\\theta_{\\text{ext,2}} = \\sin^{-1}\\left(1.5 \\sin(-22.5^\\circ)\\right) = 35^\\circ$$.",
+                "Find the final deviation angle: $$\\theta_{\\text{final}} = 45^\\circ - 35^\\circ = 10^\\circ$$."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-EQUIDISTANT-0001",
+        "title": "Equidistant Point: Intersection of Perpendicular Bisectors and Circle Solution",
+        "description": "Find the (x, z) coordinates of a point equidistant from three given points on a plane using both the perpendicular bisector method and the circle equation.",
+        "difficulty": "Intermediate",
+        "insight": "The point equidistant from three points can be determined by the intersection of perpendicular bisectors or by solving simultaneous equations derived from the distance formula.",
+        "tags": ["geometry", "equidistant point", "perpendicular bisectors", "circle geometry", "graphical solution"],
+        "question_text": "What are the (x, z) coordinates of the point that is equidistant from points at (0, 0), (8, 16), and (16, 16)? Solve this problem using both the perpendicular bisector and the circle geometry approaches.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-EQUIDISTANT-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-EQUIDISTANT-0001s.png",
+        "solution": {
+            "final_answer": "(12, 4)",
+            "steps": [
+                "**Using Perpendicular Bisectors:**",
+                "1. Write the distance equations for equidistance from points (0,0), (8,16), and (16,16).",
+                "2. Find the perpendicular bisector of the line segment connecting (0,0) and (16,16).",
+                "3. Find the perpendicular bisector of the line segment connecting (8,16) and (16,16).",
+                "4. Solve the two perpendicular bisector equations simultaneously to find their intersection point.",
+                "5. The intersection point (12, 4) satisfies equidistance from all three points.",
+                
+                "**Using Circle Geometry:**",
+                "6. Use the distance formula to set up equations for equidistance:",
+                "   - (10 − x₀)² + (16 − z₀)² = r²",
+                "   - (8 − x₀)² + (16 − z₀)² = r²",
+                "   - (0 − x₀)² + (0 − z₀)² = r²",
+                "7. Simplify the equations and eliminate r².",
+                "8. Solve the resulting system of equations algebraically.",
+                "9. Verify the solution graphically.",
+                "10. The result confirms the equidistant point at (12, 4)."
+            ]
+        }
+    }
+]

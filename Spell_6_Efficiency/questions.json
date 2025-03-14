@@ -1,0 +1,77 @@
+[
+    {
+        "id": "HH-PHASEGRATING-0004",
+        "title": "Diffraction Efficiency of a Ramp Phase Grating",
+        "description": "Calculate the diffraction efficiency for the m=+1 and all other orders of a ramp phase grating using a given transmittance function.",
+        "difficulty": "Advanced",
+        "insight": "Diffraction efficiency can be derived using Fourier coefficients for a ramp phase grating, where only the m=1 order contributes significantly.",
+        "tags": ["diffraction efficiency", "Fourier coefficients", "phase grating", "optics", "wave optics"],
+        "question_text": "Find the diffraction efficiency for the m=+1 and all other orders of a ramp phase grating with the given transmittance function: $$T(x) = e^{jKx}$$.",
+        "hint": "Evaluate the Fourier coefficients using integration and simplify using symmetry properties.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PHASEGRATING-0004.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PHASEGRATING-0004s.png",
+        "solution": {
+            "final_answer": "η₊₁ = 1, ηₘ ≠ 1 = 0",
+            "steps": [
+                "Start with the transmittance function: $$T(x) = e^{jKx}$$.",
+                "Write the expression for the Fourier coefficient: $$C_m = \\frac{1}{\\Lambda} \\int_0^{\\Lambda} e^{jKx} e^{-jmKx} dx$$.",
+                "Simplify the exponent: $$= \\frac{1}{\\Lambda} \\int_0^{\\Lambda} e^{j(1-m)Kx} dx$$.",
+                "Evaluate for $$m = 1$$: $$C_1 = \\frac{1}{\\Lambda} \\int_0^{\\Lambda} e^{0} dx = 1$$.",
+                "Evaluate for $$m ≠ 1$$: The integral evaluates to zero after simplification.",
+                "Square the coefficients to get diffraction efficiency: $$η₊₁ = |C_1|² = 1$$ and $$ηₘ ≠ 1 = |Cₘ|² = 0$$.",
+                "Conclusion: Only the first order (m=1) has nonzero diffraction efficiency."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-THICK-0001",
+        "title": "Thick vs Thin Hologram Classification",
+        "description": "Determine whether a hologram is classified as thick or thin based on laser parameters and holographic emulsion properties.",
+        "difficulty": "Intermediate",
+        "insight": "A hologram is classified as thick if the Q-factor is significantly larger than 1, while a thin hologram has a Q-factor much smaller than 1.",
+        "tags": ["holography", "thick hologram", "thin hologram", "laser optics", "diffraction"],
+        "question_text": "Two green lasers (550 nm) expose a holographic plate with an emulsion thickness of 5µm and refractive index of 1.6. One laser fires directly at the plate; the other is off-axis by 66°. After exposing the plate, the on-axis laser is again fired into the resulting pattern. Is this hologram thick or thin?",
+        "hint": "Use the Q-factor formula: $$Q = \\frac{2\\pi \\lambda t}{n d^2 \\cos(\\theta_0)}$$, where $$\\lambda$$ is the wavelength, $$t$$ is the emulsion thickness, $$n$$ is the refractive index, and $$d$$ is the spacing.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-THICK-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-THICK-0001s.png",
+        "solution": {
+            "final_answer": "Thick hologram",
+            "steps": [
+                "Use the Q-factor formula: $$Q = \\frac{2\\pi \\lambda t}{n d^2 \\cos(\\theta_0)}$$.",
+                "Substitute the given values: $$\\lambda = 550 \\times 10^{-9} \\text{ m}$$, $$t = 5 \\times 10^{-6} \\text{ m}$$, $$n = 1.6$$, and $$d = 6.02 \\times 10^{-7} \\text{ m}$$.",
+                "Evaluate the numerator: $$2\\pi (550 \\times 10^{-9}) (5 \\times 10^{-6})$$.",
+                "Evaluate the denominator: $$(1.6)(6.02 \\times 10^{-7})^2 (1)$$.",
+                "Simplify the Q-factor.",
+                "If Q >> 1, the hologram is thick. If Q << 1, it is thin.",
+                "Conclusion: The calculated Q-factor is much larger than 1, indicating a thick hologram."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-Efficiency-0100",
+        "title": "Diffraction Efficiency of an Amplitude Grating",
+        "description": "Calculate the diffraction efficiency for different orders of an amplitude grating using a given transmittance function.",
+        "difficulty": "Advanced",
+        "insight": "Diffraction efficiency can be derived using Fourier coefficients and symmetry properties of sinusoidal amplitude gratings.",
+        "tags": ["diffraction efficiency", "Fourier coefficients", "amplitude grating", "optics", "wave optics"],
+        "question_text": "Find the diffraction efficiency for the m=0, -1, and +1 orders for an amplitude grating with the given transmittance function: $$T(x) = T_0 + T_1 \\cos(Kx)$$.",
+        "hint": "Start by calculating the Fourier coefficients using Euler's identity and symmetry properties. Then square the coefficients to determine the diffraction efficiencies.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DIFFRACTION-0003.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DIFFRACTION-0003s.png",
+        "solution": {
+            "final_answer": "η₀ = T₀², η₊₁ = η₋₁ = (T₁²)/4",
+            "steps": [
+                "Start with the transmittance function: $$T(x) = T_0 + T_1 \\cos(Kx)$$.",
+                "Calculate the Fourier coefficients $$C_0$$ and $$C_1$$:",
+                "$$C_0 = T_0$$",
+                "$$C_1 = \\frac{T_1}{2}$$",
+                "Square the coefficients to get the diffraction efficiency:",
+                "$$η₀ = T₀²$$",
+                "$$η₊₁ = η₋₁ = \\frac{T₁²}{4}$$",
+                "Interpret the results: The central order (m=0) depends on the average transmittance, while the first orders (m=±1) depend on the modulation amplitude."
+            ]
+        }
+    }
+]

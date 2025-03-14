@@ -1,0 +1,169 @@
+[
+    {
+        "id": "HH-PHASORS-0050",
+        "title": "Interference of Complex Phasors: Real Function Simplification",
+        "description": "Evaluate the magnitude squared of a sum of two complex exponential terms and express the result entirely in terms of real functions.",
+        "difficulty": "Intermediate",
+        "insight": "While manipulation can involve complex exponentials, the final expression must simplify to entirely real functions.",
+        "tags": ["phasors", "complex numbers", "interference", "real functions", "trigonometry"],
+        "question_text": "Evaluate the expression $$\\left| e^{i\\theta_1} + a e^{i\\theta_2} \\right|^2$$ and simplify the result entirely in terms of real functions. Hint: You may manipulate using complex exponentials, but the final result must be expressed as real functions.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PHASORS-0050.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PHASORS-0050s.png",
+        "solution": {
+            "final_answer": "$$1 + a^2 + 2a \\cos(\\theta_1 - \\theta_2)$$",
+            "steps": [
+                "Start with the given expression: $$\\left| e^{i\\theta_1} + a e^{i\\theta_2} \\right|^2$$.",
+                "Rewrite it as the product with its conjugate: $$(e^{i\\theta_1} + a e^{i\\theta_2})(e^{-i\\theta_1} + a e^{-i\\theta_2})$$.",
+                "Expand the terms: $$1 + ae^{i(\\theta_1 - \\theta_2)} + ae^{-i(\\theta_1 - \\theta_2)} + a^2$$.",
+                "Recognize that the middle terms combine into a cosine using Euler's formula: $$e^{i(\\theta_1 - \\theta_2)} + e^{-i(\\theta_1 - \\theta_2)} = 2 \\cos(\\theta_1 - \\theta_2)$$.",
+                "Simplify to get: $$1 + a^2 + 2a \\cos(\\theta_1 - \\theta_2)$$.",
+                "The final result is entirely in terms of real functions."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-WAVEFRONT-0060",
+        "title": "Wavefront Phases: On-Axis and Off-Axis Spherical Waves",
+        "description": "Determine the phase of wavefronts at the z = 0 plane produced by point sources with varying parameters. Evaluate the coefficients for each scenario.",
+        "difficulty": "Advanced",
+        "insight": "The phase of wavefronts depends on source distance, angle, and spherical wave parameters, expressed as functions of x and y.",
+        "tags": ["wavefronts", "phase", "spherical waves", "optics", "holography"],
+        "question_text": "Choose the phase of each of the wavefronts (in degrees as a function of x and y in millimeters) produced at the z = 0 plane by point sources of wavelength 633 nm at the following locations:\n\na) $$z_{source} = -1000 \\text{ mm}, x_{source} = 0$$\n   - A) $$\\varphi(x,y) = 284.4(x^2 + y^2)$$\n   - B) 4.96\n   - C) 0.26\n\nb) $$\\theta_{source} = 7.0^\\circ, r_{source} = 2 \\times 10^6 \\text{ mm}$$\n   - A) $$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$\n   - B) 34,400, 0.070, 0.071\n   - C) 1200, 0.0024, 0.0025\n\nc) $$z_{source} = -2 \\times 10^3 \\text{ mm}, y_{source} = -30.0 \\text{ mm}$$\n   - A) $$\\varphi(x,y) = 17060 y + 284 x^2 + 284 y^2$$\n   - B) 8530, 142, 142\n   - C) 149, 2.48, 2.48\n\nSelect one CAPITAL LETTER set of coefficients for each part of the problem.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-WAVEFRONT-0060.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-WAVEFRONT-0060s.png",
+        "solution": {
+            "final_answer": "a) A: $$\\varphi(x,y) = 284.4(x^2 + y^2)$$\nb) A: $$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$\nc) B: $$\\varphi(x,y) = 8530 + 142 x^2 + 142 y^2$$",
+            "steps": [
+                "**Part a: On-axis spherical wave:**",
+                "1. Use the formula for the phase of a spherical wave: $$\\varphi(x,y) = \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$.",
+                "2. Substitute the given parameters: $$\\lambda = 633 \\times 10^{-6} \\text{ mm}, R_0 = 1000 \\text{ mm}$$.",
+                "3. Simplify the expression: $$\\varphi(x,y) = 284.4(x^2 + y^2)$$.",
+                "4. The correct option is **A**.",
+                
+                "**Part b: Off-axis spherical wave:**",
+                "5. Use the formula for the phase of an off-axis wave: $$\\varphi(x,y) = \\frac{2\\pi}{\\lambda} \\sin(\\theta) x + \\frac{\\pi}{\\lambda R_0}(x^2 + y^2 \\cos^2(\\theta))$$.",
+                "6. Substitute the given parameters: $$\\theta = 7^\\circ, r_{source} = 2 \\times 10^6 \\text{ mm}$$.",
+                "7. Simplify the expression: $$68,800 x + 0.140 x^2 + 0.142 y^2$$.",
+                "8. The correct option is **A**.",
+                
+                "**Part c: Off-axis spherical wave tilted in the y-z plane:**",
+                "9. Calculate the effective tilt angle using: $$\\theta = \\tan^{-1}\\left(\\frac{y_{source}}{z_{source}}\\right)$$.",
+                "10. Substitute $$y_{source} = -30.0 \\text{ mm}, z_{source} = -2000 \\text{ mm}$$.",
+                "11. Calculate: $$\\theta = \\tan^{-1}\\left(\\frac{-30.0}{-2000}\\right) = 0.859^\\circ$$.",
+                "12. Use the phase formula for a tilted off-axis wave: $$\\varphi(x,y) = \\frac{2\\pi}{\\lambda} \\sin(\\theta) y + \\frac{\\pi}{\\lambda R_0}(x^2 + \\cos^2(\\theta) y^2)$$.",
+                "13. Substitute the values: $$8530y + 142 x^2 + 142 y^2$$.",
+                "14. The correct option is **B**.",
+                
+                "**Verification:**",
+                "15. Cross-check each coefficient with the given options.",
+                "16. Confirm final answers align with options **A, A, B** for parts a, b, and c respectively."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-WAVEFRONT-0070",
+        "title": "Wavefront Phases: Inclined and Spherical Waves",
+        "description": "Analyze and classify the physical characteristics of waves based on their phase expressions and how these properties change with a different wavelength.",
+        "difficulty": "Advanced",
+        "insight": "The phase of wavefronts can describe both plane and spherical waves, including inclination and curvature, and these properties are influenced by the wavelength.",
+        "tags": ["wavefronts", "phase", "spherical waves", "plane waves", "optics"],
+        "question_text": "Given the phase of a wavefront passing the $$z = 0$$ plane, as expressed in degrees as a function of position in millimeters:\n\na) $$\\varphi(x,y) = -4200 x$$\nb) $$\\varphi(x,y) = 99,000 y$$\nc) $$\\varphi(x,y) = 4(x^2 + y^2)$$\nd) $$\\varphi(x,y) = -1000(x^2 + y^2)$$\n\nFind the physical characteristics of the waves (that is, their inclinations and radii of curvature) if the wavelength of all of them is 633 nm. How do these change if the wavelength is changed to 488 nm?\n\nChoose the correct physical interpretation for each wave phase:",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-WAVEFRONT-0070.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-WAVEFRONT-0070s.png",
+        "solution": {
+            "final_answer": "a) A: A plane wave inclined at $$-0.423^\\circ$$ to the x-axis.\nb) B: A plane wave inclined at $$+10^\\circ$$ to the y-axis.\nc) C: An on-axis spherical wave of radius $$71.1 \\times 10^3 \\text{ mm}$$.\nd) A: An on-axis converging wave of radius $$-284 \\text{ mm}$$.",
+            "steps": [
+                "**Part a: Plane wave inclined along the x-axis:**",
+                "1. The phase expression is linear in $$x$$: $$\\varphi(x,y) = -4200 x$$.",
+                "2. The inclination angle is given by: $$\\theta = \\frac{-4200 \\cdot \\lambda}{360}$$.",
+                "3. Substituting $$\\lambda = 633 \\text{ nm}$$, calculate: $$\\theta = -0.423^\\circ$$.",
+                "4. The wave is a downward-inclined plane wave. Correct option: **A**.",
+                
+                "**Part b: Plane wave inclined along the y-axis:**",
+                "5. The phase expression is linear in $$y$$: $$\\varphi(x,y) = 99,000 y$$.",
+                "6. The inclination angle is given by: $$\\theta = \\frac{99,000 \\cdot \\lambda}{360}$$.",
+                "7. Calculate for $$\\lambda = 633 \\text{ nm}$$: $$\\theta = 10^\\circ$$.",
+                "8. The wave is a plane wave inclined in the y-direction. Correct option: **B**.",
+                
+                "**Part c: On-axis spherical wave:**",
+                "9. The phase is quadratic in $$x$$ and $$y$$: $$\\varphi(x,y) = 4(x^2 + y^2)$$.",
+                "10. The radius of curvature is given by: $$R = \\frac{360}{4 \\cdot \\lambda}$$.",
+                "11. Substitute $$\\lambda = 633 \\text{ nm}$$: $$R = 71.1 \\times 10^3 \\text{ mm}$$.",
+                "12. The wave is an on-axis spherical wave. Correct option: **C**.",
+                
+                "**Part d: Converging spherical wave:**",
+                "13. The phase is quadratic and negative: $$\\varphi(x,y) = -1000(x^2 + y^2)$$.",
+                "14. The radius of curvature is given by: $$R = \\frac{-360}{1000 \\cdot \\lambda}$$.",
+                "15. Substitute $$\\lambda = 633 \\text{ nm}$$: $$R = -284 \\text{ mm}$$.",
+                "16. The wave is an on-axis converging spherical wave. Correct option: **A**.",
+                
+                "**Wavelength Change to 488 nm:**",
+                "17. Recalculate the radii of curvature and angles using the new wavelength.",
+                "18. Updated values:",
+                "   - Part a: $$\\theta = -0.3262^\\circ$$.",
+                "   - Part b: $$\\theta = 7.71^\\circ$$.",
+                "   - Part c: $$R = 92.2 \\times 10^3 \\text{ mm}$$.",
+                "   - Part d: $$R = -369 \\text{ mm}$$.",
+                "19. Verify alignment with updated physical characteristics.",
+                
+                "**Final Verification:**",
+                "20. Validate each coefficient and match with answer choices.",
+                "21. Confirm correct options: **A, B, C, A**."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-RECONSTRUCTION-0001",
+        "title": "Holographic Image Reconstruction: Phase and Spatial Accuracy",
+        "description": "Analyze the phase shift introduced during the holographic image reconstruction process and calculate the resulting spatial displacement.",
+        "difficulty": "Intermediate",
+        "insight": "Precise phase alignment between the reference and object beams is essential for accurate image reconstruction in holography.",
+        "tags": ["holography", "phase shift", "reconstruction", "wave optics", "image accuracy"],
+        "question_text": "During holographic reconstruction, a phase shift of 60° occurs between the reference and object beams. If the wavelength of the laser is 500 nm, determine the spatial displacement caused by this phase shift.\n\n**Hint:** Use the formula $$\\Delta x = \\frac{\\lambda \\Delta \\phi}{2 \\pi}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECONSTRUCTION-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECONSTRUCTION-0001s.png",
+        "solution": {
+            "final_answer": "Δx ≈ 83 nm",
+            "steps": [
+                "**Part (a): Spatial Shift from Phase Shift**",
+                "1. Use the formula: $$\\Delta x = \\frac{\\lambda \\Delta \\phi}{2 \\pi}$$.",
+                "2. Substitute the given values: $$\\lambda = 500 \\times 10^{-9} \\text{ m}$$, $$\\Delta \\phi = 60° = \\frac{\\pi}{3} \\text{ radians}$$.",
+                "3. Evaluate the numerator: $$500 \\times 10^{-9} \\text{ m} \\times \\frac{\\pi}{3} = 5.236 \\times 10^{-7} \\text{ m}$$ (approximately).",
+                "4. Divide by $$2 \\pi$$: $$\\Delta x = \\frac{5.236 \\times 10^{-7} \\text{ m}}{2 \\pi}$$.",
+                "5. Calculate: $$\\Delta x ≈ 8.34 \\times 10^{-8} \\text{ m}$$.",
+                "6. Convert to nanometers: $$\\Delta x ≈ 83.4 \\text{ nm}$$.",
+                "**Additional Context / Clarification:**",
+                "The phase difference introduces a measurable spatial shift in the reconstructed holographic image, emphasizing the need for precise phase control in reconstruction setups."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-RECONSTRUCTION-0002",
+        "title": "Phase Mismatch in Holographic Reconstruction",
+        "description": "Evaluate the effects of a phase mismatch on holographic image fidelity and calculate the associated spatial offset.",
+        "difficulty": "Advanced",
+        "insight": "Phase mismatches during reconstruction lead to spatial offsets in the resulting image, which degrade image accuracy.",
+        "tags": ["holography", "phase mismatch", "reconstruction", "wave optics", "spatial offset"],
+        "question_text": "In a holographic reconstruction setup, a phase mismatch of 90° is introduced between the reference and object beams. If the wavelength of the laser is 600 nm, calculate the spatial displacement caused by this phase mismatch.\n\n**Hint:** Use the formula $$\\Delta x = \\frac{\\lambda \\Delta \\phi}{2 \\pi}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECONSTRUCTION-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECONSTRUCTION-0002s.png",
+        "solution": {
+            "final_answer": "Δx ≈ 150 nm",
+            "steps": [
+                "**Part (a): Spatial Displacement from Phase Mismatch**",
+                "1. Use the formula: $$\\Delta x = \\frac{\\lambda \\Delta \\phi}{2 \\pi}$$.",
+                "2. Substitute the given values: $$\\lambda = 600 \\times 10^{-9} \\text{ m}$$, $$\\Delta \\phi = 90° = \\frac{\\pi}{2} \\text{ radians}$$.",
+                "3. Evaluate the numerator: $$600 \\times 10^{-9} \\text{ m} \\times \\frac{\\pi}{2} = 9.42 \\times 10^{-7} \\text{ m}$$.",
+                "4. Divide by $$2 \\pi$$: $$\\Delta x = \\frac{9.42 \\times 10^{-7} \\text{ m}}{2 \\pi}$$.",
+                "5. Calculate: $$\\Delta x \\approx \\frac{9.42 \\times 10^{-7}}{6.2832} \\approx 1.50 \\times 10^{-7} \\text{ m}$$.",
+                "6. Convert to nanometers: $$\\Delta x \\approx 150 \\text{ nm}$$.",
+                "**Additional Context / Clarification:**",
+                "A phase mismatch of 90° introduces a spatial displacement of approximately 150 nm in the reconstructed holographic image. This spatial offset can lead to image blurring or shifting, emphasizing the importance of precise phase control during the reconstruction process."
+            ]
+        }
+    }
+]

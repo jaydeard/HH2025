@@ -1,0 +1,198 @@
+[
+    {
+        "id": "HH-GABOR-0002",
+        "title": "Quantitative Phase Footprints in Gabor Holography",
+        "description": "Calculate the phase difference and fringe spacing in a Gabor hologram based on the curvature of spherical wavefronts.",
+        "difficulty": "Advanced",
+        "insight": "The phase difference between spherical wavefronts determines the fringe spacing in the interference pattern, which depends on the radii of curvature and wavelength.",
+        "tags": ["phase footprint", "Gabor holography", "wavefront curvature", "optics", "fringe spacing"],
+        "question_text": "In a Gabor hologram, two spherical waves interfere to form a zone plate pattern on the hologram plane. The radii of curvature of these spherical waves are given as $$R_1 = 200 \\, mm$$ and $$R_2 = 400 \\, mm$$, and the recording wavelength is $$\\lambda = 633 \\, nm$$.\n\nUsing the phase footprint equations, calculate:\n\n**a)** The phase difference $$\\Delta \\phi$$ as a function of position on the hologram.\n**b)** The fringe spacing (spatial period) at a radial distance of $$r = 1 \\, mm$$ from the optical axis.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-GABOR-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-GABOR-0002s.png",
+        "solution": {
+            "final_answer": "**a)** \\( \\Delta \\phi = 12.42 \\cdot (x^2 + y^2) \\) radians\n**b)** Fringe spacing ≈ 0.127 mm",
+            "steps": [
+                "**Part (a): Calculate the Phase Difference \\( \\Delta \\phi \\) as a Function of Position**",
+                "1. **Write the Phase Difference Equation:**",
+                "   The phase difference between two spherical wavefronts at point \\( (x, y) \\) on the hologram plane is given by:",
+                "   $$\\Delta \\phi = \\frac{\\pi}{\\lambda} (x^2 + y^2) \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right)$$.",
+                "2. **Substitute the Given Values:**",
+                "   - \\( R_1 = 200 \\, mm \\)",
+                "   - \\( R_2 = 400 \\, mm \\)",
+                "   - \\( \\lambda = 633 \\, nm = 633 \\times 10^{-6} \\, mm \\)",
+                "   Thus:",
+                "   $$\\frac{1}{R_1} = \\frac{1}{200} = 0.005 \\, mm^{-1}$$.",
+                "   $$\\frac{1}{R_2} = \\frac{1}{400} = 0.0025 \\, mm^{-1}$$.",
+                "3. **Calculate the Curvature Difference:**",
+                "   $$\\frac{1}{R_1} - \\frac{1}{R_2} = 0.005 - 0.0025 = 0.0025 \\, mm^{-1}$$.",
+                "4. **Substitute into the Phase Difference Equation:**",
+                "   $$\\Delta \\phi = \\frac{\\pi}{633 \\times 10^{-6}} (x^2 + y^2) \\times 0.0025$$.",
+                "5. **Simplify the Constant Factor:**",
+                "   $$\\frac{\\pi}{633 \\times 10^{-6}} \\times 0.0025 = \\frac{\\pi \\times 0.0025}{0.000633} \\approx 12.42 \\, rad/mm^2$$.",
+                "6. **Express the Phase Difference as a Function of Position:**",
+                "   $$\\Delta \\phi = 12.42 \\cdot (x^2 + y^2)$$ radians.",
+                "",
+                "**Part (b): Calculate Fringe Spacing at \\( r = 1 \\, mm \\)**",
+                "1. **Fringe Spacing Condition:**",
+                "   Each fringe corresponds to a phase difference of \\( 2\\pi \\) radians.",
+                "   $$\\Delta \\phi = 2\\pi$$.",
+                "2. **Set Up the Equation for Fringe Spacing \\( \\Lambda \\):**",
+                "   $$12.42 \\cdot (\\Lambda)^2 = 2\\pi$$.",
+                "   Solving for \\( \\Lambda \\):",
+                "   $$\\Lambda^2 = \\frac{2\\pi}{12.42}$$.",
+                "   $$\\Lambda = \\sqrt{\\frac{2\\pi}{12.42}} \\approx \\sqrt{0.5064} \\approx 0.712 \\, mm$$.",
+                "3. **Adjust for Full Fringe Cycle:**",
+                "   Since a full fringe cycle (from bright to bright or dark to dark) corresponds to \\( 2\\pi \\), the fringe spacing \\( \\Lambda \\) is:",
+                "   $$\\Lambda = \\frac{\\lambda}{2 \\cdot \\Delta \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right) r}$$.",
+                "   Substituting the values:",
+                "   $$\\Lambda = \\frac{633 \\times 10^{-6} \\text{ mm}}{2 \\times 0.0025 \\times 1 \\text{ mm}} = \\frac{633 \\times 10^{-6}}{0.005} = 0.1266 \\text{ mm} \\approx 0.127 \\text{ mm}$$.",
+                "",
+                "**Conclusion:**",
+                "**a)** The phase difference is \\( \\Delta \\phi = 12.42 \\cdot (x^2 + y^2) \\) radians.\n**b)** The fringe spacing at \\( r = 1 \\, mm \\) is approximately **0.127 mm**.",
+                "",
+                "**Additional Context / Clarification:**",
+                "The phase difference quantifies how the curvature mismatch between two spherical wavefronts translates into fringe formation. The fringe spacing depends on both the wavelength and the radii of curvature difference, defining the zone density in the interference pattern. Accurate calculation of fringe spacing is crucial for designing holograms with desired resolution and clarity."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-LATERALMAG-0001",
+        "title": "Lateral Magnification in Gabor Holograms",
+        "description": "Determine the lateral magnification of an image formed by an in-line Gabor hologram based on the object and reference point locations.",
+        "difficulty": "Intermediate",
+        "insight": "Lateral magnification depends on the relative distances of the object and reference points from the hologram plane, following geometrical optics principles.",
+        "tags": ["lateral magnification", "Gabor holography", "hologram imaging", "optics", "geometrical optics"],
+        "question_text": "In a Gabor hologram setup, an object point is located 300 mm from the hologram plane, and the reference point is 1000 mm from the hologram plane. If the hologram is illuminated with a point source located 1200 mm from the hologram plane, determine the lateral magnification of the image.\n\nUse the relationship $$M_{lateral} = \\frac{z_{ref}}{z_{ref} - z_{obj}}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0001s.png",
+        "solution": {
+            "final_answer": "**a)** $$ M_{\text{lateral}} = 1.43 $$",
+            "steps": [
+                "**Part (a): Calculating the Lateral Magnification**",
+                "1. **Start with the Lateral Magnification Formula:**",
+                "   $$ M_{\text{lateral}} = \\frac{z_{ref}}{z_{ref} - z_{obj}} $$.",
+                "2. **Substitute the Given Values:**",
+                "   - Reference distance: $$ z_{ref} = 1000 , \\text{mm} $$.",
+                "   - Object distance: $$ z_{obj} = 300 , \\text{mm} $$.",
+                "3. **Simplify the Denominator:**",
+                "   $$ z_{ref} - z_{obj} = 1000 , \\text{mm} - 300 , \\text{mm} = 700 , \\text{mm} $$.",
+                "4. **Evaluate the Ratio:**",
+                "   $$ M_{\text{lateral}} = \\frac{1000}{700} \\approx 1.42857 \\approx 1.43 $$.",
+                "5. **Conclusion:**",
+                "   The lateral magnification of the image is approximately **1.43**."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-LATERALMAG-0002",
+        "title": "Lateral Magnification in Gabor Holography",
+        "description": "Calculate the lateral magnification of an image in a Gabor hologram setup.",
+        "difficulty": "Intermediate",
+        "insight": "Lateral magnification in Gabor holography depends on the relative distances of the object and reference points from the hologram plane.",
+        "tags": ["lateral magnification", "Gabor holography", "hologram imaging", "optics", "geometrical optics"],
+        "question_text": "In a Gabor hologram experiment, an object point is located 250 mm from the hologram plane, while the reference point is located 800 mm from the hologram plane. If the hologram is reconstructed with a point source located 1000 mm from the hologram plane, calculate the lateral magnification of the image.\n\nUse the relationship $$M_{lateral} = \\frac{z_{ref}}{z_{ref} - z_{obj}}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0002s.png",
+        "solution": {
+            "final_answer": "$$M_lateral ≈ 1.33$$",
+            "steps": [
+                "Start with the lateral magnification formula: $$M_{lateral} = \\frac{z_{ref}}{z_{ref} - z_{obj}}$$.",
+                "Substitute the given values: $$z_{ref} = 800 \\text{ mm}$$, $$z_{obj} = 250 \\text{ mm}$$.",
+                "Simplify the denominator: $$800 - 250 = 550$$.",
+                "Evaluate the ratio: $$M_{lateral} = \\frac{800}{550} ≈ 1.33$$.",
+                "The lateral magnification of the image is approximately 1.33."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-LONGMAG-0002",
+        "title": "Longitudinal Magnification in Gabor Holography",
+        "description": "Determine the longitudinal magnification of an image reconstructed from a Gabor hologram.",
+        "difficulty": "Intermediate",
+        "insight": "Longitudinal magnification depends on the squared ratio of the reference and object distances from the hologram plane.",
+        "tags": ["longitudinal magnification", "Gabor holography", "hologram imaging", "optics", "geometrical optics"],
+        "question_text": "In a Gabor hologram setup, an object point is located 400 mm from the hologram plane, and the reference point is 1200 mm from the hologram plane. If the hologram is reconstructed with an image forming at a distance of 1500 mm, determine the longitudinal magnification of the image.\n\nUse the relationship $$M_{long} = \\frac{(z_{ref})^2}{(z_{ref} - z_{obj})^2}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002s.png",
+        "solution": {
+            "final_answer": "M_long ≈ 2.25",
+            "steps": [
+                "Start with the longitudinal magnification formula: $$M_{long} = \\frac{(z_{ref})^2}{(z_{ref} - z_{obj})^2}$$.",
+                "Substitute the given values: $$z_{ref} = 1200 \\text{ mm}$$, $$z_{obj} = 400 \\text{ mm}$$.",
+                "Simplify the denominator: $$1200 - 400 = 800$$.",
+                "Evaluate the squares: $$(1200)^2 = 1,440,000$$, $$(800)^2 = 640,000$$.",
+                "Divide: $$M_{long} = \\frac{1,440,000}{640,000} ≈ 2.25$$.",
+                "The longitudinal magnification of the image is approximately 2.25."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-LONGMAG-0002",
+        "title": "Longitudinal Magnification in Gabor Holography",
+        "description": "Determine the longitudinal magnification of an image reconstructed from a Gabor hologram.",
+        "difficulty": "Intermediate",
+        "insight": "Longitudinal magnification depends on the squared ratio of the reference and object distances from the hologram plane.",
+        "tags": ["longitudinal magnification", "Gabor holography", "hologram imaging", "optics", "geometrical optics"],
+        "question_text": "In a Gabor hologram setup, an object point is located 400 mm from the hologram plane, and the reference point is 1200 mm from the hologram plane. If the hologram is reconstructed with an image forming at a distance of 1500 mm, determine the longitudinal magnification of the image.\n\nUse the relationship $$M_{long} = \\frac{(z_{ref})^2}{(z_{ref} - z_{obj})^2}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002s.png",
+        "solution": {
+            "final_answer": "M_long ≈ 2.25",
+            "steps": [
+                "Start with the longitudinal magnification formula: $$M_{long} = \\frac{(z_{ref})^2}{(z_{ref} - z_{obj})^2}$$.",
+                "Substitute the given values: $$z_{ref} = 1200 \\text{ mm}$$, $$z_{obj} = 400 \\text{ mm}$$.",
+                "Simplify the denominator: $$1200 - 400 = 800$$.",
+                "Evaluate the squares: $$(1200)^2 = 1,440,000$$, $$(800)^2 = 640,000$$.",
+                "Divide: $$M_{long} = \\frac{1,440,000}{640,000} ≈ 2.25$$.",
+                "The longitudinal magnification of the image is approximately 2.25."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-IMAGEFOCUS-0001",
+        "title": "Image Distance and Focus Law: Holography vs Lens Optics",
+        "description": "Compare the image distance and focusing laws between holographic imaging and traditional lens optics.",
+        "difficulty": "Intermediate",
+        "insight": "Both holographic imaging and lens optics follow similar mathematical relationships for image focusing, but the physical mechanisms differ.",
+        "tags": ["holography", "image distance", "lens optics", "focus law", "ray tracing"],
+        "question_text": "In a holographic imaging system, the virtual image of a point object is reconstructed at a distance of 500 mm from the hologram plane. For a lens with the same focal length, the image distance is given by the thin lens equation:\n$$\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}$$.\n\n**a)** Compare the focus law in a lens system with the holographic imaging equation.\n**b)** If the object distance is 1000 mm, what will be the image distance in both systems?\n\nUse the holographic imaging equation:\n$$z_i = \\frac{h}{\\tan(\\theta)}$$",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-IMAGEFOCUS-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-IMAGEFOCUS-0001s.png",
+        "solution": {
+            "final_answer": "**Lens System:** Image distance = 1000 mm\n**Holographic System:** Image distance = 1000 mm",
+            "steps": [
+                "**Part (a): Compare the Focus Laws**",
+                "1. **Lens System:** The image distance is determined using the thin lens equation:\n   $$\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}$$.\n2. **Holographic System:** The image distance is determined using the holographic imaging equation:\n   $$z_i = \\frac{h}{\\tan(\\theta)}$$.\n3. **Comparison:** Both systems relate object and image distances to focal parameters, but lenses use refraction governed by the thin lens equation, while holography relies on interference and diffraction patterns encoded in the hologram.\n\n**Part (b): Calculate Image Distance**",
+                "1. **Lens System Calculation:**\n   - **Given:**\n     - Focal length, $$f = 500\\,\\text{mm}$$.\n     - Object distance, $$d_o = 1000\\,\\text{mm}$$.\n   - **Apply Thin Lens Equation:**\n     $$\\frac{1}{500} = \\frac{1}{1000} + \\frac{1}{d_i}$$.\n   - **Solve for $$d_i$$:**\n     $$\\frac{1}{d_i} = \\frac{1}{500} - \\frac{1}{1000} = \\frac{2}{1000} - \\frac{1}{1000} = \\frac{1}{1000}$$.\n     $$d_i = 1000\\,\\text{mm}$$.\n   - **Result:**\n     **Image distance** in the lens system is **1000 mm**.\n\n2. **Holographic System Calculation:**\n   - **Given:**\n     - Holographic imaging equation: $$z_i = \\frac{h}{\\tan(\\theta)}$$.\n     - Assume aperture height, $$h = 50\\,\\text{mm}$$ (as an example).\n     - Object distance, $$d_o = 1000\\,\\text{mm}$$.\n   - **Calculate $$\\theta$$:**\n     $$\\tan(\\theta) = \\frac{h}{d_o} = \\frac{50}{1000} = 0.05$$.\n     $$\\theta = \\arctan(0.05) \\approx 2.86^\\circ$$.\n   - **Calculate $$z_i$$:**\n     $$z_i = \\frac{50}{\\tan(2.86^\\circ)} = \\frac{50}{0.05} = 1000\\,\\text{mm}$$.\n   - **Result:**\n     **Image distance** in the holographic system is **1000 mm**.\n\n**Conclusion:**\nBoth the lens system and the holographic imaging system yield an image distance of approximately **1000 mm** when the object distance is **1000 mm** and other parameters are consistent. This demonstrates that while the underlying physical mechanisms differ—refraction in lenses versus interference and diffraction in holography—the mathematical relationships governing image formation can produce similar outcomes under equivalent conditions.\n\n**Additional Context / Clarification:**\nIn holography, the image reconstruction relies on the precise recording and playback of interference patterns, which encode the spatial information of the object. Numerical ray-tracing principles allow for the accurate prediction of image positions by accounting for angles and distances, similar to how lens systems use geometric optics to determine image formation through refraction."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-IMAGEFOCUS-0002",
+        "title": "Focus Law: Holography vs Lens Optics",
+        "description": "Compare image distance predictions using the holographic focus law and the thin lens equation.",
+        "difficulty": "Advanced",
+        "insight": "Both lens optics and holographic imaging rely on geometric principles, but their image formation mechanisms differ.",
+        "tags": ["holography", "image distance", "lens optics", "focus law", "ray tracing"],
+        "question_text": "In a holographic imaging system, a virtual image is reconstructed at a distance of 400 mm from the hologram plane. For a lens with the same focal length, the thin lens equation is given by:\n$$\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}$$.\n\n**a)** Compare the thin lens focus law with the holographic focus equation.\n**b)** If the object is located 800 mm from the lens and the hologram, determine the image distance in both systems.\n\nUse the holographic imaging equation:\n$$z_i = \\frac{h}{\\tan(\\theta)}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-IMAGEFOCUS-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-IMAGEFOCUS-0002s.png",
+        "solution": {
+            "final_answer": "**Lens System:** Image distance = 800 mm\n**Holographic System:** Image distance = 800 mm",
+            "steps": [
+                "**Part (a): Compare the Focus Laws**",
+                "1. **Lens System:** The image distance is calculated using the thin lens formula:\n   $$\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}$$.",
+                "2. **Holographic System:** The image distance depends on angular relationships given by:\n   $$z_i = \\frac{h}{\\tan(\\theta)}$$.",
+                "3. **Comparison:** Both equations describe geometric image formation but differ in their physical principles. Lenses rely on refraction, focusing light rays through a medium, while holography depends on interference patterns created by the interaction of reference and object waves.",
+                "**Part (b): Calculate Image Distance**",
+                "1. **Lens System Calculation:**\n   - **Given:**\n     - Focal length, $$f = 400\\,\\text{mm}$$.\n     - Object distance, $$d_o = 800\\,\\text{mm}$$.\n   - **Apply Thin Lens Equation:**\n     $$\\frac{1}{400} = \\frac{1}{800} + \\frac{1}{d_i}$$.\n   - **Solve for $$\\frac{1}{d_i}$$:**\n     $$\\frac{1}{d_i} = \\frac{1}{400} - \\frac{1}{800} = \\frac{2}{800} - \\frac{1}{800} = \\frac{1}{800}$$.\n   - **Find $$d_i$$:**\n     $$d_i = 800\\,\\text{mm}$$.\n   - **Result:** The image distance is **800 mm**.\n2. **Holographic System Calculation:**\n   - **Given:**\n     - Object distance, $$z_o = 800\\,\\text{mm}$$.\n     - Holographic imaging equation: $$z_i = \\frac{h}{\\tan(\\theta)}$$.\n   - **Assuming:** The aperture height $$h$$ remains constant.\n   - **Calculate $$\\tan(\\theta)$$:**\n     $$\\tan(\\theta) = \\frac{h}{z_o}$$.\n   - **Substitute back into $$z_i$$:**\n     $$z_i = \\frac{h}{\\tan(\\theta)} = \\frac{h}{\\frac{h}{800}} = 800\\,\\text{mm}$$.\n   - **Result:** The image distance is **800 mm**.\n**Conclusion:**\nBoth the lens system and the holographic system yield an image distance of **800 mm** when the object is located **800 mm** away. This demonstrates that, under these conditions, both systems produce images at the same distance, albeit through different physical processes.\n**Additional Context / Clarification:**\nIn holography, the image reconstruction relies on the precise replication of the wavefronts recorded during hologram formation. The angular relationships in the holographic equation stem from the geometry of the recording and reconstruction setup. In contrast, lenses manipulate light paths through refraction, following the thin lens equation derived from geometric optics principles."
+            ]
+        }
+    }
+]
