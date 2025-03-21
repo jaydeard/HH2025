@@ -133,36 +133,4 @@
             ]
         }
     }
-    ,
-    {
-        "id": "HH-COHERENCE-0001",
-        "title": "Coherence Length and Spectral Width in Interferometry",
-        "description": "Calculate the coherence length and spectral width of a laser used in a Michelson interferometer setup.",
-        "difficulty": "Intermediate",
-        "insight": "The coherence length determines the maximum path difference for visible interference patterns, while the spectral width depends on the wavelength and coherence length.",
-        "tags": ["coherence length", "spectral width", "interferometry", "optics", "Michelson interferometer"],
-        "question_text": "A student installs a 550 nm laser in a classic Michelson interferometer setup. By moving one of the mirrors, he manipulates the optical path difference of the beam. He moves the mirror until the interference lines disappear. At this distance, the difference between the beams is 1 m.\n\n**a)** What is the coherent length of the laser?\n**b)** What is the spectral width of the laser?\n\n**Hint:** Use the formulas $$d \\approx 2\\Delta$$ for coherence length and $$d \\approx \\frac{\\lambda_0^2}{\\Delta \\lambda}$$ for spectral width.",
-        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-COHERENCE-0001.png",
-        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-COHERENCE-0001s.png",
-        "solution": {
-            "final_answer": "a) d ≈ 2 m, b) Δλ ≈ 151.25 fm",
-            "steps": [
-                "**Part (a): Coherence Length**",
-                "1. Use the formula: $$d \\approx 2 \\Delta$$.",
-                "2. Substitute the given path difference: $$\\Delta = 1 \\text{ m}$$.",
-                "3. Calculate: $$d = 2 \\cdot 1 = 2 \\text{ m}$$.",
-                "4. The coherence length of the laser is approximately 2 m.",
-                "**Additional Context / Clarification:**",
-                "Why $$d ≈ 2 Δ$$: In a Michelson interferometer, if you move one mirror by a distance $$Δ$$, the round-trip OPD (Optical Path Difference) changes by $$2 Δ$$. If interference vanishes for $$Δ = 1 \\text{ m}$$, the total path difference is $$2 \\text{ m}$$. That value is then interpreted as the laser’s coherence length.",
-                "**Part (b): Spectral Width**",
-                "1. Use the formula: $$d \\approx \\frac{\\lambda_0^2}{\\Delta \\lambda}$$.",
-                "2. Rearrange for $$\\Delta \\lambda$$: $$\\Delta \\lambda = \\frac{\\lambda_0^2}{d}$$.",
-                "3. Substitute the given values: $$\\lambda_0 = 550 \\times 10^{-9} \\text{ m}$$, $$d = 2 \\text{ m}$$.",
-                "4. Calculate: $$\\Delta \\lambda = \\frac{(550 \\times 10^{-9})^2}{2} = 151.25 \\text{ fm}$$.",
-                "5. The spectral width of the laser is approximately 151.25 fm.",
-                "**Additional Context / Clarification:**",
-                "Why $$d ≈ \\frac{\\lambda_0^2}{\\Delta \\lambda}$$: This formula represents a simplified relationship between the coherence length $$d$$ and the spectral width $$\\Delta \\lambda$$ for a single-mode or narrowband source around a central wavelength $$\\lambda_0$$. While real lasers can exhibit more complex spectral line shapes, this approximation provides a good estimate for the order of magnitude of $$\\Delta \\lambda$$ in standard textbook problems."
-            ]
-        }
-    }
 ]

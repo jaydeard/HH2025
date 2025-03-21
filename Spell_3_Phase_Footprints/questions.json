@@ -23,44 +23,58 @@
     }
     ,
     {
-        "id": "HH-WAVEFRONT-0060",
-        "title": "Wavefront Phases: On-Axis and Off-Axis Spherical Waves",
-        "description": "Determine the phase of wavefronts at the z = 0 plane produced by point sources with varying parameters. Evaluate the coefficients for each scenario.",
+        "id": "HH-WAVEFRONT-0060A",
+        "title": "On-Axis Spherical Wavefront Phase",
+        "description": "Determine the phase of a spherical wavefront at $$z=0$$ for a point source located on the $$z$$-axis.",
         "difficulty": "Advanced",
-        "insight": "The phase of wavefronts depends on source distance, angle, and spherical wave parameters, expressed as functions of x and y.",
+        "insight": "The phase of a spherical wave depends on the radius of curvature $$R_0$$ and the wavelength $$\\lambda$$, converted to degrees.",
         "tags": ["wavefronts", "phase", "spherical waves", "optics", "holography"],
-        "question_text": "Choose the phase of each of the wavefronts (in degrees as a function of x and y in millimeters) produced at the z = 0 plane by point sources of wavelength 633 nm at the following locations:\n\na) $$z_{source} = -1000 \\text{ mm}, x_{source} = 0$$\n   - A) $$\\varphi(x,y) = 284.4(x^2 + y^2)$$\n   - B) 4.96\n   - C) 0.26\n\nb) $$\\theta_{source} = 7.0^\\circ, r_{source} = 2 \\times 10^6 \\text{ mm}$$\n   - A) $$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$\n   - B) 34,400, 0.070, 0.071\n   - C) 1200, 0.0024, 0.0025\n\nc) $$z_{source} = -2 \\times 10^3 \\text{ mm}, y_{source} = -30.0 \\text{ mm}$$\n   - A) $$\\varphi(x,y) = 17060 y + 284 x^2 + 284 y^2$$\n   - B) 8530, 142, 142\n   - C) 149, 2.48, 2.48\n\nSelect one CAPITAL LETTER set of coefficients for each part of the problem.",
-        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-WAVEFRONT-0060.png",
-        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-WAVEFRONT-0060s.png",
+        "question_text": "Given a wavelength of $$633 \\text{ nm}$$ and a point source at $$z_{source} = -1000 \\text{ mm}$$ (with $$x_{source} = 0$$), find the wavefront phase $$\\varphi(x,y)$$ (in degrees, with $$x$$ and $$y$$ in mm) at the plane $$z=0$$. Assume a spherical wave and ignore any constant offset in phase.",
         "solution": {
-            "final_answer": "a) A: $$\\varphi(x,y) = 284.4(x^2 + y^2)$$\nb) A: $$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$\nc) B: $$\\varphi(x,y) = 8530 + 142 x^2 + 142 y^2$$",
-            "steps": [
-                "**Part a: On-axis spherical wave:**",
-                "1. Use the formula for the phase of a spherical wave: $$\\varphi(x,y) = \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$.",
-                "2. Substitute the given parameters: $$\\lambda = 633 \\times 10^{-6} \\text{ mm}, R_0 = 1000 \\text{ mm}$$.",
-                "3. Simplify the expression: $$\\varphi(x,y) = 284.4(x^2 + y^2)$$.",
-                "4. The correct option is **A**.",
-                
-                "**Part b: Off-axis spherical wave:**",
-                "5. Use the formula for the phase of an off-axis wave: $$\\varphi(x,y) = \\frac{2\\pi}{\\lambda} \\sin(\\theta) x + \\frac{\\pi}{\\lambda R_0}(x^2 + y^2 \\cos^2(\\theta))$$.",
-                "6. Substitute the given parameters: $$\\theta = 7^\\circ, r_{source} = 2 \\times 10^6 \\text{ mm}$$.",
-                "7. Simplify the expression: $$68,800 x + 0.140 x^2 + 0.142 y^2$$.",
-                "8. The correct option is **A**.",
-                
-                "**Part c: Off-axis spherical wave tilted in the y-z plane:**",
-                "9. Calculate the effective tilt angle using: $$\\theta = \\tan^{-1}\\left(\\frac{y_{source}}{z_{source}}\\right)$$.",
-                "10. Substitute $$y_{source} = -30.0 \\text{ mm}, z_{source} = -2000 \\text{ mm}$$.",
-                "11. Calculate: $$\\theta = \\tan^{-1}\\left(\\frac{-30.0}{-2000}\\right) = 0.859^\\circ$$.",
-                "12. Use the phase formula for a tilted off-axis wave: $$\\varphi(x,y) = \\frac{2\\pi}{\\lambda} \\sin(\\theta) y + \\frac{\\pi}{\\lambda R_0}(x^2 + \\cos^2(\\theta) y^2)$$.",
-                "13. Substitute the values: $$8530y + 142 x^2 + 142 y^2$$.",
-                "14. The correct option is **B**.",
-                
-                "**Verification:**",
-                "15. Cross-check each coefficient with the given options.",
-                "16. Confirm final answers align with options **A, A, B** for parts a, b, and c respectively."
-            ]
+          "final_answer": "$$\\varphi(x,y) = 284.4 (x^2 + y^2)$$",
+          "steps": [
+            "1. The radius of curvature is $$R_0 = 1000 \\text{ mm}$$.",
+            "2. Convert $$633 \\text{ nm}$$ to mm: $$\\lambda = 0.000633 \\text{ mm}$$.",
+            "3. Use the spherical wave phase formula $$\\varphi = \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$ in radians, then convert to degrees by multiplying by $$\\frac{180}{\\pi}$$.",
+            "4. Numerically, this yields approximately $$284.4 (x^2 + y^2)$$ degrees, where $$x$$ and $$y$$ are in mm."
+          ]
         }
-    }
+      },
+      {
+        "id": "HH-WAVEFRONT-0060B",
+        "title": "Off-Axis Nearly Planar Wavefront Phase",
+        "description": "Determine the phase of a nearly planar, tilted wavefront at $$z=0$$ for a large radius source with a specified tilt angle.",
+        "difficulty": "Advanced",
+        "insight": "A large radius of curvature plus a tilt angle creates a linear phase term (tilt) plus small quadratic terms (curvature).",
+        "tags": ["wavefronts", "phase", "spherical waves", "optics", "holography"],
+        "question_text": "Given a wavelength of $$633 \\text{ nm}$$, an effective radius $$r_{source} = 2 \\times 10^6 \\text{ mm}$$, and a tilt angle $$\\theta_{source} = 7^\\circ$$, find the wavefront phase $$\\varphi(x,y)$$ (in degrees, with $$x$$ and $$y$$ in mm) at $$z=0$$. Assume the wave is almost planar but includes a slight curvature.",
+        "solution": {
+          "final_answer": "$$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$",
+          "steps": [
+            "1. The large radius of curvature ($$r_{source} = 2 \\times 10^6 \\text{ mm}$$) means the wave is almost planar.",
+            "2. The tilt angle $$\\theta_{source} = 7^\\circ$$ contributes a linear phase term in $$x$$: $$\\varphi_{tilt} \\approx \\frac{2\\pi}{\\lambda} \\sin(7^\\circ) \\cdot x$$, converted to degrees.",
+            "3. The small curvature adds quadratic terms in $$x^2$$ and $$y^2$$: $$\\varphi_{curv} \\approx \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$, adjusted for the tilt direction.",
+            "4. Numerically, this yields $$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$ degrees."
+          ]
+        }
+      },
+      {
+        "id": "HH-WAVEFRONT-0060C",
+        "title": "Off-Axis Spherical Wavefront Phase in the y-z Plane",
+        "description": "Determine the phase of a spherical wavefront at $$z=0$$ for a point source offset in the $$y$$-$$z$$ plane.",
+        "difficulty": "Advanced",
+        "insight": "A source offset in $$y$$ adds a tilt primarily in $$y$$ plus spherical curvature terms in $$x^2$$ and $$y^2$$.",
+        "tags": ["wavefronts", "phase", "spherical waves", "optics", "holography"],
+        "question_text": "Given a wavelength of $$633 \\text{ nm}$$, a point source at $$z_{source} = -2000 \\text{ mm}$$ and $$y_{source} = -30 \\text{ mm}$$, find the wavefront phase $$\\varphi(x,y)$$ (in degrees, with $$x$$ and $$y$$ in mm) at $$z=0$$. Assume a spherical wave that includes both a tilt and curvature.",
+        "solution": {
+          "final_answer": "$$\\varphi(x,y) = 8530 y + 142 x^2 + 142 y^2$$",
+          "steps": [
+            "1. The source location introduces a tilt in the $$y$$ direction: $$\\varphi_{tilt} \\approx \\frac{2\\pi}{\\lambda} \\sin(\\theta) \\cdot y$$, where $$\\theta \\approx \\tan^{-1}\\left(\\frac{y_{source}}{z_{source}}\\right)$$. Convert to degrees.",
+            "2. The curvature term adds a quadratic phase contribution: $$\\varphi_{curv} \\approx \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$, with $$R_0 \\approx 2000 \\text{ mm}$$, converted to degrees. (the $$\\cos^2(\\theta)$$ is negligible)",
+            "3. Numerically, combining the linear term in $$y$$ with the quadratic terms in $$x^2$$ and $$y^2$$ gives $$\\varphi(x,y) = 8530 y + 142 x^2 + 142 y^2$$ degrees."
+          ]
+        }
+      }
     ,
     {
         "id": "HH-WAVEFRONT-0070",
