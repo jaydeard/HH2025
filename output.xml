@@ -10,10 +10,12 @@
         <!-- Start of the multiple-choice question -->
         <question type="multichoice">
             <name>
-            <text>Phase Footprint of a Point Source on a Plane</text>
+            <text>Michelson Interferometer: Fringe Spacing and Source Separation</text>
             </name>
             <questiontext format="html">
-            <text><![CDATA[<p>Given a point source of λ = 633 nm wavelength at the coordinate (x0, z0) = (0, -1000 mm), what is the phase footprint at the plane z=0? You may assume that the constant phase term (on-axis phase) is zero. Express your final answer in degrees as a function of (x² + y²).<img src="None" width="400" /><br /></p>]]></text>
+            <text><![CDATA[<p>In a Michelson Interferometer, two dark fringes are spaced 1 inch apart (measured center-to-center). These fringes are observed on a screen placed 60 cm away from the lens. If the wavelength of the laser used is 632 nm, determine the separation between the two point sources (formed by the He-Ne laser images). Use the relationship:
+<span class="math-tex">\(\sin(\theta) - \sin(-\theta) = \frac{\lambda}{\Lambda}\)</span>
+and approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for the easy solution. Verify whether the results from the exact and approximate methods are nearly identical.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001.png" width="400" /><br /></p>]]></text>
             </questiontext>
             <generalfeedback format="html">
             <text><![CDATA[<p></p>]]></text>
@@ -38,37 +40,52 @@
             
             <!-- Correct Answer -->
             <answer fraction="100" format="html">
-            <text><![CDATA[<p>φ(x, y) ≈ 284.4 (x² + y²) degrees.</p>]]></text>
+            <text><![CDATA[<p>d = 15 μm</p>]]></text>
             <feedback format="html">
-                <text><![CDATA[<p>1. Convert the wavelength to millimeters: λ = 633 nm = 0.000633 mm.<br/>2. The (angular) phase constant in degrees per mm is k_deg = 360° / λ. Numerically, k_deg ≈ 360° / 0.000633 mm ≈ 568,830 deg/mm.<br/>3. The path length from the source to a point (x, y, 0) is L = √(1000² + r²), where r² = x² + y². The on-axis path is 1000 mm, so the extra distance is ΔL = L - 1000.<br/>4. For r ≪ 1000 mm, use the binomial expansion: √(1000² + r²) ≈ 1000 + r² / (2 × 1000). Hence, ΔL ≈ r² / (2 × 1000).<br/>5. The phase (in degrees) is φ(r) = k_deg × ΔL = (568,830 deg/mm) × (r² / (2 × 1000)).<br/>6. Combine constants: 568,830 / (2 × 1000) ≈ 284.4, so φ(r) ≈ 284.4 (x² + y²).<br/>7. The phase footprint (ignoring the constant term) is therefore φ(x, y) = 284.4 (x² + y²) degrees.<img src="None" width="400" /><br /></p>]]></text>
+                <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
+<span class="math-tex">\(\Lambda = .0254\)</span>  
+<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
+<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
             </feedback>
             </answer>
         
         <answer fraction="0" format="html">
-        <text><![CDATA[<p>φ(x, y) = 360 (x² + y²) degrees.</p>]]></text>
+        <text><![CDATA[<p>d = 30 μm</p>]]></text>
         <feedback format="html">
-            <text><![CDATA[<p>1. Convert the wavelength to millimeters: λ = 633 nm = 0.000633 mm.<br/>2. The (angular) phase constant in degrees per mm is k_deg = 360° / λ. Numerically, k_deg ≈ 360° / 0.000633 mm ≈ 568,830 deg/mm.<br/>3. The path length from the source to a point (x, y, 0) is L = √(1000² + r²), where r² = x² + y². The on-axis path is 1000 mm, so the extra distance is ΔL = L - 1000.<br/>4. For r ≪ 1000 mm, use the binomial expansion: √(1000² + r²) ≈ 1000 + r² / (2 × 1000). Hence, ΔL ≈ r² / (2 × 1000).<br/>5. The phase (in degrees) is φ(r) = k_deg × ΔL = (568,830 deg/mm) × (r² / (2 × 1000)).<br/>6. Combine constants: 568,830 / (2 × 1000) ≈ 284.4, so φ(r) ≈ 284.4 (x² + y²).<br/>7. The phase footprint (ignoring the constant term) is therefore φ(x, y) = 284.4 (x² + y²) degrees.<img src="None" width="400" /><br /></p>]]></text>
+            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
+<span class="math-tex">\(\Lambda = .0254\)</span>  
+<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
+<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
         </feedback>
         </answer>
         
         <answer fraction="0" format="html">
-        <text><![CDATA[<p>φ(x, y) = 500 (x² + y²) degrees.</p>]]></text>
+        <text><![CDATA[<p>d = 20 μm</p>]]></text>
         <feedback format="html">
-            <text><![CDATA[<p>1. Convert the wavelength to millimeters: λ = 633 nm = 0.000633 mm.<br/>2. The (angular) phase constant in degrees per mm is k_deg = 360° / λ. Numerically, k_deg ≈ 360° / 0.000633 mm ≈ 568,830 deg/mm.<br/>3. The path length from the source to a point (x, y, 0) is L = √(1000² + r²), where r² = x² + y². The on-axis path is 1000 mm, so the extra distance is ΔL = L - 1000.<br/>4. For r ≪ 1000 mm, use the binomial expansion: √(1000² + r²) ≈ 1000 + r² / (2 × 1000). Hence, ΔL ≈ r² / (2 × 1000).<br/>5. The phase (in degrees) is φ(r) = k_deg × ΔL = (568,830 deg/mm) × (r² / (2 × 1000)).<br/>6. Combine constants: 568,830 / (2 × 1000) ≈ 284.4, so φ(r) ≈ 284.4 (x² + y²).<br/>7. The phase footprint (ignoring the constant term) is therefore φ(x, y) = 284.4 (x² + y²) degrees.<img src="None" width="400" /><br /></p>]]></text>
+            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
+<span class="math-tex">\(\Lambda = .0254\)</span>  
+<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
+<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
         </feedback>
         </answer>
         
         <answer fraction="0" format="html">
-        <text><![CDATA[<p>φ(x, y) = 150 (x² + y²) degrees.</p>]]></text>
+        <text><![CDATA[<p>d = 5 μm</p>]]></text>
         <feedback format="html">
-            <text><![CDATA[<p>1. Convert the wavelength to millimeters: λ = 633 nm = 0.000633 mm.<br/>2. The (angular) phase constant in degrees per mm is k_deg = 360° / λ. Numerically, k_deg ≈ 360° / 0.000633 mm ≈ 568,830 deg/mm.<br/>3. The path length from the source to a point (x, y, 0) is L = √(1000² + r²), where r² = x² + y². The on-axis path is 1000 mm, so the extra distance is ΔL = L - 1000.<br/>4. For r ≪ 1000 mm, use the binomial expansion: √(1000² + r²) ≈ 1000 + r² / (2 × 1000). Hence, ΔL ≈ r² / (2 × 1000).<br/>5. The phase (in degrees) is φ(r) = k_deg × ΔL = (568,830 deg/mm) × (r² / (2 × 1000)).<br/>6. Combine constants: 568,830 / (2 × 1000) ≈ 284.4, so φ(r) ≈ 284.4 (x² + y²).<br/>7. The phase footprint (ignoring the constant term) is therefore φ(x, y) = 284.4 (x² + y²) degrees.<img src="None" width="400" /><br /></p>]]></text>
+            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
+<span class="math-tex">\(\Lambda = .0254\)</span>  
+<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
+<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
         </feedback>
         </answer>
         
         <answer fraction="0" format="html">
-        <text><![CDATA[<p>φ(x, y) = 200 (x² + y²) degrees.</p>]]></text>
+        <text><![CDATA[<p>d = 10 μm</p>]]></text>
         <feedback format="html">
-            <text><![CDATA[<p>1. Convert the wavelength to millimeters: λ = 633 nm = 0.000633 mm.<br/>2. The (angular) phase constant in degrees per mm is k_deg = 360° / λ. Numerically, k_deg ≈ 360° / 0.000633 mm ≈ 568,830 deg/mm.<br/>3. The path length from the source to a point (x, y, 0) is L = √(1000² + r²), where r² = x² + y². The on-axis path is 1000 mm, so the extra distance is ΔL = L - 1000.<br/>4. For r ≪ 1000 mm, use the binomial expansion: √(1000² + r²) ≈ 1000 + r² / (2 × 1000). Hence, ΔL ≈ r² / (2 × 1000).<br/>5. The phase (in degrees) is φ(r) = k_deg × ΔL = (568,830 deg/mm) × (r² / (2 × 1000)).<br/>6. Combine constants: 568,830 / (2 × 1000) ≈ 284.4, so φ(r) ≈ 284.4 (x² + y²).<br/>7. The phase footprint (ignoring the constant term) is therefore φ(x, y) = 284.4 (x² + y²) degrees.<img src="None" width="400" /><br /></p>]]></text>
+            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
+<span class="math-tex">\(\Lambda = .0254\)</span>  
+<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
+<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
         </feedback>
         </answer>
         
