@@ -10,18 +10,14 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0001.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0001s.png",
         "solution": {
-            "final_answer": "f = 157 cycles/mm",
+            "final_answer": "f ≈ 157.2 cycles/mm",
             "steps": [
                 "**Step 1: Set up the spatial frequency equation**",
                 "The spatial frequency is given by: $$f = \\frac{\\sin(\\theta_{obj}) - \\sin(\\theta_{ref})}{\\lambda}$$.",
                 "**Step 2: Calculate object beam angle**",
-                "Using trigonometry: $$\\sin(\\theta_{obj}) = \\frac{50}{500} = 0.1$$.",
+                "Using trigonometry: $$\\theta_{obj} = \\arctan(\\frac{50}{500}) = 0.0997$$.",
                 "**Step 3: Substitute values into the formula**",
-                "$$f = \\frac{0.1 - 0}{633 \\times 10^{-6}}$$.",
-                "**Step 4: Perform the calculation**",
-                "$$f = \\frac{0.1}{633 \\times 10^{-6}} = 157 \\, \\text{cycles/mm}$$.",
-                "**Conclusion**",
-                "The spatial frequency of the fringes at the specified point is approximately 157 cycles/mm."
+                "$$f = \\frac{0.1}{633 \\times 10^{-6}} = 157 \\, \\text{cycles/mm}$$."
             ]
         }
     }
@@ -33,24 +29,20 @@
         "difficulty": "Advanced",
         "insight": "The spatial frequency of interference fringes depends on the angles of object and reference beams relative to the hologram surface.",
         "tags": ["ray-tracing", "wavefront reconstruction", "holography", "spatial frequency", "diffraction"],
-        "question_text": "In a holographic recording system, an object point is located 300 mm below the optical axis, and a reference beam travels parallel to the z-axis. The object is placed at a distance of 600 mm along the z-axis from the hologram surface. Using a laser with a wavelength of 532 nm, determine the spatial frequency of the interference fringes at a point 30 mm above the optical axis on the hologram surface.",
+        "question_text": "In a holographic setup, we place the film on the plane z = 0. An object is placed at the point z = -600 mm and y = -300 mm (y = 0 is the optical axis). The reference beam travels parallel to the z-axis. Using a laser with a wavelength of 532 nm, determine the spatial frequency of the interference fringes at a point y = 30 mm on the film surface (z = 0).",
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0002.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0002s.png",
         "solution": {
-            "final_answer": "f ≈ 56 cycles/mm",
+            "final_answer": "f ≈ 905.86 cycles/mm",
             "steps": [
                 "**Step 1: Write the spatial frequency formula**",
                 "$$f = \\frac{\\sin(\\theta_{obj}) - \\sin(\\theta_{ref})}{\\lambda}$$.",
                 "**Step 2: Determine the angle of the object beam**",
-                "Using trigonometry: $$\\sin(\\theta_{obj}) = \\frac{30}{600} = 0.05$$.",
+                "Using trigonometry: $$\\theta_{obj} = \\arctan(\\frac{330}{600}) = 0.5028 rad$$.",
                 "**Step 3: Substitute the given values**",
                 "$$f = \\frac{0.05 - 0}{532 \\times 10^{-6}}$$.",
                 "**Step 4: Perform the calculation**",
-                "$$f = \\frac{0.05}{532 \\times 10^{-6}} = 94 \\, \\text{cycles/mm}$$.",
-                "**Step 5: Account for beam geometry corrections (small angle approximation)**",
-                "Adjustments result in a final corrected value of approximately: $$f ≈ 56 \\, \\text{cycles/mm}$$.",
-                "**Conclusion:**",
-                "The spatial frequency of the interference fringes at the given point is approximately 56 cycles/mm."
+                "$$f = \\frac{0.5028}{532 \\times 10^{-6}} = 905.86 \\, \\text{cycles/mm}$$."
             ]
         }
     }
@@ -84,7 +76,7 @@
                 "**Step 6: Interpret the result**",
                 "The reconstructed image appears at approximately z = 823.6 mm along the optical axis.",
                 "**Additional Context / Clarification:**",
-                "The slight discrepancy in image position is caused by the reference beam's finite angle, introducing a small aberation. Numerical ray-tracing provides a more accurate prediction of image location compared to simplified geometrical approximations."
+                "The slight discrepancy in image position is caused by the reference beam's finite angle, introducing a small aberration. Numerical ray-tracing provides a more accurate prediction of image location compared to simplified geometrical approximations."
             ]
         }
     }

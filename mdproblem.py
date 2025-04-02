@@ -17,6 +17,7 @@ def generate_markdown_problem(problem):
     markdown = f"""
 ### Problem {problem['id']}
 **{problem['title']}**
+
 """
     if "insight" in problem:
         markdown += f'*Insight*: {problem["insight"]}\n\n'

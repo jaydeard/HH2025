@@ -1,6 +1,6 @@
 [
     {
-        "id": "HH-INTERFERENCE-0010",
+        "id": "HH-INTERFERENCE-0001",
         "title": "Fringe Spacing in Interference Patterns",
         "description": "Determine the fringe spacing in an interference pattern formed by object and reference beams in a holographic recording setup.",
         "difficulty": "Intermediate",
@@ -26,6 +26,31 @@
     }
     ,
     {
+        "id": "HH-INTERFERENCE-0002",
+        "title": "Fringe Spacing in Interference Patterns",
+        "description": "Determine the fringe spacing in an interference pattern formed by object and reference beams in a holographic recording setup.",
+        "difficulty": "Intermediate",
+        "insight": "Fringe spacing depends on the angle between the object and reference beams and the wavelength of light used.",
+        "tags": ["holography", "fringe spacing", "interference pattern", "optics", "wave optics"],
+        "question_text": "A plane wave reference beam intersects an object beam at an angle of 45° on a holographic plate. The laser wavelength is 633 nm. Calculate the fringe spacing.",
+        "hint": "Use the fringe spacing formula: $$d = \\frac{\\lambda}{2 \\sin(\\theta/2)}$$.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0010.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0010s.png",
+        "solution": {
+          "final_answer": "d ≈ 0.83 µm",
+          "steps": [
+            "1. The fringe spacing formula is: $$d = \\frac{\\lambda}{2 \\sin(\\theta/2)}$$.",
+            "2. Substitute the given values: $$\\lambda = 633 \\times 10^{-9} \\text{ m}$$, $$\\theta = 45°$$.",
+            "3. Compute half the angle: $$\\theta/2 = 22.5°$$, then $$\\sin(22.5°) \\approx 0.3827$$.",
+            "4. Multiply by 2: $$2 \\cdot 0.3827 = 0.7654$$.",
+            "5. Divide: $$d = \\frac{633 \\times 10^{-9}}{0.7654} \\approx 8.27 \\times 10^{-7} \\text{ m}$$.",
+            "6. Convert to micrometers: $$d \\approx 0.83 \\text{ µm}$$.",
+            "7. Conclusion: The fringe spacing is approximately 0.83 µm."
+          ]
+        }
+      }      
+    ,
+    {
         "id": "HH-INTERFERENCE-0040",
         "title": "Interference of Light Waves: Intensity at Different Phases",
         "description": "Determine the total intensity of two coherent light waves at different phase differences when their individual intensities are given.",
@@ -48,7 +73,7 @@
     }
     ,
     {
-        "id": "HH-MICHELSON-0001",
+        "id": "HH-MICHELSON-0010",
         "title": "Michelson Interferometer: Fringe Spacing and Source Separation",
         "description": "Determine the separation between two point sources based on observed fringe spacing on a distant screen.",
         "difficulty": "Advanced",
@@ -68,6 +93,31 @@
                 "**Easy Solution:**",
                 "1. Approximate $$\\tan(\\theta) \\approx \\sin(\\theta)$$ for small angles.",
                 "2. $$.6\\cdot \\frac{\\lambda}{\\Lambda} \\approx 15 \\mu$$."
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-MICHELSON-0020",
+        "title": "Michelson Interferometer: Fringe Spacing and Source Separation",
+        "description": "Determine the separation between two point sources based on observed fringe spacing on a distant screen.",
+        "difficulty": "Advanced",
+        "insight": "Fringe spacing in an interferometer depends on the wavelength of light, the distance to the screen, and the angular separation of the point sources.",
+        "tags": ["interference", "Michelson interferometer", "optics", "fringe spacing", "spatial period"],
+        "question_text": "In a Michelson Interferometer, two dark fringes are spaced half an inch apart (measured center-to-center). These fringes are observed on a screen placed 1 meter away from the lens. If the wavelength of the laser used is 532 nm, determine the separation between the two point sources (formed by the He-Ne laser images).",
+        "hint": "Start with the fringe spacing formula and use trigonometric relationships involving small angles.",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png",
+        "solution": {
+            "final_answer": "d = 41.89 μm",
+            "steps": [
+                "**Hard Solution:**",
+                "1. Use the grating equation: $$\\sin(\\theta_{out}) - \\sin(\\theta_{in}) = \\frac{\\lambda}{\\Lambda}$$. We will assume $$\\theta_{in} = 0$$ for simplicity.",
+                "2. Solve for $$\\theta_{out}$$  \n$$\\Lambda = 0.0127$$  \n$$ \\lambda = 532 \\cdot 10^{-9}$$  \n$$\\theta_{out} = \\arcsin(\\frac{\\lambda}{\\Lambda})$$.",
+                "3. Convert angle to distance using tangent: $$1\\text{m} \\cdot\\tan\\theta \\approx 41.89 \\mu $$.",
+                "**Easy Solution:**",
+                "1. Approximate $$\\tan(\\theta) \\approx \\sin(\\theta)$$ for small angles.",
+                "2. $$\\frac{\\lambda}{\\Lambda} \\approx 41.89 \\mu$$."
             ]
         }
     }
@@ -105,14 +155,14 @@
     }
     ,
     {
-        "id": "HH-INTERFERENCE-0020",
+        "id": "HH-INTERFERENCE-0100",
         "title": "Interference Intensity Calculation",
         "description": "Calculate the intensity of the interference pattern at the origin produced by two interfering point sources.",
         "difficulty": "Advanced",
         "tags": ["interference", "optics", "wave physics"],
-        "question_text": "You may use your notes and a computer for this problem.\n\nThere are two point sources, $$\\lambda=633nm$$, that interfere at the origin.\n\nPoint 1 is radiating 2 watts of light and is located at:\n\n  - x1 = 40 cm\n  - y1 = 60 cm\n  - z1 = 0 cm\n\nPoint 2 is radiating 5 watts of light and is located at:\n\n  - x2 = -30 cm\n  - y2 = 0 cm\n  - z2 = 70 cm\n\nUsing the Master Interference Equation, calculate the intensity of the interference pattern at the origin.\n\nKeep in mind that the intensity of an isometrically diverging point source is given by $$\\frac{\\text{total power emitted}}{4\\pi R^2}$$ at any distance $$R$$.",
+        "question_text": "You may use your notes and/or a computer for this problem.\n\nThere are two point sources, $$\\lambda=633nm$$, that interfere at the origin.\n\nPoint 1 is radiating 2 watts of light and is located at:\n\n  - x1 = 40 cm\n  - y1 = 60 cm\n  - z1 = 0 cm\n\nPoint 2 is radiating 5 watts of light and is located at:\n\n  - x2 = -30 cm\n  - y2 = 0 cm\n  - z2 = 70 cm\n\nUsing the Master Interference Equation, calculate the intensity of the interference pattern at the origin.\n\nKeep in mind that the intensity of an isometrically diverging point source is given by $$\\frac{\\text{total power emitted}}{4\\pi R^2}$$ at any distance $$R$$.",
         "solution": {
-        "final_answer": "1.9084",
+        "final_answer": "$$1.9084 \\text{ W/m}2$$",
         "steps": [
             "1. For each point source, the intensity at a distance $$R$$ is given by $$I = \\frac{P}{4\\pi R^2}$$, where $$P$$ is the power emitted.",
             "2. Determine the distance from each source to the origin using the coordinates provided.",
@@ -121,4 +171,29 @@
         ]
         }
     }
+    ,
+    {
+        "id": "HH-INTERFERENCE-0200",
+        "title": "Interference Intensity Calculation",
+        "description": "Calculate the intensity of the interference pattern at the origin produced by two interfering point sources.",
+        "difficulty": "Advanced",
+        "tags": ["interference", "optics", "wave physics"],
+        "question_text": "You may use your notes and/or a computer for this problem.\n\nThere are two point sources, $$\\lambda=633nm$$, that interfere at the origin.\n\nPoint 1 is radiating 3 watts of light and is located at:\n\n  - x1 = 35 cm\n  - y1 = 55 cm\n  - z1 = 0 cm\n\nPoint 2 is radiating 4 watts of light and is located at:\n\n  - x2 = -25 cm\n  - y2 = 5 cm\n  - z2 = 50 cm\n\nUsing the Master Interference Equation, calculate the intensity of the interference pattern at the origin.\n\nKeep in mind that the intensity of an isometrically diverging point source is given by $$\\frac{\\text{total power emitted}}{4\\pi R^2}$$ at any distance $$R$$.",
+        "solution": {
+          "final_answer": "$$2.63 \\text{ W/m}2$$",
+          "steps": [
+            "1. For each point source, the intensity at a distance $$R$$ is given by $$I = \\frac{P}{4\\pi R^2}$$, where $$P$$ is the power emitted.",
+            "2. Determine the distance from each source to the origin using the coordinates provided:",
+            "   - For Point 1 at (35, 55, 0) cm, $$R_1 = \\sqrt{35^2 + 55^2} \\text{ cm} \\approx 65.19 \\text{ cm}$$, or about 0.6519 m.",
+            "   - For Point 2 at (-25, 5, 50) cm, $$R_2 = \\sqrt{(-25)^2 + 5^2 + 50^2} \\text{ cm} \\approx 56.12 \\text{ cm}$$, or about 0.5612 m.",
+            "3. Calculate the intensity from each source (using SI units with $$R$$ in meters):",
+            "   - $$I_1 = \\frac{3}{4\\pi (0.6519)^2} \\approx 0.561 \\text{ W/m}^2$$.",
+            "   - $$I_2 = \\frac{4}{4\\pi (0.5612)^2} \\approx 1.0101 \\text{ W/m}^2$$.",
+            "4. Compute the phase difference at the origin using $$\\Delta\\varphi = \\frac{2\\pi}{\\lambda}(R_1 - R_2)$$, with $$\\lambda = 633 \\times 10^{-9} \\text{ m}$$.",
+            "   - You can use the raw number from this calculation ($$\\approx 900010.5$$), or modulo by 2pi ($$\\approx 0.789$$). The result of $$\\cos(\\Delta\\varphi)$$ will be the same.",
+            "5. Evaluate the Master Interference Equation: $$I_{total} \\approx 0.561 + 1.0101 + 2\\sqrt{0.561 \\cdot 1.0101}\\cos(0.789) \\approx 2.63 \\text{ W/m}^2$$."
+          ]
+        }
+      }
+      
 ]

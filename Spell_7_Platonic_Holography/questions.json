@@ -6,7 +6,7 @@
         "difficulty": "Intermediate",
         "insight": "The interference pattern between the object and reference beams is the core mechanism enabling holographic recording and reconstruction.",
         "tags": ["holography", "object beam", "reference beam", "interference", "optics"],
-        "question_text": "In a holographic recording setup, an object beam is diffusely reflected from an aluminum-sprayed object surface, while a reference beam is a plane wave incident at an angle of 30°. The reference beam's intensity is greater than the object beam by a factor of 10. What is the beam ratio, and how does it affect the interference pattern?",
+        "question_text": "In a holographic recording setup, an object beam is diffusely reflected from an aluminum-sprayed object surface, while a reference beam is a plane wave incident at an angle of 30°. The reference beam's intensity is 200 mW/cm², and the object beam intensity is 20 mW/cm². What is the beam ratio, and how does it affect the interference pattern?",
         "hint": "The beam ratio (K) is the ratio of the intensity of the reference beam to the intensity of the object beam. The interference pattern's visibility depends on this ratio.",
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0007.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0007s.png",
@@ -15,10 +15,10 @@
             "steps": [
                 "The beam ratio is defined as: $$K = \\frac{I_{ref}}{I_{obj}}$$.",
                 "Substitute the given values: $$K = 10$$.",
-                "Interpretation: A high beam ratio (K > 1) ensures clear recording of the interference pattern but may reduce fringe contrast if excessively high.",
-                "The interference term in the intensity pattern is given by: $$I_{int} = 2\\sqrt{I_{obj} I_{ref}} \\cos(\\Delta \\phi)$$.",
-                "As K increases, the contribution from the object beam decreases relative to the reference beam, affecting fringe visibility.",
-                "Conclusion: The beam ratio (K=10) strikes a balance, but extreme values (e.g., K > 50) may cause poor contrast in the interference pattern."
+                "Interpretation: A beam ratio of 10 means the reference beam is significantly stronger than the object beam.",
+                "Effect on Fringe Pattern: High beam ratios reduce fringe visibility as the weaker beam's modulation effect diminishes.",
+                "Optimal Balance: Ideal beam ratios for high-contrast holograms are typically between 5 and 10.",
+                "Conclusion: At a beam ratio of 10, we're on the upper limit of acceptable K values. The interference pattern remains detectable for recording."
             ]
         }
     }
@@ -140,36 +140,12 @@
     }
     ,
     {
-        "id": "HH-RECMAT-0011",
-        "title": "Silver Halide Emulsion Properties in Holography",
-        "description": "Analyze the key optical properties of silver halide emulsions used in holographic recording materials.",
-        "difficulty": "Intermediate",
-        "insight": "The small grain size of silver halide emulsions allows them to resolve fine interference fringes, making them suitable for high-resolution holograms.",
-        "tags": ["holography", "silver halide", "recording material", "optics", "wave optics"],
-        "question_text": "A silver halide holographic emulsion has grains approximately 35 nm in diameter. Explain how this small grain size impacts the resolution of interference fringes recorded on the emulsion.",
-        "hint": "The resolution of holographic recording materials depends on the ability to capture fine interference fringes, which is influenced by the grain size.",
-        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0011.png",
-        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0011s.png",
-        "solution": {
-            "final_answer": "Smaller grain size improves the resolution of interference fringes.",
-            "steps": [
-                "The resolution of a holographic recording material depends on its ability to record fine-scale interference fringes.",
-                "Smaller grains mean higher spatial resolution because they can capture finer details.",
-                "Grains larger than the fringe spacing would blur the interference pattern, reducing the clarity of the hologram.",
-                "The 35 nm grain size in silver halide emulsions allows them to resolve fringe patterns corresponding to very high spatial frequencies.",
-                "Conclusion: Smaller grains in silver halide emulsions ensure higher resolution and better quality holograms."
-            ]
-        }
-    }
-    ,
-    {
         "id": "HH-RECMAT-0012",
         "title": "Grain Size vs Sensitivity in Holographic Emulsions",
         "description": "Examine how the grain size of silver halide emulsions affects their sensitivity and ability to record fine interference fringes.",
         "difficulty": "Intermediate",
-        "insight": "There is a trade-off between grain size and sensitivity: smaller grains improve resolution but reduce light sensitivity.",
         "tags": ["holography", "silver halide", "recording material", "grain size", "optics"],
-        "question_text": "A holographic silver halide emulsion has extremely fine grains (35 nm) to resolve fine interference fringes. Explain how this fine grain size impacts the sensitivity of the emulsion.",
+        "question_text": "A holographic silver halide emulsion has extremely fine grains (35 nm) to resolve fine interference fringes. Explain how this fine grain size impacts holograms recorded in the film.",
         "hint": "Smaller grains improve resolution but reduce the light sensitivity of the emulsion.",
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012s.png",

@@ -23,6 +23,25 @@
     }
     ,
     {
+      "id": "HH-WAVEFRONT-0070",
+      "title": "On-Axis Spherical Wavefront Phase",
+      "description": "Determine the phase of a spherical wavefront at $$z=0$$ for a point source located on the $$z$$-axis.",
+      "difficulty": "Advanced",
+      "insight": "The phase of a spherical wave depends on the radius of curvature $$R_0$$ and the wavelength $$\\lambda$$, converted to degrees.",
+      "tags": ["wavefronts", "phase", "spherical waves", "optics", "holography"],
+      "question_text": "Given a wavelength of $$633 \\text{ nm}$$ and a point source at $$z_{source} = 2300 \\text{ mm}$$ (with $$x_{source} = 0$$), find the wavefront phase $$\\varphi(x,y)$$ (in degrees, with $$x$$ and $$y$$ in mm) at the plane $$z=0$$. Assume a spherical wave and ignore any constant offset in phase.",
+      "solution": {
+        "final_answer": "$$\\varphi(x,y) = 123.6 (x^2 + y^2)$$",
+        "steps": [
+          "1. The radius of curvature is $$R_0 = 2300 \\text{ mm}$$.",
+          "2. Convert $$633 \\text{ nm}$$ to mm: $$\\lambda = 0.000633 \\text{ mm}$$.",
+          "3. Use the spherical wave phase formula $$\\varphi = \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$ in radians, then convert to degrees by multiplying by $$\\frac{180}{\\pi}$$.",
+          "4. Numerically, this yields $$\\varphi(x,y) = \\frac{\\pi}{0.000633 \\times 2300}(x^2+y^2)$$ radians, which is approximately $$123.6 (x^2+y^2)$$ degrees, where $$x$$ and $$y$$ are in mm."
+        ]
+      }
+    }
+    ,    
+    {
         "id": "HH-WAVEFRONT-0060A",
         "title": "On-Axis Spherical Wavefront Phase",
         "description": "Determine the phase of a spherical wavefront at $$z=0$$ for a point source located on the $$z$$-axis.",

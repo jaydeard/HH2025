@@ -1,94 +1,61 @@
 <?xml version="1.0"?>
-        <quiz>
-        <!-- Category for the question -->
-        <question type="category">
-            <category>
-            <text>OWLet 1 (for Unit 1: Introduction)</text>
-            </category>
-        </question>
-        
-        <!-- Start of the multiple-choice question -->
-        <question type="multichoice">
-            <name>
-            <text>Michelson Interferometer: Fringe Spacing and Source Separation</text>
-            </name>
-            <questiontext format="html">
-            <text><![CDATA[<p>In a Michelson Interferometer, two dark fringes are spaced 1 inch apart (measured center-to-center). These fringes are observed on a screen placed 60 cm away from the lens. If the wavelength of the laser used is 632 nm, determine the separation between the two point sources (formed by the He-Ne laser images). Use the relationship:
-<span class="math-tex">\(\sin(\theta) - \sin(-\theta) = \frac{\lambda}{\Lambda}\)</span>
-and approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for the easy solution. Verify whether the results from the exact and approximate methods are nearly identical.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001.png" width="400" /><br /></p>]]></text>
-            </questiontext>
-            <generalfeedback format="html">
-            <text><![CDATA[<p></p>]]></text>
-            </generalfeedback>
-            <penalty>0.3333333</penalty>
-            <hidden>0</hidden>
-            <defaultgrade>1</defaultgrade>
-            <single>1</single>
-            <shuffleanswers>false</shuffleanswers>
-            <answernumbering>abc</answernumbering>
-            
-            <correctfeedback format="html">
-            <text/>
-            </correctfeedback>
-            <partiallycorrectfeedback format="html">
-            <text/>
-            </partiallycorrectfeedback>
-            <incorrectfeedback format="html">
-            <text/>
-            </incorrectfeedback>
-            <shownumcorrect/>
-            
-            <!-- Correct Answer -->
-            <answer fraction="100" format="html">
-            <text><![CDATA[<p>d = 15 μm</p>]]></text>
-            <feedback format="html">
-                <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
-<span class="math-tex">\(\Lambda = .0254\)</span>  
-<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
-<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
-            </feedback>
-            </answer>
-        
-        <answer fraction="0" format="html">
-        <text><![CDATA[<p>d = 30 μm</p>]]></text>
-        <feedback format="html">
-            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
-<span class="math-tex">\(\Lambda = .0254\)</span>  
-<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
-<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
-        </feedback>
-        </answer>
-        
-        <answer fraction="0" format="html">
-        <text><![CDATA[<p>d = 20 μm</p>]]></text>
-        <feedback format="html">
-            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
-<span class="math-tex">\(\Lambda = .0254\)</span>  
-<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
-<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
-        </feedback>
-        </answer>
-        
-        <answer fraction="0" format="html">
-        <text><![CDATA[<p>d = 5 μm</p>]]></text>
-        <feedback format="html">
-            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
-<span class="math-tex">\(\Lambda = .0254\)</span>  
-<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
-<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
-        </feedback>
-        </answer>
-        
-        <answer fraction="0" format="html">
-        <text><![CDATA[<p>d = 10 μm</p>]]></text>
-        <feedback format="html">
-            <text><![CDATA[<p>**Hard Solution:**<br/>1. Use the grating equation: <span class="math-tex">\(\sin(\theta_{out}) - \sin(\theta_{in}) = \frac{\lambda}{\Lambda}\)</span>. We will assume <span class="math-tex">\(\theta_{in} = 0\)</span> for simplicity.<br/>2. Solve for <span class="math-tex">\(\theta_{out}\)</span>  
-<span class="math-tex">\(\Lambda = .0254\)</span>  
-<span class="math-tex">\( \lambda = 632 \cdot 10^{-9}\)</span>  
-<span class="math-tex">\(\theta_{out} = \arcsin(\frac{\lambda}{\Lambda})\)</span>.<br/>3. Convert angle to distance using tangent: <span class="math-tex">\(.6\cdot \tan\theta \approx 15 \mu \)</span>.<br/>**Easy Solution:**<br/>1. Approximate <span class="math-tex">\(\tan(\theta) \approx \sin(\theta)\)</span> for small angles.<br/>2. <span class="math-tex">\(.6\cdot \frac{\lambda}{\Lambda} \approx 15 \mu\)</span>.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-MICHELSON-0001s.png" width="400" /><br /></p>]]></text>
-        </feedback>
-        </answer>
-        
-        </question>
-        </quiz>
-        
+<quiz>
+  <!-- Category for the question -->
+  <question type="category">
+    <category>
+      <text>OWLet 1 (for Unit 1: Introduction)</text>
+    </category>
+  </question>
+  
+  <!-- Start of the multiple-choice question -->
+  <question type="multichoice">
+    <name>
+      <text>Fringe Spacing in Interference Patterns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>A plane wave reference beam intersects an object beam at an angle of 45° on a holographic plate. The laser wavelength is 633 nm. Calculate the fringe spacing.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0010.png" width="400" /><br /></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p>]]></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <defaultgrade>1</defaultgrade>
+    <single>1</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    
+    <correctfeedback format="html">
+      <text/>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text/>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text/>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    
+    <!-- Correct Answer without feedback -->
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>d ≈ 0.83 µm</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>d ≈ 1.25 µm</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>d ≈ 0.45 µm</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>d ≈ 1.00 µm</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>d ≈ 0.65 µm</p>]]></text>
+    </answer>
+
+  </question>
+</quiz>

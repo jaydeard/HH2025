@@ -1,4 +1,5 @@
-#writing stuff
+# Description: This script generates distractors for a multiple-choice question and creates a Moodle XML file with the question and distractors.
+# It uses the steps from the json to provide feedback for the answers. To generate questions without feedback, use LS.py.
 import os
 import openai
 import json
