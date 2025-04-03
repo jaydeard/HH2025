@@ -72,5 +72,26 @@
         ]
       }
     }
+    ,
+    {
+      "id": "HH-GRATING-EFFICIENCY-0001",
+      "title": "Match Grating Type with Maximum Achievable Diffraction Efficiency",
+      "description": "Match each of the listed grating types to the correct maximum achievable diffraction efficiency from the provided options.",
+      "difficulty": "Intermediate",
+      "tags": ["diffraction efficiency", "gratings", "optics", "wave optics"],
+      "question_text": "Below is a list of grating types and a set of possible maximum diffraction efficiencies. Match each grating type with its corresponding maximum efficiency:\n\n1. Phase, Sinusoidal\n2. Phase, Blazed (Sawtooth)\n3. Phase, Square\n4. Amplitude, Sinusoidal\n5. Amplitude, Square\n\nPossible Maximum Achievable Diffraction Efficiencies:  \nA. 33.8%  \nB. 6.25%  \nC. 40.5%  \nD. 10.1%  \nE. 100%\n\n",
+      "solution": {
+        "final_answer":
+          "Phase, Sinusoidal = A (33.8%)  \nPhase, Blazed (Sawtooth) = E (100%)  \nPhase, Square = C (40.5%)  \nAmplitude, Sinusoidal = D (10.1%)  \nAmplitude, Square = B (6.25%)",
+        "steps": [
+          "1. Recognize that a perfectly blazed (sawtooth) phase grating can, in theory, direct all energy into a single order, giving 100% efficiency.",
+          "2. A sinusoidal phase grating has a known theoretical maximum efficiency near 33.8%.",
+          "3. A square phase grating can reach around 40.5% in the primary order.",
+          "4. An amplitude sinusoidal grating is limited to about 10.1% in a single order due to light absorption/blocking in the grating.",
+          "5. An amplitude square grating can achieve around 6.25% for the main order under ideal conditions."
+        ]
+      }
+    }
+    
   ]
   

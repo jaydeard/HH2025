@@ -83,23 +83,16 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ARTIFACTS-0001.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ARTIFACTS-0001s.png",
         "solution": {
-            "final_answer": "Twin Image: Phase-shifting techniques; Zero-Order Term: Spatial filtering.",
+            "final_answer": "Twin Image: Off-axis holography  \nZero-Order Term: Spatial filtering using a Fourier aperture.",
             "steps": [
                 "**Step 1: Origin of Twin Image**",
-                "1. The twin image arises from the interference pattern recorded by both the real and conjugate object waves.",
-                "2. During reconstruction, these waves overlap, causing a secondary (twin) image to appear.",
+                "   The twin image arises from the fact that diffraction has positive and negative orders.",
                 "**Step 2: Mitigating Twin Image**",
-                "1. A common solution is to use **phase-shifting holography**, where multiple phase-shifted holograms are combined to eliminate the twin image.",
+                "   A common solution is to use **off-axis holography**, where the reference beam is angled relative to the object beam.",
                 "**Step 3: Origin of Zero-Order Term**",
-                "1. The zero-order term originates from the unmodulated light passing directly through the hologram.",
-                "2. It creates a bright spot at the center of the reconstructed image.",
+                "   The zero-order term originates from the unmodulated light passing directly through the hologram. It creates a bright spot at the center of the reconstructed image.",
                 "**Step 4: Mitigating Zero-Order Term**",
-                "1. **Spatial filtering** can be applied using an aperture at the Fourier plane to block the zero-order term.",
-                "**Step 5: Final Answer**",
-                "1. Twin Image: Phase-shifting techniques.",
-                "2. Zero-Order Term: Spatial filtering.",
-                "**Additional Context / Clarification:**",
-                "Twin images and zero-order terms are fundamental artifacts in holography. While twin images arise due to phase ambiguities, zero-order terms result from residual unmodulated light. Modern techniques like phase-shifting and spatial filtering are commonly employed to minimize these issues, improving the clarity of reconstructed holographic images."
+                "**Spatial filtering** can be applied using an aperture at the Fourier plane to block the zero-order term."
             ]
         }
     }

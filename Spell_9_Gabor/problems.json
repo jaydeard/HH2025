@@ -10,7 +10,7 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-GABOR-0002.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-GABOR-0002s.png",
         "solution": {
-            "final_answer": "**a)** \\( \\Delta \\phi = 12.42 \\cdot (x^2 + y^2) \\) radians\n**b)** Fringe spacing ≈ 0.127 mm",
+            "final_answer": "**a)** \\( \\Delta \\phi = 12.42 \\cdot (x^2 + y^2) \\) radians\n**b)** Fringe spacing \\approx 0.127 mm",
             "steps": [
                 "**Part (a): Calculate the Phase Difference \\( \\Delta \\phi \\) as a Function of Position**",
                 "1. **Write the Phase Difference Equation:**",
@@ -96,12 +96,12 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0002.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LATERALMAG-0002s.png",
         "solution": {
-            "final_answer": "$$M_lateral ≈ 1.33$$",
+            "final_answer": "$$M_lateral \\approx 1.33$$",
             "steps": [
                 "Start with the lateral magnification formula: $$M_{lateral} = \\frac{z_{ref}}{z_{ref} - z_{obj}}$$.",
                 "Substitute the given values: $$z_{ref} = 800 \\text{ mm}$$, $$z_{obj} = 250 \\text{ mm}$$.",
                 "Simplify the denominator: $$800 - 250 = 550$$.",
-                "Evaluate the ratio: $$M_{lateral} = \\frac{800}{550} ≈ 1.33$$.",
+                "Evaluate the ratio: $$M_{lateral} = \\frac{800}{550} \\approx 1.33$$.",
                 "The lateral magnification of the image is approximately 1.33."
             ]
         }
@@ -118,36 +118,13 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002s.png",
         "solution": {
-            "final_answer": "M_long ≈ 2.25",
+            "final_answer": "M_long \\approx 2.25",
             "steps": [
                 "Start with the longitudinal magnification formula: $$M_{long} = \\frac{(z_{ref})^2}{(z_{ref} - z_{obj})^2}$$.",
                 "Substitute the given values: $$z_{ref} = 1200 \\text{ mm}$$, $$z_{obj} = 400 \\text{ mm}$$.",
                 "Simplify the denominator: $$1200 - 400 = 800$$.",
                 "Evaluate the squares: $$(1200)^2 = 1,440,000$$, $$(800)^2 = 640,000$$.",
-                "Divide: $$M_{long} = \\frac{1,440,000}{640,000} ≈ 2.25$$.",
-                "The longitudinal magnification of the image is approximately 2.25."
-            ]
-        }
-    }
-    ,
-    {
-        "id": "HH-LONGMAG-0002",
-        "title": "Longitudinal Magnification in Gabor Holography",
-        "description": "Determine the longitudinal magnification of an image reconstructed from a Gabor hologram.",
-        "difficulty": "Intermediate",
-        "insight": "Longitudinal magnification depends on the squared ratio of the reference and object distances from the hologram plane.",
-        "tags": ["longitudinal magnification", "Gabor holography", "hologram imaging", "optics", "geometrical optics"],
-        "question_text": "In a Gabor hologram setup, an object point is located 400 mm from the hologram plane, and the reference point is 1200 mm from the hologram plane. If the hologram is reconstructed with an image forming at a distance of 1500 mm, determine the longitudinal magnification of the image.\n\nUse the relationship $$M_{long} = \\frac{(z_{ref})^2}{(z_{ref} - z_{obj})^2}$$.",
-        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002.png",
-        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0002s.png",
-        "solution": {
-            "final_answer": "M_long ≈ 2.25",
-            "steps": [
-                "Start with the longitudinal magnification formula: $$M_{long} = \\frac{(z_{ref})^2}{(z_{ref} - z_{obj})^2}$$.",
-                "Substitute the given values: $$z_{ref} = 1200 \\text{ mm}$$, $$z_{obj} = 400 \\text{ mm}$$.",
-                "Simplify the denominator: $$1200 - 400 = 800$$.",
-                "Evaluate the squares: $$(1200)^2 = 1,440,000$$, $$(800)^2 = 640,000$$.",
-                "Divide: $$M_{long} = \\frac{1,440,000}{640,000} ≈ 2.25$$.",
+                "Divide: $$M_{long} = \\frac{1,440,000}{640,000} \\approx 2.25$$.",
                 "The longitudinal magnification of the image is approximately 2.25."
             ]
         }

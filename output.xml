@@ -10,10 +10,10 @@
   <!-- Start of the multiple-choice question -->
   <question type="multichoice">
     <name>
-      <text>Fringe Spacing in Interference Patterns</text>
+      <text>Beam Ratio and Fringe Contrast in Holographic Recording</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>A plane wave reference beam intersects an object beam at an angle of 45° on a holographic plate. The laser wavelength is 633 nm. Calculate the fringe spacing.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0010.png" width="400" /><br /></p>]]></text>
+      <text><![CDATA[<p>In a holographic setup, the object beam has an average intensity of 1 mW/cm², while the reference beam has an intensity of 15 mW/cm². The object beam preserves polarization, and the reference beam is incident at an angle of 45°. Calculate the beam ratio and discuss how it influences the interference pattern and hologram quality.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008.png" width="400" /><br /></p>]]></text>
     </questiontext>
     <generalfeedback format="html">
       <text><![CDATA[<p></p>]]></text>
@@ -38,23 +38,7 @@
     
     <!-- Correct Answer without feedback -->
     <answer fraction="100" format="html">
-      <text><![CDATA[<p>d ≈ 0.83 µm</p>]]></text>
-    </answer>
-
-    <answer fraction="0" format="html">
-      <text><![CDATA[<p>d ≈ 1.25 µm</p>]]></text>
-    </answer>
-
-    <answer fraction="0" format="html">
-      <text><![CDATA[<p>d ≈ 0.45 µm</p>]]></text>
-    </answer>
-
-    <answer fraction="0" format="html">
-      <text><![CDATA[<p>d ≈ 1.00 µm</p>]]></text>
-    </answer>
-
-    <answer fraction="0" format="html">
-      <text><![CDATA[<p>d ≈ 0.65 µm</p>]]></text>
+      <text><![CDATA[<p>Beam ratio (K) = 15; Excessively high ratios reduce fringe contrast.</p>]]></text>
     </answer>
 
   </question>

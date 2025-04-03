@@ -5,12 +5,18 @@ import openai
 import json
 import ast
 
+USE_AI_DISTRACTORS = False  # Set to False to disable AI distractor generation
 
-client = openai.OpenAI()
+if USE_AI_DISTRACTORS:
+  client = openai.OpenAI()
 
 
 #writing
 def generate_distractors(problem):
+    
+    if not USE_AI_DISTRACTORS:
+        return []  # Return empty list when AI is disabled
+    
     prompt = f"""return a list of four strings elements (don't forget double quotes around each string!) where each string is a distractor for the following problem (given in this format e.g. [<str>,<str>,...], do not include ticmarks or a code environment just the list).  distractors should be of teh same format as the final answer
     ): \n + {problem}"""
     try:
@@ -130,9 +136,11 @@ def create_moodle_xml(problem_data, distractors):
 with open("input.json", "r", encoding="utf-8") as f:
     problem_data = json.load(f)
 
-distractors = generate_distractors(problem_data)
+if USE_AI_DISTRACTORS:
+    distractors = generate_distractors(problem_data)
+else:
+    distractors = []  # No distractors when AI is disabled
 
-# Generate Moodle XML
 xml_content = create_moodle_xml(problem_data, distractors)
 
 # Save to file

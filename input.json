@@ -1,147 +1,24 @@
-[
-  {
-      "id": "HH-RAYTRACING-0001",
-      "title": "Wavefront Reconstruction Using Ray-Tracing",
-      "description": "Analyze how interference patterns and diffraction form virtual and real images in a holographic plate using ray-tracing principles.",
-      "difficulty": "Intermediate",
-      "insight": "Ray-tracing helps to mathematically describe how interference patterns encode spatial information, allowing virtual and real images to be reconstructed accurately.",
-      "tags": ["ray-tracing", "wavefront reconstruction", "holography", "interference", "diffraction"],
-      "question_text": "A point object is placed at z = -500 mm along the optical axis in a Gabor holographic setup. The reference beam is a plane wave traveling parallel to the z-axis. Calculate the spatial frequency of the interference fringes at a point 50 mm above the optical axis on the hologram surface, given a He-Ne laser with a wavelength of 633 nm.",
-      "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0001.png",
-      "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0001s.png",
-      "solution": {
-          "final_answer": "f ≈ 157.2 cycles/mm",
-          "steps": [
-              "**Step 1: Set up the spatial frequency equation**",
-              "The spatial frequency is given by: $$f = \\frac{\\sin(\\theta_{obj}) - \\sin(\\theta_{ref})}{\\lambda}$$.",
-              "**Step 2: Calculate object beam angle**",
-              "Using trigonometry: $$\\theta_{obj} = \\arctan(\\frac{50}{500}) = 0.0997$$.",
-              "**Step 3: Substitute values into the formula**",
-              "$$f = \\frac{0.1}{633 \\times 10^{-6}} = 157 \\, \\text{cycles/mm}$$."
-          ]
-      }
-  }
-  ,
-  {
-      "id": "HH-RAYTRACING-0002",
-      "title": "Spatial Frequency in Wavefront Reconstruction",
-      "description": "Calculate the spatial frequency of interference fringes on a hologram plate using ray-tracing principles.",
-      "difficulty": "Advanced",
-      "insight": "The spatial frequency of interference fringes depends on the angles of object and reference beams relative to the hologram surface.",
-      "tags": ["ray-tracing", "wavefront reconstruction", "holography", "spatial frequency", "diffraction"],
-      "question_text": "In a holographic setup, we place the film on the plane z = 0. An object is placed at the point z = -600 mm and y = -300 mm (y = 0 is the optical axis). The reference beam travels parallel to the z-axis. Using a laser with a wavelength of 532 nm, determine the spatial frequency of the interference fringes at a point y = 30 mm on the film surface (z = 0).",
-      "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0002.png",
-      "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0002s.png",
-      "solution": {
-          "final_answer": "f ≈ 905.86 cycles/mm",
-          "steps": [
-              "**Step 1: Write the spatial frequency formula**",
-              "$$f = \\frac{\\sin(\\theta_{obj}) - \\sin(\\theta_{ref})}{\\lambda}$$.",
-              "**Step 2: Determine the angle of the object beam**",
-              "Using trigonometry: $$\\theta_{obj} = \\arctan(\\frac{330}{600}) = 0.5028 rad$$.",
-              "**Step 3: Substitute the given values**",
-              "$$f = \\frac{0.05 - 0}{532 \\times 10^{-6}}$$.",
-              "**Step 4: Perform the calculation**",
-              "$$f = \\frac{0.5028}{532 \\times 10^{-6}} = 905.86 \\, \\text{cycles/mm}$$."
-          ]
-      }
-  }
-  ,
-  {
-      "id": "HH-RAYTRACING-0003",
-      "title": "Numerical Ray-Tracing: Image Position and Aberration",
-      "description": "Use numerical ray-tracing to determine the image position and identify potential aberrations in a holographic system.",
-      "difficulty": "Advanced",
-      "insight": "Numerical ray-tracing helps accurately predict image positions and identify aberrations caused by beam geometry and recording parameters.",
-      "tags": ["ray-tracing", "numerical analysis", "holography", "image formation", "aberrations"],
-      "question_text": "In a holographic imaging system, an object point is located 400 mm below the optical axis, and a reference beam is incident at an angle of 5° with respect to the optical axis. The recording wavelength is 633 nm, and the hologram is located 800 mm away from the object plane. Using numerical ray-tracing, determine the position of the reconstructed image along the z-axis.",
-      "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003.png",
-      "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003s.png",
-      "solution": {
-          "final_answer": "The reconstructed image is located at approximately z = 823.6 mm.",
-          "steps": [
-              "**Step 1: Write the image position formula from ray-tracing principles**",
-              "$$z' = \\frac{z}{1 - \\frac{z}{R}}$$, where R is the effective radius of curvature due to the reference beam.",
-              "**Step 2: Approximate the radius of curvature (R)**",
-              "Using the angle: $$R = \\frac{z}{\\sin(\\theta)}$$.",
-              "Substitute the values: $$R = \\frac{800}{\\sin(5^\\circ)}$$.",
-              "**Step 3: Calculate sin(5°)**",
-              "$$\\sin(5^\\circ) ≈ 0.0872$$.",
-              "$$R = \\frac{800}{0.0872} ≈ 9170 \\text{ mm}$$.",
-              "**Step 4: Substitute into the image position formula**",
-              "$$z' = \\frac{800}{1 - \\frac{800}{9170}}$$.",
-              "**Step 5: Simplify the fraction**",
-              "$$1 - \\frac{800}{9170} ≈ 0.9127$$.",
-              "$$z' = \\frac{800}{0.9127} ≈ 876.4 \\text{ mm}$$.",
-              "**Step 6: Interpret the result**",
-              "The reconstructed image appears at approximately z = 823.6 mm along the optical axis.",
-              "**Additional Context / Clarification:**",
-              "The slight discrepancy in image position is caused by the reference beam's finite angle, introducing a small aberation. Numerical ray-tracing provides a more accurate prediction of image location compared to simplified geometrical approximations."
-          ]
-      }
-  }
-  ,
-  {
-      "id": "HH-RAYTRACING-0003",
-      "title": "Numerical Ray-Tracing: Image Position and Aberration",
-      "description": "Use numerical ray-tracing to determine the image position and identify potential aberrations in a holographic system.",
-      "difficulty": "Advanced",
-      "insight": "Numerical ray-tracing helps accurately predict image positions and identify aberrations caused by beam geometry and recording parameters.",
-      "tags": ["ray-tracing", "numerical analysis", "holography", "image formation", "aberrations"],
-      "question_text": "In a holographic imaging system, an object point is located 400 mm below the optical axis, and a reference beam is incident at an angle of 5° with respect to the optical axis. The recording wavelength is 633 nm, and the hologram is located 800 mm away from the object plane. Using numerical ray-tracing, determine the position of the reconstructed image along the z-axis.",
-      "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003.png",
-      "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003s.png",
-      "solution": {
-          "final_answer": "The reconstructed image is located at approximately z = 823.6 mm.",
-          "steps": [
-              "**Step 1: Write the image position formula from ray-tracing principles**",
-              "$$z' = \\frac{z}{1 - \\frac{z}{R}}$$, where R is the effective radius of curvature due to the reference beam.",
-              "**Step 2: Approximate the radius of curvature (R)**",
-              "Using the angle: $$R = \\frac{z}{\\sin(\\theta)}$$.",
-              "Substitute the values: $$R = \\frac{800}{\\sin(5^\\circ)}$$.",
-              "**Step 3: Calculate sin(5°)**",
-              "$$\\sin(5^\\circ) ≈ 0.0872$$.",
-              "$$R = \\frac{800}{0.0872} ≈ 9170 \\text{ mm}$$.",
-              "**Step 4: Substitute into the image position formula**",
-              "$$z' = \\frac{800}{1 - \\frac{800}{9170}}$$.",
-              "**Step 5: Simplify the fraction**",
-              "$$1 - \\frac{800}{9170} ≈ 0.9127$$.",
-              "$$z' = \\frac{800}{0.9127} ≈ 876.4 \\text{ mm}$$.",
-              "**Step 6: Interpret the result**",
-              "The reconstructed image appears at approximately z = 823.6 mm along the optical axis.",
-              "**Additional Context / Clarification:**",
-              "The slight discrepancy in image position is caused by the reference beam's finite angle, introducing a small aberation. Numerical ray-tracing provides a more accurate prediction of image location compared to simplified geometrical approximations."
-          ]
-      }
-  }
-  ,
-  {
-      "id": "HH-RAYTRACING-0004",
-      "title": "Numerical Ray-Tracing: Image Shift Due to Reference Beam Angle",
-      "description": "Use numerical ray-tracing principles to calculate the image shift caused by an angled reference beam in a holographic system.",
-      "difficulty": "Advanced",
-      "insight": "The angle of the reference beam introduces shifts in the reconstructed image position, which can be quantified through numerical ray-tracing.",
-      "tags": ["ray-tracing", "numerical analysis", "holography", "image shift", "reference beam"],
-      "question_text": "In a holographic setup, an object is positioned 500 mm below the optical axis, and the reference beam makes an angle of 7° with the z-axis. The hologram is located 1000 mm from the object plane, and the laser wavelength is 532 nm. Using numerical ray-tracing, determine the lateral image shift caused by the reference beam angle.",
-      "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0004.png",
-      "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0004s.png",
-      "solution": {
-          "final_answer": "The lateral image shift is approximately 122.1 mm.",
-          "steps": [
-              "**Step 1: Write the lateral shift formula**",
-              "$$\\Delta x = z \\tan(\\theta)$$, where $$z$$ is the object-to-hologram distance and $$\\theta$$ is the reference beam angle.",
-              "**Step 2: Substitute the given values**",
-              "$$z = 1000 \\text{ mm}$$, $$\\theta = 7^\\circ$$.",
-              "$$\\Delta x = 1000 \\cdot \\tan(7^\\circ)$$.",
-              "**Step 3: Calculate $$\\tan(7^\\circ)$$**",
-              "$$\\tan(7^\\circ) ≈ 0.1221$$.",
-              "**Step 4: Perform the multiplication**",
-              "$$\\Delta x = 1000 \\cdot 0.1221 = 122.1 \\text{ mm}$$.",
-              "**Step 5: Final Answer**",
-              "The lateral image shift caused by the reference beam angle is approximately 122.1 mm.",
-              "**Additional Context / Clarification:**",
-              "The angle of the reference beam introduces a predictable lateral shift in the reconstructed image. This effect becomes more significant as the reference beam angle increases, requiring precise numerical ray-tracing for accurate corrections."
-          ]
-      }
-  }
-]
+{
+    "id": "HH-OBJECTREF-0008",
+    "title": "Beam Ratio and Fringe Contrast in Holographic Recording",
+    "description": "Evaluate the impact of beam ratio on fringe visibility and interference contrast in a holographic setup.",
+    "difficulty": "Intermediate",
+    "insight": "An optimal beam ratio balances the intensity of the object and reference beams to maximize fringe visibility without overwhelming the holographic pattern.",
+    "tags": ["holography", "object beam", "reference beam", "beam ratio", "interference"],
+    "question_text": "In a holographic setup, the object beam has an average intensity of 1 mW/cm², while the reference beam has an intensity of 15 mW/cm². The object beam preserves polarization, and the reference beam is incident at an angle of 45°. Calculate the beam ratio and discuss how it influences the interference pattern and hologram quality.",
+    "hint": "The beam ratio (K) is defined as the ratio of the reference beam intensity to the object beam intensity. Optimal fringe visibility occurs when the intensities are balanced.",
+    "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008.png",
+    "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008s.png",
+    "solution": {
+        "final_answer": "Beam ratio (K) = 15; Excessively high ratios reduce fringe contrast.",
+        "steps": [
+            "The beam ratio is defined as: $$K = \\frac{I_{ref}}{I_{obj}}$$.",
+            "Substitute the given values: $$I_{ref} = 15 \\text{ mW/cm}^2$$, $$I_{obj} = 1 \\text{ mW/cm}^2$$.",
+            "Calculate the beam ratio: $$K = \\frac{15}{1} = 15$$.",
+            "Interpretation: A beam ratio of 15 means the reference beam is significantly stronger than the object beam.",
+            "Effect on Fringe Pattern: High beam ratios reduce fringe visibility as the weaker beam's modulation effect diminishes.",
+            "Optimal Balance: Ideal beam ratios for high-contrast holograms are typically between 5 and 10.",
+            "Conclusion: At a beam ratio of 15, fringe visibility is reduced, but the interference pattern remains detectable for recording."
+        ]
+    }
+}
