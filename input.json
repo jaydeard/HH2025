@@ -1,24 +1,21 @@
 {
-    "id": "HH-OBJECTREF-0008",
-    "title": "Beam Ratio and Fringe Contrast in Holographic Recording",
-    "description": "Evaluate the impact of beam ratio on fringe visibility and interference contrast in a holographic setup.",
+    "id": "HH-RECMAT-0012",
+    "title": "Grain Size vs Sensitivity in Holographic Emulsions",
+    "description": "Examine how the grain size of silver halide emulsions affects their sensitivity and ability to record fine interference fringes.",
     "difficulty": "Intermediate",
-    "insight": "An optimal beam ratio balances the intensity of the object and reference beams to maximize fringe visibility without overwhelming the holographic pattern.",
-    "tags": ["holography", "object beam", "reference beam", "beam ratio", "interference"],
-    "question_text": "In a holographic setup, the object beam has an average intensity of 1 mW/cm², while the reference beam has an intensity of 15 mW/cm². The object beam preserves polarization, and the reference beam is incident at an angle of 45°. Calculate the beam ratio and discuss how it influences the interference pattern and hologram quality.",
-    "hint": "The beam ratio (K) is defined as the ratio of the reference beam intensity to the object beam intensity. Optimal fringe visibility occurs when the intensities are balanced.",
-    "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008.png",
-    "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008s.png",
+    "tags": ["holography", "silver halide", "recording material", "grain size", "optics"],
+    "question_text": "A holographic silver halide emulsion has extremely fine grains (35 nm) to resolve fine interference fringes. Explain how this fine grain size impacts holograms recorded in the film.",
+    "hint": "Smaller grains improve resolution but reduce the light sensitivity of the emulsion.",
+    "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012.png",
+    "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012s.png",
     "solution": {
-        "final_answer": "Beam ratio (K) = 15; Excessively high ratios reduce fringe contrast.",
+        "final_answer": "Smaller grain size reduces light sensitivity but improves resolution.",
         "steps": [
-            "The beam ratio is defined as: $$K = \\frac{I_{ref}}{I_{obj}}$$.",
-            "Substitute the given values: $$I_{ref} = 15 \\text{ mW/cm}^2$$, $$I_{obj} = 1 \\text{ mW/cm}^2$$.",
-            "Calculate the beam ratio: $$K = \\frac{15}{1} = 15$$.",
-            "Interpretation: A beam ratio of 15 means the reference beam is significantly stronger than the object beam.",
-            "Effect on Fringe Pattern: High beam ratios reduce fringe visibility as the weaker beam's modulation effect diminishes.",
-            "Optimal Balance: Ideal beam ratios for high-contrast holograms are typically between 5 and 10.",
-            "Conclusion: At a beam ratio of 15, fringe visibility is reduced, but the interference pattern remains detectable for recording."
+            "Sensitivity in holographic emulsions depends on the ability of grains to absorb light photons.",
+            "Smaller grains have less surface area to absorb photons, reducing sensitivity.",
+            "However, smaller grains enable better spatial resolution because they can record finer interference fringes.",
+            "This creates a trade-off: smaller grains improve resolution but reduce sensitivity.",
+            "Conclusion: Silver halide emulsions with 35 nm grains prioritize resolution over light sensitivity."
         ]
     }
 }

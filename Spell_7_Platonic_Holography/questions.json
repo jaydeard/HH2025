@@ -30,7 +30,7 @@
         "difficulty": "Intermediate",
         "insight": "An optimal beam ratio balances the intensity of the object and reference beams to maximize fringe visibility without overwhelming the holographic pattern.",
         "tags": ["holography", "object beam", "reference beam", "beam ratio", "interference"],
-        "question_text": "In a holographic setup, the object beam has an average intensity of 1 mW/cm², while the reference beam has an intensity of 15 mW/cm². The object beam preserves polarization, and the reference beam is incident at an angle of 45°. Calculate the beam ratio and discuss how it influences the interference pattern and hologram quality.",
+        "question_text": "In a holographic setup, the object beam has an average intensity of 1 mW/cm², while the reference beam has an intensity of 15 mW/cm². The object beam preserves polarization, and the reference beam is incident at an angle of 45°. Calculate the beam ratio (K) and discuss how it influences the interference pattern and hologram quality.",
         "hint": "The beam ratio (K) is defined as the ratio of the reference beam intensity to the object beam intensity. Optimal fringe visibility occurs when the intensities are balanced.",
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-OBJECTREF-0008s.png",

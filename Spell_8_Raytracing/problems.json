@@ -76,40 +76,6 @@
                 "**Step 6: Interpret the result**",
                 "The reconstructed image appears at approximately z = 823.6 mm along the optical axis.",
                 "**Additional Context / Clarification:**",
-                "The slight discrepancy in image position is caused by the reference beam's finite angle, introducing a small aberration. Numerical ray-tracing provides a more accurate prediction of image location compared to simplified geometrical approximations."
-            ]
-        }
-    }
-    ,
-    {
-        "id": "HH-RAYTRACING-0003",
-        "title": "Numerical Ray-Tracing: Image Position and Aberration",
-        "description": "Use numerical ray-tracing to determine the image position and identify potential aberrations in a holographic system.",
-        "difficulty": "Advanced",
-        "insight": "Numerical ray-tracing helps accurately predict image positions and identify aberrations caused by beam geometry and recording parameters.",
-        "tags": ["ray-tracing", "numerical analysis", "holography", "image formation", "aberrations"],
-        "question_text": "In a holographic imaging system, an object point is located 400 mm below the optical axis, and a reference beam is incident at an angle of 5° with respect to the optical axis. The recording wavelength is 633 nm, and the hologram is located 800 mm away from the object plane. Using numerical ray-tracing, determine the position of the reconstructed image along the z-axis.",
-        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003.png",
-        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003s.png",
-        "solution": {
-            "final_answer": "The reconstructed image is located at approximately z = 823.6 mm.",
-            "steps": [
-                "**Step 1: Write the image position formula from ray-tracing principles**",
-                "$$z' = \\frac{z}{1 - \\frac{z}{R}}$$, where R is the effective radius of curvature due to the reference beam.",
-                "**Step 2: Approximate the radius of curvature (R)**",
-                "Using the angle: $$R = \\frac{z}{\\sin(\\theta)}$$.",
-                "Substitute the values: $$R = \\frac{800}{\\sin(5^\\circ)}$$.",
-                "**Step 3: Calculate sin(5°)**",
-                "$$\\sin(5^\\circ) ≈ 0.0872$$.",
-                "$$R = \\frac{800}{0.0872} ≈ 9170 \\text{ mm}$$.",
-                "**Step 4: Substitute into the image position formula**",
-                "$$z' = \\frac{800}{1 - \\frac{800}{9170}}$$.",
-                "**Step 5: Simplify the fraction**",
-                "$$1 - \\frac{800}{9170} ≈ 0.9127$$.",
-                "$$z' = \\frac{800}{0.9127} ≈ 876.4 \\text{ mm}$$.",
-                "**Step 6: Interpret the result**",
-                "The reconstructed image appears at approximately z = 823.6 mm along the optical axis.",
-                "**Additional Context / Clarification:**",
                 "The slight discrepancy in image position is caused by the reference beam's finite angle, introducing a small aberation. Numerical ray-tracing provides a more accurate prediction of image location compared to simplified geometrical approximations."
             ]
         }
