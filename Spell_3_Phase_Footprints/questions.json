@@ -66,17 +66,17 @@
         "difficulty": "Advanced",
         "insight": "A large radius of curvature plus a tilt angle creates a linear phase term (tilt) plus small quadratic terms (curvature).",
         "tags": ["wavefronts", "phase", "spherical waves", "optics", "holography"],
-        "question_text": "Given a wavelength of $$633 \\text{ nm}$$, an effective radius $$r_{source} = 2 \\times 10^6 \\text{ mm}$$, and a tilt angle $$\\theta_{source} = 7^\\circ$$, find the wavefront phase $$\\varphi(x,y)$$ (in degrees, with $$x$$ and $$y$$ in mm) at $$z=0$$. Assume the wave is almost planar but includes a slight curvature.",
+        "question_text": "Given a wavelength of $$633 \\text{ nm}$$, an effective radius $$r_{source} = 2000 \\text{ mm}$$, and a tilt angle $$\\theta_{source} = 7^\\circ$$, find the wavefront phase $$\\varphi(x,y)$$ (in degrees, with $$x$$ and $$y$$ in mm) at $$z=0$$.",
         "solution": {
-          "final_answer": "$$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$",
+          "final_answer": "$$\\varphi(x,y) = 69,310 x + 2.46 x^2 + 2.48 y^2$$",
           "steps": [
-            "1. The large radius of curvature ($$r_{source} = 2 \\times 10^6 \\text{ mm}$$) means the wave is almost planar.",
-            "2. The tilt angle $$\\theta_{source} = 7^\\circ$$ contributes a linear phase term in $$x$$: $$\\varphi_{tilt} \\approx \\frac{2\\pi}{\\lambda} \\sin(7^\\circ) \\cdot x$$, converted to degrees.",
-            "3. The small curvature adds quadratic terms in $$x^2$$ and $$y^2$$: $$\\varphi_{curv} \\approx \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$, adjusted for the tilt direction.",
-            "4. Numerically, this yields $$\\varphi(x,y) = 68,800 x + 0.140 x^2 + 0.142 y^2$$ degrees."
+            "The tilt angle $$\\theta_{source} = 7^\\circ$$ contributes a linear phase term in $$x$$: $$\\varphi_{tilt} \\approx \\frac{2\\pi}{\\lambda} \\sin(7^\\circ) \\cdot x$$, converted to degrees.",
+            "The small curvature adds quadratic terms in $$x^2$$ and $$y^2$$: $$\\varphi_{curv} \\approx \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$, adjusted for the tilt direction.",
+            "Numerically, this yields $$\\varphi(x,y) \\approx 69,310 x + 2.46 x^2 + 2.48 y^2$$."
           ]
         }
-      },
+      }
+      ,
       {
         "id": "HH-WAVEFRONT-0060C",
         "title": "Off-Axis Spherical Wavefront Phase in the y-z Plane",
@@ -86,11 +86,11 @@
         "tags": ["wavefronts", "phase", "spherical waves", "optics", "holography"],
         "question_text": "Given a wavelength of $$633 \\text{ nm}$$, a point source at $$z_{source} = -2000 \\text{ mm}$$ and $$y_{source} = -30 \\text{ mm}$$, find the wavefront phase $$\\varphi(x,y)$$ (in degrees, with $$x$$ and $$y$$ in mm) at $$z=0$$. Assume a spherical wave that includes both a tilt and curvature.",
         "solution": {
-          "final_answer": "$$\\varphi(x,y) = 8530 y + 142 x^2 + 142 y^2$$",
+          "final_answer": "$$\\varphi(x,y) = 8530 y + 2.4807 x^2 + 2.481 y^2$$",
           "steps": [
             "1. The source location introduces a tilt in the $$y$$ direction: $$\\varphi_{tilt} \\approx \\frac{2\\pi}{\\lambda} \\sin(\\theta) \\cdot y$$, where $$\\theta \\approx \\tan^{-1}\\left(\\frac{y_{source}}{z_{source}}\\right)$$. Convert to degrees.",
-            "2. The curvature term adds a quadratic phase contribution: $$\\varphi_{curv} \\approx \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$, with $$R_0 \\approx 2000 \\text{ mm}$$, converted to degrees. (the $$\\cos^2(\\theta)$$ is negligible)",
-            "3. Numerically, combining the linear term in $$y$$ with the quadratic terms in $$x^2$$ and $$y^2$$ gives $$\\varphi(x,y) = 8530 y + 142 x^2 + 142 y^2$$ degrees."
+            "2. The curvature term adds a quadratic phase contribution: $$\\varphi_{curv} \\approx \\frac{\\pi}{\\lambda R_0}(x^2 + y^2)$$, with $$R_0 \\approx 2000 \\text{ mm}$$, converted to degrees.",
+            "3. Combining the linear term in $$y$$ with the quadratic terms in $$x^2$$ and $$y^2$$ gives $$\\varphi(x,y) = 8530 y + 2.4807 x^2 + 2.481 y^2$$"
           ]
         }
       }

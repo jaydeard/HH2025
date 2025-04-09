@@ -1,21 +1,33 @@
 {
-    "id": "HH-RECMAT-0012",
-    "title": "Grain Size vs Sensitivity in Holographic Emulsions",
-    "description": "Examine how the grain size of silver halide emulsions affects their sensitivity and ability to record fine interference fringes.",
+    "id": "HH-DOF-ASTIG-0002",
+    "title": "Effect of Depth of Field and Astigmatism on Holographic Image Clarity",
+    "description": "Evaluate how depth of field and astigmatism affect the clarity of a rainbow holographic image.",
     "difficulty": "Intermediate",
-    "tags": ["holography", "silver halide", "recording material", "grain size", "optics"],
-    "question_text": "A holographic silver halide emulsion has extremely fine grains (35 nm) to resolve fine interference fringes. Explain how this fine grain size impacts holograms recorded in the film.",
-    "hint": "Smaller grains improve resolution but reduce the light sensitivity of the emulsion.",
-    "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012.png",
-    "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012s.png",
+    "insight": "Astigmatism results from differences in horizontal and vertical focus, creating a limited depth of field and reducing image clarity.",
+    "tags": ["depth of field", "astigmatism", "holography", "rainbow holography", "image clarity"],
+    "question_text": "In a rainbow holographic display, a hologram is viewed from a distance of $$D_{view} = 600 \\, mm$$. The maximum allowable astigmatism is set to $$0.2 \\, diopters$$. Determine the allowable range of depth of field (both in front of and behind the hologram) before image clarity is significantly affected by astigmatism.\n\nUse the relationships:\n$$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$ and $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$,\nwhere $$A_1$$ and $$A_2$$ represent the allowable astigmatism limits.",
+    "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DOF-ASTIG-0002.png",
+    "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DOF-ASTIG-0002s.png",
     "solution": {
-        "final_answer": "Smaller grain size reduces light sensitivity but improves resolution.",
+        "final_answer": "Allowable depth of field: 81 mm in front and 64 mm behind the hologram.",
         "steps": [
-            "Sensitivity in holographic emulsions depends on the ability of grains to absorb light photons.",
-            "Smaller grains have less surface area to absorb photons, reducing sensitivity.",
-            "However, smaller grains enable better spatial resolution because they can record finer interference fringes.",
-            "This creates a trade-off: smaller grains improve resolution but reduce sensitivity.",
-            "Conclusion: Silver halide emulsions with 35 nm grains prioritize resolution over light sensitivity."
+            "Start with the astigmatism limit formula: $$A = 0.2 \\, diopters$$.",
+            "**Part (a): Calculate Depth in Front of the Hologram**",
+            "1. Use the formula: $$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$.",
+            "2. Convert the viewing distance to meters for consistency with diopters: $$D_{view} = 600 \\, mm = 0.6 \\, m$$.",
+            "3. Calculate: $$\\frac{1}{D_{view}} = \\frac{1}{0.6} \\approx 1.6667 \\, diopters$$.",
+            "4. Set up the equation: $$1.6667 - \\frac{1}{D_{front}} = 0.2$$.",
+            "5. Solve for $$\\frac{1}{D_{front}}$$: $$\\frac{1}{D_{front}} = 1.6667 - 0.2 = 1.4667 \\, diopters$$.",
+            "6. Calculate $$D_{front}$$: $$D_{front} = \\frac{1}{1.4667} \\approx 0.681 \\, m = 681 \\, mm$$.",
+            "7. Determine the depth in front: $$681 \\, mm - 600 \\, mm = 81 \\, mm$$.",
+            "**Part (b): Calculate Depth Behind the Hologram**",
+            "1. Use the formula: $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$.",
+            "2. Substitute the known values: $$\\frac{1}{D_{back}} - 1.6667 = 0.2$$.",
+            "3. Solve for $$\\frac{1}{D_{back}}$$: $$\\frac{1}{D_{back}} = 0.2 + 1.6667 = 1.8667 \\, diopters$$.",
+            "4. Calculate $$D_{back}$$: $$D_{back} = \\frac{1}{1.8667} \\approx 0.536 \\, m = 536 \\, mm$$.",
+            "5. Determine the depth behind: $$600 \\, mm - 536 \\, mm = 64 \\, mm$$.",
+            "**Conclusion:**",
+            "The allowable depth of field is approximately $$81 \\, mm$$ in front and $$64 \\, mm$$ behind the hologram."
         ]
     }
 }

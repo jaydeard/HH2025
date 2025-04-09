@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
 <quiz>
-  <!-- Category for the question -->
   <question type="category">
     <category>
       <text>OWLet 1 (for Unit 1: Introduction)</text>
     </category>
   </question>
   
-  <!-- Start of the multiple-choice question -->
   <question type="multichoice">
     <name>
-      <text>Grain Size vs Sensitivity in Holographic Emulsions</text>
+      <text>Effect of Depth of Field and Astigmatism on Holographic Image Clarity</text>
     </name>
     <questiontext format="html">
-      <text><![CDATA[<p>A holographic silver halide emulsion has extremely fine grains (35 nm) to resolve fine interference fringes. Explain how this fine grain size impacts holograms recorded in the film.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-RECMAT-0012.png" width="400" /><br /></p>]]></text>
+      <text><![CDATA[<p>In a rainbow holographic display, a hologram is viewed from a distance of <span class="math-tex">\(D_{view} = 600 \, mm\)</span>. The maximum allowable astigmatism is set to <span class="math-tex">\(0.2 \, diopters\)</span>. Determine the allowable range of depth of field (both in front of and behind the hologram) before image clarity is significantly affected by astigmatism.
+
+Use the relationships:
+<span class="math-tex">\(A_1 = \frac{1}{D_{view}} - \frac{1}{D_{front}}\)</span> and <span class="math-tex">\(A_2 = \frac{1}{D_{back}} - \frac{1}{D_{view}}\)</span>,
+where <span class="math-tex">\(A_1\)</span> and <span class="math-tex">\(A_2\)</span> represent the allowable astigmatism limits.<img src="https://s3.us-east-2.amazonaws.com/hh.images/FIG-DOF-ASTIG-0002.png" width="400" /></p>]]></text>
     </questiontext>
     <generalfeedback format="html">
-      <text><![CDATA[<p></p>]]></text>
+      <text><![CDATA[]]></text>
     </generalfeedback>
     <penalty>0.3333333</penalty>
     <hidden>0</hidden>
@@ -36,9 +38,24 @@
     </incorrectfeedback>
     <shownumcorrect/>
     
-    <!-- Correct Answer without feedback -->
     <answer fraction="100" format="html">
-      <text><![CDATA[<p>Smaller grain size reduces light sensitivity but improves resolution.</p>]]></text>
+      <text><![CDATA[<p>Allowable depth of field: 81 mm in front and 64 mm behind the hologram.</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Distractor 1</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Distractor 2</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Distractor 3</p>]]></text>
+    </answer>
+
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Distractor 4</p>]]></text>
     </answer>
 
   </question>

@@ -27,6 +27,30 @@
     }
     ,
     {
+        "id": "HH-H1H2-TRANSFER-0002",
+        "title": "Angular Geometries in H1-H2 Transfer Holography (Modified Parameters)",
+        "description": "Analyze the angular relationships and spatial origins required for successful H1 to H2 transfer holography with adjusted beam properties.",
+        "difficulty": "Intermediate",
+        "insight": "Angular inversion and curvature summation govern beam alignment in phase-conjugate H1-H2 transfers.",
+        "tags": ["H1-H2 transfer", "angular geometry", "phase conjugation", "holography", "optics"],
+        "question_text": "In an H1-H2 transfer holography setup:\n- H1 is illuminated with a reference beam at an angle of $$\\theta_{ref} = 40^\\circ$$.\n- The object wave converges with a radius of curvature $$R_{obj} = 250 \\text{ mm}$$.\n- The distance between H1 and H2 is $$d = 150 \\text{ mm}$$.\n\n**a)** Calculate the angle of the output beam from H1 required to ensure proper convergence at H2.\n**b)** Determine the radius of curvature of the output beam at H2 assuming ideal phase conjugation.\n\nUse the relationship:\n$$\\theta_{out} = 180^\\circ - \\theta_{ref}$$\n$$R_{out} = R_{obj} + d$$",
+        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-H1H2-TRANSFER-0002.png",
+        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-H1H2-TRANSFER-0002s.png",
+        "solution": {
+            "final_answer": "a) θ_out = 140°, b) R_out = 400 mm",
+            "steps": [
+                "**Part (a): Calculate Output Beam Angle**",
+                "1. Apply angular inversion: $$\\theta_{out} = 180^\\circ - 40^\\circ = 140^\\circ$$.",
+                "**Part (b): Calculate Output Radius of Curvature**",
+                "1. Sum object curvature and plate separation: $$250 \\text{ mm} + 150 \\text{ mm} = 400 \\text{ mm}$$.",
+                "**Key Insight:**",
+                "- The 140° output angle ensures phase-conjugate beam alignment",
+                "- 400 mm radius maintains focus continuity between H1 and H2"
+            ]
+        }
+    }    
+    ,
+    {
         "id": "HH-COLORBLUR-0001",
         "title": "Color Blur in H2 Hologram Viewing",
         "description": "Analyze how color blur arises in an H2 hologram when images from multiple colors recorded in H1 fail to overlap perfectly.",
@@ -42,17 +66,17 @@
                 "**Part (a): Calculate Lateral Displacement**",
                 "1. Use the formula: $$\\Delta x = d \\cdot \\tan(\\theta) \\cdot \\left(1 - \\frac{\\lambda_1}{\\lambda_3}\\right)$$.",
                 "2. Substitute the given values: $$d = 200 \\, mm$$, $$\\theta = 30^\\circ$$, $$\\lambda_1 = 450 \\, nm$$, $$\\lambda_3 = 650 \\, nm$$.",
-                "3. Calculate $$\\tan(30^\\circ) ≈ 0.577$$.",
+                "3. Calculate $$\\tan(30^\\circ) = 0.577$$.",
                 "4. Evaluate the wavelength ratio: $$\\frac{450}{650} ≈ 0.692$$.",
                 "5. Substitute into the formula: $$\\Delta x = 200 \\cdot 0.577 \\cdot (1 - 0.692)$$.",
                 "6. Simplify: $$\\Delta x = 200 \\cdot 0.577 \\cdot 0.308$$.",
-                "7. Evaluate: $$\\Delta x ≈ 35.5 \\, mm$$.",
+                "7. Evaluate: $$\\Delta x = 35.5 \\, mm$$.",
                 "**Part (b): Explanation of Color Blur**",
                 "1. Each wavelength reconstructs at slightly different angles, leading to spatially displaced images.",
                 "2. When the blue, green, and red components do not overlap, the viewer perceives a blurred, rainbow-like effect.",
                 "3. This blur is more pronounced at larger viewing angles and greater distances between H1 and H2.",
                 "**Conclusion:**",
-                "The lateral displacement between red and blue images is approximately $$35.5 \\, mm$$, which contributes to visible color blur in the final image."
+                "The lateral displacement between red and blue images is approximately $$35.5 \\text{ mm}$$, which contributes to visible color blur in the final image."
             ]
         }
     }
@@ -73,11 +97,11 @@
                 "**Part (a): Calculate Lateral Displacement**",
                 "1. Use the formula: $$\\Delta x = d \\cdot \\tan(\\theta) \\cdot \\left(1 - \\frac{\\lambda_1}{\\lambda_3}\\right)$$.",
                 "2. Substitute the given values: $$d = 150 \\, mm$$, $$\\theta = 25^\\circ$$, $$\\lambda_1 = 480 \\, nm$$, $$\\lambda_3 = 680 \\, nm$$.",
-                "3. Calculate $$\\tan(25^\\circ) ≈ 0.466$$.",
+                "3. Calculate $$\\tan(25^\\circ) = 0.466$$.",
                 "4. Evaluate the wavelength ratio: $$\\frac{480}{680} ≈ 0.706$$.",
                 "5. Substitute into the formula: $$\\Delta x = 150 \\cdot 0.466 \\cdot (1 - 0.706)$$.",
                 "6. Simplify: $$\\Delta x = 150 \\cdot 0.466 \\cdot 0.294$$.",
-                "7. Evaluate: $$\\Delta x ≈ 20.58 \\, mm$$.",
+                "7. Evaluate: $$\\Delta x = 20.58 \\, mm$$.",
                 "**Part (b): Explanation of Color Blur**",
                 "1. Different wavelengths reconstruct at slightly different angles, causing their corresponding images to appear at slightly different lateral positions on the H2 plate.",
                 "2. This misalignment creates a visible blur, especially noticeable in high-contrast or sharp edges in the image.",

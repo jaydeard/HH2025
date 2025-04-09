@@ -6,11 +6,11 @@
         "difficulty": "Advanced",
         "insight": "Spherical aberration arises when peripheral rays focus at different points than central rays, leading to image blurring in holographic reconstructions.",
         "tags": ["holography", "aberrations", "spherical aberration", "wave optics", "image quality"],
-        "question_text": "In a holographic optical system, a spherical lens with a focal length of 200 mm is used to focus a collimated reference beam of wavelength 532 nm. The lens aperture has a diameter of 50 mm. Calculate the spherical aberration (in micrometers) between the paraxial and marginal rays on the image plane.",
+        "question_text": "In a holographic optical system, a spherical lens with a focal length of 200 mm is used to focus a collimated reference beam of wavelength 532 nm. The lens aperture has a diameter of 50 mm. Calculate the spherical aberration (in micrometers) between the paraxial and marginal rays on the image plane. Hint: use the formula:\n$$S = \\frac{h^4}{8 f^3}$$, where $$h$$ is the aperture radius and $$f$$ is the focal length.",
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ABERRATIONS-0001.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-ABERRATIONS-0001s.png",
         "solution": {
-            "final_answer": "The spherical aberration is approximately 31.25 µm.",
+            "final_answer": "The spherical aberration is approximately 6.1 µm.",
             "steps": [
                 "**Step 1: Write the spherical aberration formula**",
                 "$$S = \\frac{h^4}{8 f^3}$$, where $$h$$ is the aperture radius and $$f$$ is the focal length.",
@@ -22,13 +22,9 @@
                 "**Step 4: Perform the calculations**",
                 "$$(25)^4 = 390625$$.",
                 "$$8 (200)^3 = 8 \\cdot 8,000,000 = 64,000,000$$.",
-                "$$S = \\frac{390625}{64,000,000} ≈ 6.1 \\times 10^{-3} \\text{ mm}$$.",
+                "$$S = \\frac{390625}{64,000,000} = 6.1 \\times 10^{-3} \\text{ mm}$$.",
                 "**Step 5: Convert to micrometers**",
-                "$$S = 6.1 \\text{ µm}$$.",
-                "**Step 6: Final Adjustment for Approximation**",
-                "After considering marginal ray effects, the spherical aberration is approximately $$31.25 \\text{ µm}$$.",
-                "**Additional Context / Clarification:**",
-                "Spherical aberration causes light rays passing through the edges of a lens to focus at different points than rays passing through the center. This results in image blurring, which can be mitigated using aspheric lenses or aperture adjustments."
+                "$$S = 6.1 \\text{ microns}$$."
             ]
         }
     }
@@ -67,7 +63,7 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-BLURDIST-QUIZ-0001.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-BLURDIST-QUIZ-0001s.png",
         "solution": {
-            "final_answer": "ω_blur ≈ 0.0025 radians",
+            "final_answer": "ω_blur ≈ 0.003 radians",
             "steps": [
                 "Start with the formula: $$\\omega_{blur} = \\frac{1}{1 + \\frac{D_{view}}{D_{image}}} \\Delta \\theta_{out}$$.",
                 "Substitute the given values: $$\\Delta \\theta_{out} = 0.015 \\text{ radians}$$, $$D_{image} = 200 \\text{ mm}$$, $$D_{view} = 800 \\text{ mm}$$.",
@@ -93,7 +89,7 @@
             "final_answer": "Δh_source-blur ≈ 4.36 mm",
             "steps": [
                 "Start with the formula for source size blur: $$\\Delta h_{source-blur} = R_{out} \\cdot \\theta_{ill}$$.",
-                "Convert the angular subtense to radians: $$0.5^\\circ = \\frac{0.5 \\cdot \\pi}{180} ≈ 0.00873 \\text{ rad}$$.",
+                "Convert the angular subtense to radians: $$0.5^\\circ = \\frac{0.5 \\cdot \\pi}{180} = 0.00873 \\text{ rad}$$.",
                 "Substitute the given values: $$R_{out} = 500 \\text{ mm}$$, $$\\theta_{ill} = 0.00873$$.",
                 "Evaluate: $$\\Delta h_{source-blur} = 500 \\cdot 0.00873$$.",
                 "Calculate: $$\\Delta h_{source-blur} = 4.36 \\text{ mm}$$.",
@@ -146,7 +142,7 @@
                 "**Step 3: Simplify the fraction**",
                 "$$\\frac{100}{5} = 20$$.",
                 "**Step 4: Take the logarithm**",
-                "$$\\log_{10}(20) ≈ 1.301$$.",
+                "$$\\log_{10}(20) = 1.301$$.",
                 "**Step 5: Multiply by 10**",
                 "$$SNR = 10 \\times 1.301 = 13.01 \\text{ dB}$$.",
                 "**Step 6: Final Answer**",

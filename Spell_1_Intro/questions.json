@@ -77,28 +77,6 @@
     ,
     {
         "id": "HH-PRISM-0001",
-        "title": "Refraction by a Prism: Angle of Light through a Triangular Prism",
-        "description": "Determine the final angle of a light ray after it traverses a triangular prism with a given apex angle and refractive index.",
-        "difficulty": "Advanced",
-        "insight": "The refraction of light through a prism follows Snell's Law, and the internal angles determine the final exiting angle.",
-        "tags": ["refraction", "prism", "Snell's law", "optics"],
-        "question_text": "What is the angle of the ray of light pictured here after it has traversed a triangular prism with an apex angle of 45° and a refractive index of 1.50?",
-        "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PRISM-0001.png",
-        "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-PRISM-0001s.png",
-        "solution": {
-            "final_answer": "The final angle is 10°.",
-            "steps": [
-                "Use Trig, and the coordinate (-10,-7) fot find the input angle: $$\\theta =  35^\\circ$$.",
-                "Use Snell's Law at the first interface: $$\\theta_{int,1} = \\sin^{-1}\\left(\\frac{1}{1.5} \\sin 35^\\circ\\right) = 22.5^\\circ$$.",
-                "Calculate the internal angle at the second interface: $$\\theta_{int,2} = 22.5^\\circ - 45^\\circ = -22.5^\\circ$$.",
-                "Apply Snell's Law again at the second interface: $$\\theta_{ext,2} = \\sin^{-1}\\left(1.5 \\sin(-22.5^\\circ)\\right) = 35^\\circ$$.",
-                "Determine the final exiting angle: $$\\theta_{final} = 45^\\circ - 35^\\circ = 10^\\circ$$."
-            ]
-        }
-    }
-    ,
-    {
-        "id": "HH-PRISM-0001b",
         "title": "Refraction Through a Triangular Prism",
         "description": "Determine the final angle of a ray of light after traversing a triangular prism with a given apex angle and refractive index.",
         "difficulty": "Advanced",

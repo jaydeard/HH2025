@@ -40,17 +40,53 @@
                 "2. Substitute given values: $$\\lambda = 632.8 \\times 10^{-9} \\, m$$, $$\\Delta \\lambda = 0.2 \\times 10^{-9} \\, m$$, $$L = 1.0 \\, m$$, $$\\theta_{ref} = 20^\\circ$$, $$\\theta_{ill} = 21^\\circ$$.",
                 "3. Calculate wavenumber: $$k = \\frac{2 \\pi}{632.8 \\times 10^{-9}} ≈ 9.93 \\times 10^6 \\, rad/m$$.",
                 "4. Calculate phase mismatch:",
-                "   $$\\Delta \\Phi = (9.93 \\times 10^6)(0.2 \\times 10^{-9})(1.0) + (9.93 \\times 10^6)(0.01745)$$.",
-                "5. Evaluate terms: $$\\Delta \\Phi = 1.99 \\times 10^{-3} + 173.2$$.",
-                "6. Final result: $$\\Delta \\Phi ≈ 173.2 \\, rad$$.",
+                "   $$\\Delta \\Phi = (9.93 \\times 10^6)(0.2 \\times 10^{-9})(1.0) + (9.93 \\times 10^6)(-0.01745)$$.",
+                "5. Evaluate terms: $$\\Delta \\Phi = 1.99 \\times 10^{-3} - 173296$$.",
+                "6. Final result: $$\\Delta \\Phi ≈ -173296 \\text{ rad}$$.",
                 "**Part (b): Evaluate Reconstruction Conditions**",
                 "1. For perfect reconstruction, $$\\Delta \\Phi$$ must be approximately zero.",
-                "2. Since $$173.2 \\, rad$$ is not zero, the image will not perfectly reconstruct.",
+                "2. Since $$173296 \\text{ rad}$$ is not zero, the image will not perfectly reconstruct.",
                 "**Conclusion:**",
-                "The phase mismatch is approximately $$173.2 \\, rad$$, and perfect reconstruction conditions are not met."
+                "The phase mismatch is approximately $$-173296 \\text{ rad}$$, and perfect reconstruction conditions are not met."
             ]
         }
     }
+    ,
+    {
+        "id": "HH-PHASEMISMATCH-0002",
+        "title": "Phase Mismatch in Off-Axis Holography with Wavelength Shift",
+        "description": "Calculate phase mismatch and reconstruction feasibility when reconstructing with a different wavelength but matched angles.",
+        "difficulty": "Advanced",
+        "insight": "Phase mismatch arises primarily from wavelength differences when beam angles are identical.",
+        "tags": ["phase mismatch", "off-axis holography", "wavelength shift", "reconstruction fidelity"],
+        "question_text": "In an off-axis holography setup, a reference wave with a wavelength of $$\\lambda_{\\text{ref}} = 532 \\, \\text{nm}$$ illuminates the holographic plate at an angle of $$\\theta_{\\text{ref}} = 20^\\circ$$. The illumination wave during reconstruction has a wavelength of $$\\lambda_{\\text{ill}} = 633 \\, \\text{nm}$$ and the same angle of $$\\theta_{\\text{ill}} = 20^\\circ$$.\n\n**a)** Calculate the phase mismatch between the reference and illumination waves.\n**b)** Determine if perfect reconstruction is possible.\n\nUse the formula:\n$$\\Delta \\Phi = \\frac{2 \\pi}{\\lambda_{\\text{ref}}} (\\Delta \\lambda) L + k (\\theta_{\\text{ref}} - \\theta_{\\text{ill}})$$,\nwhere $$L = 1.0 \\, \\text{m}$$ and $$k = \\frac{2 \\pi}{\\lambda_{\\text{ref}}}$$.",
+        "solution": {
+            "final_answer": "**a)** Phase mismatch ≈ 1.19 radians\n**b)** Perfect reconstruction is **not** possible.",
+            "steps": [
+                "**Part (a): Phase Mismatch Calculation**",
+                "1. **Formula**:",
+                "   $$\\Delta \\Phi = \\frac{2\\pi}{\\lambda_{\\text{ref}}} (\\Delta \\lambda)L + k(\\theta_{\\text{ref}} - \\theta_{\\text{ill}})$$",
+                "2. **Substitute values**:",
+                "   - $$\\lambda_{\\text{ref}} = 532 \\times 10^{-9} \\, \\text{m}$$",
+                "   - $$\\Delta \\lambda = 633 - 532 = 101 \\times 10^{-9} \\, \\text{m}$$",
+                "   - $$L = 1.0 \\, \\text{m}$$",
+                "   - $$\\theta_{\\text{ref}} - \\theta_{\\text{ill}} = 0^\\circ$$",
+                "3. **Calculate terms**:",
+                "   - Wavelength term:",
+                "     $$\\frac{2\\pi}{532 \\times 10^{-9}} \\cdot 101 \\times 10^{-9} \\cdot 1.0 \\approx 1.19 \\, \\text{rad}$$",
+                "   - Angular term: $$k \\cdot 0 = 0$$",
+                "4. **Total phase mismatch**:",
+                "   $$\\Delta \\Phi = 1.19 + 0 = 1.19 \\, \\text{rad}$$",
+                "**Part (b): Reconstruction Feasibility**",
+                "1. **Condition**: Perfect reconstruction requires $$\\Delta \\Phi = 2\\pi n$$ (integer $$n$$).",
+                "2. **Check**: $$1.19 \\, \\text{rad} \\neq 2\\pi n$$ for any integer $$n$$.",
+                "3. **Conclusion**: Phase mismatch is **not** a multiple of $$2\\pi$$.",
+                "**Key Insight**:",
+                "Even small wavelength differences (101 nm) introduce significant phase errors when angles are matched. This highlights the critical role of wavelength stability in holographic systems."
+            ]
+        }
+    }
+    
     ,
     {
         "id": "HH-LONGMAG-0005",
@@ -63,7 +99,7 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0005.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-LONGMAG-0005s.png",
         "solution": {
-            "final_answer": "MAG_long ≈ 8.1",
+            "final_answer": "MAG_long ≈ 16.2",
             "steps": [
                 "Start with the longitudinal magnification formula: $$MAG_{long} = m \\frac{\\lambda_2}{\\lambda_1} \\left(\\frac{R_{out,m}}{R_{obj}}\\right)^2$$.",
                 "Substitute the given values: $$m = 1.5$$, $$\\lambda_2 = 600 \\text{ nm}$$, $$\\lambda_1 = 500 \\text{ nm}$$, $$R_{out,m} = 600 \\text{ mm}$$, $$R_{obj} = 200 \\text{ mm}$$.",

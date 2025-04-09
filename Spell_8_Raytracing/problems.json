@@ -58,9 +58,8 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-RAYTRACING-0003s.png",
         "solution": {
-            "final_answer": "The reconstructed image is located at approximately z = 823.6 mm.",
+            "final_answer": "The reconstructed image is located at approximately z = 876.4 mm.",
             "steps": [
-                "**Step 1: Write the image position formula from ray-tracing principles**",
                 "$$z' = \\frac{z}{1 - \\frac{z}{R}}$$, where R is the effective radius of curvature due to the reference beam.",
                 "**Step 2: Approximate the radius of curvature (R)**",
                 "Using the angle: $$R = \\frac{z}{\\sin(\\theta)}$$.",
@@ -72,11 +71,7 @@
                 "$$z' = \\frac{800}{1 - \\frac{800}{9170}}$$.",
                 "**Step 5: Simplify the fraction**",
                 "$$1 - \\frac{800}{9170} ≈ 0.9127$$.",
-                "$$z' = \\frac{800}{0.9127} ≈ 876.4 \\text{ mm}$$.",
-                "**Step 6: Interpret the result**",
-                "The reconstructed image appears at approximately z = 823.6 mm along the optical axis.",
-                "**Additional Context / Clarification:**",
-                "The slight discrepancy in image position is caused by the reference beam's finite angle, introducing a small aberation. Numerical ray-tracing provides a more accurate prediction of image location compared to simplified geometrical approximations."
+                "$$z' = \\frac{800}{0.9127} ≈ 876.4 \\text{ mm}$$."
             ]
         }
     }
@@ -94,19 +89,9 @@
         "solution": {
             "final_answer": "The lateral image shift is approximately 122.1 mm.",
             "steps": [
-                "**Step 1: Write the lateral shift formula**",
                 "$$\\Delta x = z \\tan(\\theta)$$, where $$z$$ is the object-to-hologram distance and $$\\theta$$ is the reference beam angle.",
-                "**Step 2: Substitute the given values**",
-                "$$z = 1000 \\text{ mm}$$, $$\\theta = 7^\\circ$$.",
-                "$$\\Delta x = 1000 \\cdot \\tan(7^\\circ)$$.",
-                "**Step 3: Calculate $$\\tan(7^\\circ)$$**",
                 "$$\\tan(7^\\circ) ≈ 0.1221$$.",
-                "**Step 4: Perform the multiplication**",
                 "$$\\Delta x = 1000 \\cdot 0.1221 = 122.1 \\text{ mm}$$.",
-                "**Step 5: Final Answer**",
-                "The lateral image shift caused by the reference beam angle is approximately 122.1 mm.",
-                "**Additional Context / Clarification:**",
-                "The angle of the reference beam introduces a predictable lateral shift in the reconstructed image. This effect becomes more significant as the reference beam angle increases, requiring precise numerical ray-tracing for accurate corrections."
             ]
         }
     }

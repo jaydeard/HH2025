@@ -37,7 +37,7 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0010.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-INTERFERENCE-0010s.png",
         "solution": {
-          "final_answer": "d ≈ 0.83 µm",
+          "final_answer": "d ≈ 0.895 µm",
           "steps": [
             "1. The fringe spacing formula is: $$d = \\frac{\\lambda}{2 \\sin(\\theta/2)}$$.",
             "2. Substitute the given values: $$\\lambda = 633 \\times 10^{-9} \\text{ m}$$, $$\\theta = 45°$$.",

@@ -6,14 +6,14 @@
         "difficulty": "Intermediate",
         "insight": "Astigmatism arises because of the differing curvatures of horizontal and vertical wavefronts, limiting the hologram's depth of field.",
         "tags": ["depth of field", "astigmatism", "holography", "rainbow holography", "image clarity"],
-        "question_text": "In a white-light rainbow holographic setup, a hologram is viewed from a distance of $$D_{view} = 500 \\, mm$$. The acceptable astigmatism limit is set to $$0.25 \\, diopters$$. Calculate the allowable depth of field (both in front of and behind the hologram) before astigmatism-induced blur becomes significant.\n\nUse the relationships:\n$$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$ and $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$,\nwhere $$A_1$$ and $$A_2$$ correspond to the allowable astigmatism limits.",
+        "question_text": "In a white-light rainbow holographic setup, a hologram is viewed from a distance of $$D_{view} = 500 \\, mm$$. The acceptable astigmatism limit is set to $$0.25 \\, diopters$$. Calculate the allowable depth of field (both in front of and behind the viewer at 500 mm) before astigmatism-induced blur becomes significant.\n\nUse the relationships:\n$$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$ and $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$,\nwhere $$A_1$$ and $$A_2$$ correspond to the allowable astigmatism limits.",
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DOF-ASTIG-0001.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DOF-ASTIG-0001s.png",
         "solution": {
-            "final_answer": "Allowable depth of field: 71 mm in front and 56 mm behind the hologram.",
+            "final_answer": "Allowable depth of field: 71 mm in front and 56 mm behind the veiwer (at 500 mm).",
             "steps": [
                 "Start with the astigmatism limit formula: $$A = 0.25 \\, diopters$$.",
-                "**Part (a): Calculate Depth in Front of the Hologram**",
+                "**Part (a): Calculate Depth in Front of the Viewer**",
                 "1. Use the formula: $$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$.",
                 "2. Substitute the given values (ensure units are in meters): $$D_{view} = 500 \\, mm = 0.5 \\, m$$.",
                 "3. Calculate: $$\\frac{1}{D_{view}} = \\frac{1}{0.5} = 2 \\, diopters$$.",
@@ -21,7 +21,7 @@
                 "5. Solve for $$\\frac{1}{D_{front}}$$: $$\\frac{1}{D_{front}} = 2 - 0.25 = 1.75 \\, diopters$$.",
                 "6. Calculate $$D_{front}$$: $$D_{front} = \\frac{1}{1.75} \\approx 0.571 \\, m = 571 \\, mm$$.",
                 "7. Determine the depth in front: $$571 \\, mm - 500 \\, mm = 71 \\, mm$$.",
-                "**Part (b): Calculate Depth Behind the Hologram**",
+                "**Part (b): Calculate Depth Behind the Viewer*",
                 "1. Use the formula: $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$.",
                 "2. Substitute the given values: $$\\frac{1}{D_{view}} = 2 \\, diopters$$.",
                 "3. Set up the equation: $$\\frac{1}{D_{back}} - 2 = 0.25$$.",
@@ -29,7 +29,7 @@
                 "5. Calculate $$D_{back}$$: $$D_{back} = \\frac{1}{2.25} \\approx 0.444 \\, m = 444 \\, mm$$.",
                 "6. Determine the depth behind: $$500 \\, mm - 444 \\, mm = 56 \\, mm$$.",
                 "**Conclusion:**",
-                "The allowable depth of field is approximately 71 mm in front and 56 mm behind the hologram."
+                "The allowable depth of field is approximately 71 mm in front and 56 mm behind the viewer."
             ]
         }
     }
@@ -41,14 +41,14 @@
         "difficulty": "Intermediate",
         "insight": "Astigmatism results from differences in horizontal and vertical focus, creating a limited depth of field and reducing image clarity.",
         "tags": ["depth of field", "astigmatism", "holography", "rainbow holography", "image clarity"],
-        "question_text": "In a rainbow holographic display, a hologram is viewed from a distance of $$D_{view} = 600 \\, mm$$. The maximum allowable astigmatism is set to $$0.2 \\, diopters$$. Determine the allowable range of depth of field (both in front of and behind the hologram) before image clarity is significantly affected by astigmatism.\n\nUse the relationships:\n$$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$ and $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$,\nwhere $$A_1$$ and $$A_2$$ represent the allowable astigmatism limits.",
+        "question_text": "In a rainbow holographic display, a hologram is viewed from a distance of $$D_{view} = 600 \\, mm$$. The maximum allowable astigmatism is set to $$0.2 \\, diopters$$. Determine the allowable range of depth of field (both in front of and behind the viewer at 500 mm) before image clarity is significantly affected by astigmatism.\n\nUse the relationships:\n$$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$ and $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$,\nwhere $$A_1$$ and $$A_2$$ represent the allowable astigmatism limits.",
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DOF-ASTIG-0002.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-DOF-ASTIG-0002s.png",
         "solution": {
-            "final_answer": "Allowable depth of field: 81 mm in front and 64 mm behind the hologram.",
+            "final_answer": "Allowable depth of field: 81 mm in front and 64 mm behind the veiwer (at 500 mm).",
             "steps": [
                 "Start with the astigmatism limit formula: $$A = 0.2 \\, diopters$$.",
-                "**Part (a): Calculate Depth in Front of the Hologram**",
+                "**Part (a): Calculate Depth in Front of the Viewer**",
                 "1. Use the formula: $$A_1 = \\frac{1}{D_{view}} - \\frac{1}{D_{front}}$$.",
                 "2. Convert the viewing distance to meters for consistency with diopters: $$D_{view} = 600 \\, mm = 0.6 \\, m$$.",
                 "3. Calculate: $$\\frac{1}{D_{view}} = \\frac{1}{0.6} \\approx 1.6667 \\, diopters$$.",
@@ -56,14 +56,14 @@
                 "5. Solve for $$\\frac{1}{D_{front}}$$: $$\\frac{1}{D_{front}} = 1.6667 - 0.2 = 1.4667 \\, diopters$$.",
                 "6. Calculate $$D_{front}$$: $$D_{front} = \\frac{1}{1.4667} \\approx 0.681 \\, m = 681 \\, mm$$.",
                 "7. Determine the depth in front: $$681 \\, mm - 600 \\, mm = 81 \\, mm$$.",
-                "**Part (b): Calculate Depth Behind the Hologram**",
+                "**Part (b): Calculate Depth Behind the Veiwer**",
                 "1. Use the formula: $$A_2 = \\frac{1}{D_{back}} - \\frac{1}{D_{view}}$$.",
                 "2. Substitute the known values: $$\\frac{1}{D_{back}} - 1.6667 = 0.2$$.",
                 "3. Solve for $$\\frac{1}{D_{back}}$$: $$\\frac{1}{D_{back}} = 0.2 + 1.6667 = 1.8667 \\, diopters$$.",
                 "4. Calculate $$D_{back}$$: $$D_{back} = \\frac{1}{1.8667} \\approx 0.536 \\, m = 536 \\, mm$$.",
                 "5. Determine the depth behind: $$600 \\, mm - 536 \\, mm = 64 \\, mm$$.",
                 "**Conclusion:**",
-                "The allowable depth of field is approximately $$81 \\, mm$$ in front and $$64 \\, mm$$ behind the hologram."
+                "The allowable depth of field is approximately $$81 \\, mm$$ in front and $$64 \\, mm$$ behind the viewer."
             ]
         }
     }

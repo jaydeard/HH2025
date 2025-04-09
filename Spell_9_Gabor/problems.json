@@ -1,5 +1,32 @@
 [
     {
+        "id": "HH-GABOR-0004",
+        "title": "Radius of Curvature Calculation for Gabor Hologram Reconstruction",
+        "description": "Determine the radius of curvature for the m=+1 reconstructed order in a Gabor hologram setup with modified parameters.",
+        "difficulty": "Advanced",
+        "insight": "The radius of curvature depends on wavelength ratios, object/reference wavefront curvatures, and illumination wave properties.",
+        "tags": ["Gabor holography", "wavefront curvature", "reconstruction orders", "optical engineering", "hologram imaging"],
+        "question_text": "Find the radius of curvature (in mm) of the m=+1 order for a Gabor hologram with the following parameters:\n\n- Robj = 150 mm\n- Rref = 2500 mm\n- Rill = 1800 mm\n- λ₁ = 532 nm (recording wavelength)\n- λ₂ = 473 nm (reconstruction wavelength)\n\nUse the holographic reconstruction curvature formula:\n$$\\frac{1}{R_m} = m \\cdot \\frac{\\lambda_2}{\\lambda_1} \\left( \\frac{1}{R_{\\text{obj}}} - \\frac{1}{R_{\\text{ref}}} \\right) + \\frac{1}{R_{\\text{ill}}}$$",
+        "solution": {
+            "final_answer": "Radius of curvature for m=+1 order: 163.3 mm",
+            "steps": [
+                "**Step 1: Calculate curvature difference**",
+                "$$\\frac{1}{R_{\\text{obj}}} - \\frac{1}{R_{\\text{ref}}} = \\frac{1}{150} - \\frac{1}{2500} = 0.006667 - 0.0004 = 0.006267\\ \\text{mm}^{-1}$$",
+                
+                "**Step 2: Apply wavelength scaling**",
+                "$$\\frac{473}{532} \\times 0.006267 = 0.8891 \\times 0.006267 = 0.005569\\ \\text{mm}^{-1}$$",
+                
+                "**Step 3: Add illumination curvature term**",
+                "$$\\frac{1}{R_{\\text{ill}}} = \\frac{1}{1800} = 0.000556\\ \\text{mm}^{-1}$$",
+                "$$\\frac{1}{R_{+1}} = 0.005569 + 0.000556 = 0.006125\\ \\text{mm}^{-1}$$",
+                
+                "**Step 4: Compute final radius**",
+                "$$R_{+1} = \\frac{1}{0.006125} \\approx 163.3\\ \\text{mm}$$"
+            ]
+        }
+    }
+    ,    
+    {
         "id": "HH-GABOR-0002",
         "title": "Quantitative Phase Footprints in Gabor Holography",
         "description": "Calculate the phase difference and fringe spacing in a Gabor hologram based on the curvature of spherical wavefronts.",
@@ -10,48 +37,55 @@
         "image_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-GABOR-0002.png",
         "solution_url": "https://s3.us-east-2.amazonaws.com/hh.images/FIG-GABOR-0002s.png",
         "solution": {
-            "final_answer": "**a)** \\( \\Delta \\phi = 12.42 \\cdot (x^2 + y^2) \\) radians\n**b)** Fringe spacing \\approx 0.127 mm",
+            "final_answer": "A} $$ \\Delta \\phi = 12.42 \\cdot (x^2 + y^2) $$ radians\nB) Fringe spacing $$\\approx 0.127$$ mm",
             "steps": [
-                "**Part (a): Calculate the Phase Difference \\( \\Delta \\phi \\) as a Function of Position**",
-                "1. **Write the Phase Difference Equation:**",
-                "   The phase difference between two spherical wavefronts at point \\( (x, y) \\) on the hologram plane is given by:",
-                "   $$\\Delta \\phi = \\frac{\\pi}{\\lambda} (x^2 + y^2) \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right)$$.",
-                "2. **Substitute the Given Values:**",
-                "   - \\( R_1 = 200 \\, mm \\)",
-                "   - \\( R_2 = 400 \\, mm \\)",
-                "   - \\( \\lambda = 633 \\, nm = 633 \\times 10^{-6} \\, mm \\)",
-                "   Thus:",
-                "   $$\\frac{1}{R_1} = \\frac{1}{200} = 0.005 \\, mm^{-1}$$.",
-                "   $$\\frac{1}{R_2} = \\frac{1}{400} = 0.0025 \\, mm^{-1}$$.",
-                "3. **Calculate the Curvature Difference:**",
-                "   $$\\frac{1}{R_1} - \\frac{1}{R_2} = 0.005 - 0.0025 = 0.0025 \\, mm^{-1}$$.",
-                "4. **Substitute into the Phase Difference Equation:**",
-                "   $$\\Delta \\phi = \\frac{\\pi}{633 \\times 10^{-6}} (x^2 + y^2) \\times 0.0025$$.",
-                "5. **Simplify the Constant Factor:**",
-                "   $$\\frac{\\pi}{633 \\times 10^{-6}} \\times 0.0025 = \\frac{\\pi \\times 0.0025}{0.000633} \\approx 12.42 \\, rad/mm^2$$.",
-                "6. **Express the Phase Difference as a Function of Position:**",
-                "   $$\\Delta \\phi = 12.42 \\cdot (x^2 + y^2)$$ radians.",
-                "",
-                "**Part (b): Calculate Fringe Spacing at \\( r = 1 \\, mm \\)**",
-                "1. **Fringe Spacing Condition:**",
-                "   Each fringe corresponds to a phase difference of \\( 2\\pi \\) radians.",
-                "   $$\\Delta \\phi = 2\\pi$$.",
-                "2. **Set Up the Equation for Fringe Spacing \\( \\Lambda \\):**",
-                "   $$12.42 \\cdot (\\Lambda)^2 = 2\\pi$$.",
-                "   Solving for \\( \\Lambda \\):",
-                "   $$\\Lambda^2 = \\frac{2\\pi}{12.42}$$.",
-                "   $$\\Lambda = \\sqrt{\\frac{2\\pi}{12.42}} \\approx \\sqrt{0.5064} \\approx 0.712 \\, mm$$.",
-                "3. **Adjust for Full Fringe Cycle:**",
-                "   Since a full fringe cycle (from bright to bright or dark to dark) corresponds to \\( 2\\pi \\), the fringe spacing \\( \\Lambda \\) is:",
-                "   $$\\Lambda = \\frac{\\lambda}{2 \\cdot \\Delta \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right) r}$$.",
-                "   Substituting the values:",
-                "   $$\\Lambda = \\frac{633 \\times 10^{-6} \\text{ mm}}{2 \\times 0.0025 \\times 1 \\text{ mm}} = \\frac{633 \\times 10^{-6}}{0.005} = 0.1266 \\text{ mm} \\approx 0.127 \\text{ mm}$$.",
-                "",
-                "**Conclusion:**",
-                "**a)** The phase difference is \\( \\Delta \\phi = 12.42 \\cdot (x^2 + y^2) \\) radians.\n**b)** The fringe spacing at \\( r = 1 \\, mm \\) is approximately **0.127 mm**.",
-                "",
-                "**Additional Context / Clarification:**",
-                "The phase difference quantifies how the curvature mismatch between two spherical wavefronts translates into fringe formation. The fringe spacing depends on both the wavelength and the radii of curvature difference, defining the zone density in the interference pattern. Accurate calculation of fringe spacing is crucial for designing holograms with desired resolution and clarity."
+                "**Part (a): Phase Difference Calculation**",
+            "1. Phase difference formula for spherical waves:",
+            "$$\\Delta \\phi = \\frac{\\pi}{\\lambda} (x^2 + y^2) \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right)$$",
+            "2. Substitute values:",
+            "$$\\frac{1}{200} - \\frac{1}{400} = 0.0025 \\text{ mm}^{-1}$$",
+            "$$\\Delta \\phi = \\frac{\\pi}{633\\times10^{-6}} \\cdot 0.0025 \\cdot (x^2 + y^2)$$",
+            "3. Simplify:",
+            "$$\\Delta \\phi = 12.42 \\cdot (x^2 + y^2) \\, \\text{radians}$$",
+
+            "**Part (b): Fringe Spacing at r = 1 mm**",
+            "1. Fringe spacing formula:",
+            "$$\\Lambda = \\frac{\\lambda}{2 \\left( \\frac{1}{R_1} - \\frac{1}{R_2} \\right) r}$$",
+            "2. Substitute values:",
+            "$$\\Lambda = \\frac{633\\times10^{-6}}{2 \\cdot 0.0025 \\cdot 1}$$",
+            "3. Calculate:",
+            "$$\\Lambda = \\frac{0.000633}{0.005} = 0.1266 \\, mm \\approx 0.127 \\, mm$$"
+            ]
+        }
+    }
+    ,
+    {
+        "id": "HH-GABOR-0003",
+        "title": "Quantitative Phase Analysis in Gabor Holography",
+        "description": "Calculate phase difference and fringe spacing in a Gabor hologram with modified wavefront curvatures.",
+        "difficulty": "Advanced",
+        "insight": "Fringe spacing scales inversely with curvature difference and radial position, while phase difference grows quadratically with spatial coordinates.",
+        "tags": ["phase analysis", "Gabor holography", "wavefront curvature", "interference", "nanophotonics"],
+        "question_text": "In a Gabor hologram, two spherical waves with radii of curvature $$R_1 = 250\\, mm$$ and $$R_2 = 500\\, mm$$ interfere to form a zone plate. The recording wavelength is $$\\lambda = 633\\, nm$$.\n\nCalculate:\n\n**a)** Phase difference $$\\Delta\\phi$$ as a function of position\n**b)** Fringe spacing at $$r = 1.2\\, mm$$ from the optical axis",
+        "solution": {
+            "final_answer": "A) $$\\Delta\\phi = 9.93 \\cdot (x^2 + y^2)$$ radians\nB) Fringe spacing $$\\approx 0.158$$ mm",
+            "steps": [
+                "**Part (a): Phase Difference Calculation**",
+                "1. Phase difference formula:",
+                "$$\\Delta\\phi = \\frac{\\pi}{\\lambda}(x^2 + y^2)\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)$$",
+                "2. Substitute values:",
+                "$$\\frac{1}{250} - \\frac{1}{500} = 0.004 - 0.002 = 0.002\\, mm^{-1}$$",
+                "3. Convert units and calculate:",
+                "$$\\Delta\\phi = \\frac{\\pi}{633\\times10^{-6}} \\cdot 0.002 \\cdot (x^2 + y^2)$$",
+                "$$\\Delta\\phi \\approx 9.93\\cdot(x^2 + y^2)\\, \\text{radians}$$",
+                
+                "**Part (b): Fringe Spacing Calculation**",
+                "1. Fringe spacing formula:",
+                "$$\\Lambda = \\frac{\\lambda}{2\\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)r}$$",
+                "2. Substitute values:",
+                "$$\\Lambda = \\frac{633\\times10^{-6}}{2\\cdot0.002\\cdot1.2}$$",
+                "3. Calculate:",
+                "$$\\Lambda = \\frac{0.000633}{0.0048} \\approx 0.158\\, mm$$"
             ]
         }
     }
